@@ -15,6 +15,8 @@
 - Google Map API
 - Slack API
 - Sendgrid API
+# Test:
+- Rspec
 # Commands / Steps to run the app: 
 - Create your own database.yml in config folder connected to a postgreSQL database and a MySQL database
 - Create your own application.yml file in config folder containing all the needed API keys. You can also contact me to get mine to test it out
@@ -29,3 +31,10 @@
 1) Go to the admin panel by accessing: longngelevator.online/admin
 2) Login using an admin account: Example would be: nicolas.genest@codeboxx.biz/password or martin.chantal@codeboxx.biz/password
 3) There will be an intervention form on the navbar. You can also access it by going to: longngelevator.online/admin/intervention
+
+
+# Commands to run tests: 
+1) Test elevator media: bundle exec rspec ./spec/streamer_spec.rb
+2) Test unit test 1: bundle exec rspec ./spec/unit_test_1.rb  
+3) Test unit test 2: bundle exec rspec ./spec/unit_test_2.rb
+4) Test unit test 3: bundle exec rspec ./spec/unit_test_3.rb
