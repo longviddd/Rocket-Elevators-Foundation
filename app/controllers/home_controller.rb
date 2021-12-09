@@ -8,4 +8,5 @@ class HomeController < ApplicationController
   def residential; end
 
   def quote; end
+  def streamer; end
 end

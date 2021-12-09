@@ -1,0 +1,10 @@
+<% require 'ElevatorMedia/streamer' %>
+
+<html>
+<% streamer = ElevatorMedia::Streamer.new %>
+<%= streamer.getContent().html_safe() %>
+
+
+</html>
+
+
