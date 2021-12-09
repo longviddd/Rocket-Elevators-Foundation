@@ -8,13 +8,13 @@ ActiveAdmin.register_page 'Dashboard' do
 
   content title: proc { I18n.t('active_admin.dashboard') } do
 
-    panel "Text to Speech" do
-      $current_user_firstname = current_user.first_name
-      puts("current user first name is " + $current_user_firstname)
-      watson_controller = WatsonController.new
-      watson_controller.greetings
-      audio_tag("greetings.wav", autoplay: true, controls: true)
-    end
+    # panel "Text to Speech" do
+    #   $current_user_firstname = current_user.first_name
+    #   puts("current user first name is " + $current_user_firstname)
+    #   watson_controller = WatsonController.new
+    #   watson_controller.greetings
+    #   audio_tag("greetings.wav", autoplay: true, controls: true)
+    # end
 
     panel "Go Home" do
       # controller do

@@ -115,3 +115,6 @@ gem 'faraday'
 gem 'sendgrid-ruby'
 gem 'sendgrid-actionmailer', '~> 2.4.0'
 gem 'dropbox_api'
+gem 'rspec'
+gem "rspec-rails", :group => [:development, :test]
+gem 'webmock'
