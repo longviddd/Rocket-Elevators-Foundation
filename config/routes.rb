@@ -23,5 +23,7 @@ Rails.application.routes.draw do
   get '/intervention_form/column/:column_id', to: 'intervention#getColumn'
   post '/intervention_form/submit' => 'intervention#submit'
   
+  
+  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

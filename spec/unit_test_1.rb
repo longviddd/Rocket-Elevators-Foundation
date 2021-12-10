@@ -1,6 +1,7 @@
 require 'rails_helper'
 require 'ElevatorMedia/streamer.rb'
 require 'webmock'
+#test login panel
 describe 'login into the page as an admin', type: :feature do
     context "test if login panel work" do
         it "login the user" do

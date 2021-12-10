@@ -65,6 +65,7 @@ group :development do
   gem "capistrano-bundler", ">= 1.1.0"
   gem "capistrano-rails", "~> 1.4", require: false
   gem "rvm1-capistrano3", require: false
+  gem 'brakeman'
 end
 
 group :test do
@@ -89,6 +90,7 @@ gem "pundit"
 gem "rubocop", require: false
 gem "json"
 gem "highcharts-rails"
+gem "activerecord-session_store"
 
 gem "arbre"
 

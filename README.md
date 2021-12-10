@@ -32,6 +32,7 @@
 2) Login using an admin account: Example would be: nicolas.genest@codeboxx.biz/password or martin.chantal@codeboxx.biz/password
 3) There will be an intervention form on the navbar. You can also access it by going to: longngelevator.online/admin/intervention
 
+# Elevator Streamer link: https://longngelevator.online/streamer
 
 # Commands to run tests: 
 1) Test elevator media: bundle exec rspec ./spec/streamer_spec.rb
