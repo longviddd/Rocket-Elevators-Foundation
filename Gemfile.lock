@@ -430,7 +430,6 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    secure_headers (6.3.3)
     selenium-webdriver (4.0.3)
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
@@ -567,7 +566,6 @@ DEPENDENCIES
   rubocop
   rvm1-capistrano3
   sass-rails (~> 5.0)
-  secure_headers
   selenium-webdriver
   sendgrid-actionmailer (~> 2.4.0)
   sendgrid-ruby
