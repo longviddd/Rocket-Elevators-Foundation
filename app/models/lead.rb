@@ -4,7 +4,7 @@ class Lead < ApplicationRecord
     after_create :upload
     private
         def sanitize_content
-            puts "sanitizing"
+            puts 'sanitizing'
             self.full_name = sanitize_field(self.full_name)
             self.company_name = sanitize_field(self.company_name)
             self.email = sanitize_field(self.email)
