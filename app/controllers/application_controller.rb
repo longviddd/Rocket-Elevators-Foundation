@@ -3,6 +3,9 @@ require 'net/https'
 class ApplicationController < ActionController::Base
   protect_from_forgery prepend: true, with: :exception
   RECAPTCHA_MINIMUM_SCORE = 0.5
+  rescue_from User::EmailTaken do |_exception|
+    redirect_to root_path, notice: t('devise.registrations.signed_up_but_unconfirmed')
+  end
   
   site_key = ENV['RECAPTCHA_SITE_KEY']
 
@@ -13,6 +16,9 @@ class ApplicationController < ActionController::Base
       redirect_to root_path
 
     end
+  end
+  rescue_from User::EmailTaken do |_exception|
+    redirect_to root_path, notice: t('devise.registrations.signed_up_but_unconfirmed')
   end
   def verify_recaptcha?(token, recaptcha_action)
     secret_key = ENV['RECAPTCHA_SECRET_KEY']

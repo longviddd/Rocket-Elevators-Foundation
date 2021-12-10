@@ -12,9 +12,6 @@ Rails.application.routes.draw do
   get '/index', to: 'home#index'
   post '/create_quotes' =>'quotes#create'
   post '/create_leads' => 'leads#create'
-  get '/users/:id' , to: 'users#show'
-  get '/users/:id/edit', to: 'users#edit', :as => :user
-  patch '/users/:id/edit' => 'users#update'
   get '/greetings', to: 'watson#greetings'
   get '/maps/:building_id', to: 'map#load'
   get '/intervention_form/customer/:customer_id', to: 'intervention#getCustomer'
