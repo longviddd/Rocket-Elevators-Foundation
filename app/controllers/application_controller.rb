@@ -6,6 +6,11 @@ class ApplicationController < ActionController::Base
   rescue_from User::EmailTaken do |_exception|
     redirect_to root_path, notice: t('devise.registrations.signed_up_but_unconfirmed')
   end
+  rescue_from ActiveRecord::RecordNotFound, :with => :render_404
+
+  def render_404
+    render :file => "#{Rails.root}/public/404.html",  :status => 404
+  end
   
   site_key = ENV['RECAPTCHA_SITE_KEY']
 

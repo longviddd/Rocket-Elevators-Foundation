@@ -35,7 +35,7 @@ class MapController < ApplicationController
             'weatherStatus' => weatherStatus,
             'weatherHumidity' => weatherHumidity
         }
-        
+        puts @buildingInfo
         render json: @buildingInfo
     end
     def show; end
