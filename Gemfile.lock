@@ -90,6 +90,10 @@ GEM
       io-like (~> 0.3.0)
     arel (9.0.0)
     ast (2.4.2)
+    authtrail (0.4.1)
+      activerecord (>= 5.2)
+      railties (>= 5.2)
+      warden
     autoprefixer-rails (10.3.3.0)
       execjs (~> 2)
     bcrypt (3.1.16)
@@ -515,6 +519,7 @@ DEPENDENCIES
   activeadmin!
   activerecord-session_store
   arbre
+  authtrail
   bcrypt_pbkdf (>= 1.0, < 2.0)
   bootsnap (>= 1.1.0)
   bootstrap
