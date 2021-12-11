@@ -16,12 +16,8 @@ ActiveAdmin.register_page 'Dashboard' do
     #   audio_tag("greetings.wav", autoplay: true, controls: true)
     # end
 
-    panel "Go Home" do
-      # controller do
-      #   before_action do |_|
-      #       redirect_to index_path
-      #   end
-      # end
+    panel "Home Page" do
+      link_to "Home Page", "/"
     end
 
   end

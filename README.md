@@ -36,6 +36,6 @@
 
 # Commands to run tests: 
 1) Test elevator media: bundle exec rspec ./spec/streamer_spec.rb
-2) Test unit test 1: bundle exec rspec ./spec/unit_test_1.rb  
-3) Test unit test 2: bundle exec rspec ./spec/unit_test_2.rb
-4) Test unit test 3: bundle exec rspec ./spec/unit_test_3.rb
+2) Test Login: bundle exec rspec ./spec/test_login.rb
+3) Test Intervention Model: bundle exec rspec ./spec/intervention_spec_bonus.rb
+4) Test Map Controller: bundle exec rspec ./spec/map_controller_spec_bonus.rb
