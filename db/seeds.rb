@@ -3515,41 +3515,41 @@ address = {
   ]
 }
 #Array of all employees first name
-first_names = Array['Nicolas', 'Nadya', 'Martin', 'Mathieu', 'Patrick', 'David', 'Mathieu', 'Thomas', 'Serge',
-                    'Francis', 'Mathieu', 'David', 'Nicolas', 'David', 'Remi', 'Timothy', 'Kiril', 'Emmanuela', 'Abdul', 'Krista', 'Jonathan']
-#Array of all last names
-last_names = Array['Genest', 'Fortier', 'Chantal', 'Houde', 'Tibault', 'Boutin', 'Lortie', 'Carrier', 'Savoie',
-                   'Patry-Jessop', 'Lefrancois', 'Larochelle', 'Pineault', 'Amyot', 'Gagnon', 'Wever', 'Kleinerman', 'Derilus', 'Akeeb', 'Sheely', 'Murray']
-#Array of all employees' function
-functions = Array['CEO', 'Director', 'Assistant Director', 'Captain', 'Captain', 'Engineer', 'Engineer', 'Engineer',
-                  'Engineer', 'Engineer', 'Engineer', 'Engineer', 'Engineer', 'Engineer', 'Engineer', 'Developer', 'Developer', 'Developer', 'Developer', 'Developer', 'Developer']
-#Array of all employees' email
-emails = Array['nicolas.genest@codeboxx.biz', 'nadya.fortier@codeboxx.biz', 'martin.chantal@codeboxx.biz',
-               'mathieu.houde@codeboxx.biz', 'patrick.thibault@codeboxx.biz', 'david.boutin@codeboxx.biz', 'mathieu.lortie@codeboxx.biz', 'thomas.carrier@codeboxx.biz', 'serge.savoie@codeboxx.biz', 'francis.patry-jessop@codeboxx.biz', 'mathieu.lefrancois@codeboxx.biz', 'david.larochelle@codeboxx.biz', 'nicolas.pineault@codeboxx.biz', 'david.amyot@codeboxx.biz', 'remi.gagnon@codeboxx.biz', 'timothy.wever@codeboxx.biz', 'kiril.kleinerman@codeboxx.biz', 'emmanuela.derilus@codeboxx.biz', 'abdul.akeeb@codeboxx.biz', 'krista.sheely@codeboxx.biz', 'jonathan.murray@codeboxx.biz']
+# first_names = Array['Nicolas', 'Nadya', 'Martin', 'Mathieu', 'Patrick', 'David', 'Mathieu', 'Thomas', 'Serge',
+#                     'Francis', 'Mathieu', 'David', 'Nicolas', 'David', 'Remi', 'Timothy', 'Kiril', 'Emmanuela', 'Abdul', 'Krista', 'Jonathan']
+# #Array of all last names
+# last_names = Array['Genest', 'Fortier', 'Chantal', 'Houde', 'Tibault', 'Boutin', 'Lortie', 'Carrier', 'Savoie',
+#                    'Patry-Jessop', 'Lefrancois', 'Larochelle', 'Pineault', 'Amyot', 'Gagnon', 'Wever', 'Kleinerman', 'Derilus', 'Akeeb', 'Sheely', 'Murray']
+# #Array of all employees' function
+# functions = Array['CEO', 'Director', 'Assistant Director', 'Captain', 'Captain', 'Engineer', 'Engineer', 'Engineer',
+#                   'Engineer', 'Engineer', 'Engineer', 'Engineer', 'Engineer', 'Engineer', 'Engineer', 'Developer', 'Developer', 'Developer', 'Developer', 'Developer', 'Developer']
+# #Array of all employees' email
+# emails = Array['nicolas.genest@codeboxx.biz', 'nadya.fortier@codeboxx.biz', 'martin.chantal@codeboxx.biz',
+#                'mathieu.houde@codeboxx.biz', 'patrick.thibault@codeboxx.biz', 'david.boutin@codeboxx.biz', 'mathieu.lortie@codeboxx.biz', 'thomas.carrier@codeboxx.biz', 'serge.savoie@codeboxx.biz', 'francis.patry-jessop@codeboxx.biz', 'mathieu.lefrancois@codeboxx.biz', 'david.larochelle@codeboxx.biz', 'nicolas.pineault@codeboxx.biz', 'david.amyot@codeboxx.biz', 'remi.gagnon@codeboxx.biz', 'timothy.wever@codeboxx.biz', 'kiril.kleinerman@codeboxx.biz', 'emmanuela.derilus@codeboxx.biz', 'abdul.akeeb@codeboxx.biz', 'krista.sheely@codeboxx.biz', 'jonathan.murray@codeboxx.biz']
 
-# for i in 0...first_name.length()
-#     @user = User.create!(email: email[i], password: 'password', password_confirmation: 'password', first_name:first_name[i], last_name:last_name[i], function:function[i])
-#     puts @user
-#     Employee.create!(first_name:first_name[i], last_name:last_name[i], function:function[i], email:email[i])
+# # for i in 0...first_name.length()
+# #     @user = User.create!(email: email[i], password: 'password', password_confirmation: 'password', first_name:first_name[i], last_name:last_name[i], function:function[i])
+# #     puts @user
+# #     Employee.create!(first_name:first_name[i], last_name:last_name[i], function:function[i], email:email[i])
+# # end
+# #loop to create all employees/users
+# first_names.each_with_index do |first_name, index|
+# #   puts index
+# #   puts first_name
+
+#   @user = User.create(email: emails[index],
+#                       password: 'Password123!',
+#                       password_confirmation: 'Password123!',
+#                       first_name: first_names[index],
+#                       last_name: last_names[index],
+#                       function: functions[index])
+
+#   next unless @user&.valid?
+
+# #   puts 'will create employee'
+#   Employee.create!(first_name: first_names[index], last_name: last_names[index], function: functions[index],
+#                    email: emails[index], user: @user)
 # end
-#loop to create all employees/users
-first_names.each_with_index do |first_name, index|
-#   puts index
-#   puts first_name
-
-  @user = User.create(email: emails[index],
-                      password: 'password',
-                      password_confirmation: 'password',
-                      first_name: first_names[index],
-                      last_name: last_names[index],
-                      function: functions[index])
-
-  next unless @user&.valid?
-
-#   puts 'will create employee'
-  Employee.create!(first_name: first_names[index], last_name: last_names[index], function: functions[index],
-                   email: emails[index], user: @user)
-end
 
 require "json"
 require "faker"
@@ -3563,231 +3563,231 @@ product_line = Array['Standard', 'Premium', 'Excelium']
 $j = 0
 #loop to create 250 fake quotes. Normal data is generated randomly. 
 #normal data are generated randomly, however, the price and the elevator shafts are calculated.
-while $j < 250 do
-    puts "Making quote #{$j}"
-    random_product_line = product_line[rand(0..2)]
-    random_building_type = address_type[rand(0..3)]
-    random_amount_floors = rand(10..50)
-    random_amount_basements = rand(1..5)
-    random_amount_apartments = rand(50..500)
-    random_amount_parking_slots = rand(100..500)
-    random_amount_companies = rand(50..200)
-    random_amount_elevators = rand(5..15)
-    random_amount_corporations = rand(5..15)
-    random_business_hours = rand(8..24)
-    fakeEmail = Faker::Internet.unique.email
-    fakeCompanyName = Faker::Company.unique.name
-    random_maximum_occupancy = rand(50..100)
-    quote_fake_date_of_creation = Faker::Date.between(from: 730.days.ago, to: Date.today)
-    if random_building_type == "Residential"
-        numberOfColumns = (random_amount_floors.to_f / 20).ceil
-        averageDoorsPerFloors = (random_amount_apartments.to_f / random_amount_floors.to_f).ceil
-        numberOfShaftsPerColumn = (averageDoorsPerFloors.to_f / 6).ceil
-        totalShafts = numberOfShaftsPerColumn * numberOfColumns
-        if random_product_line == "Standard"
-            totalElevatorPrice = totalShafts * 7565
-            installationFees = totalElevatorPrice / 100 * 10
-            finalPrice = totalElevatorPrice + installationFees
-        elsif random_product_line == "Premium"
-            totalElevatorPrice = totalShafts * 12345
-            installationFees = totalElevatorPrice / 100 * 13
-            finalPrice = totalElevatorPrice + installationFees
-        else
-            totalElevatorPrice = totalShafts * 15400
-            installationFees = totalElevatorPrice / 100 * 16
-            finalPrice = totalElevatorPrice + installationFees
-        end
-        quotes = Quote.create!(
-            building_type: "Residential",
-            amount_floors: random_amount_floors,
-            amount_basements: random_amount_basements,
-            amount_apartments: random_amount_apartments,
-            product_line: random_product_line,
-            amount_elevators: totalShafts,
-            installation_fees: installationFees,
-            total_cost: finalPrice,
-            email: fakeEmail,
-            company_name: fakeCompanyName,
-            created_at: quote_fake_date_of_creation,
-            full_name: Faker::Name.unique.name
+# while $j < 250 do
+#     puts "Making quote #{$j}"
+#     random_product_line = product_line[rand(0..2)]
+#     random_building_type = address_type[rand(0..3)]
+#     random_amount_floors = rand(10..50)
+#     random_amount_basements = rand(1..5)
+#     random_amount_apartments = rand(50..500)
+#     random_amount_parking_slots = rand(100..500)
+#     random_amount_companies = rand(50..200)
+#     random_amount_elevators = rand(5..15)
+#     random_amount_corporations = rand(5..15)
+#     random_business_hours = rand(8..24)
+#     fakeEmail = Faker::Internet.unique.email
+#     fakeCompanyName = Faker::Company.unique.name
+#     random_maximum_occupancy = rand(50..100)
+#     quote_fake_date_of_creation = Faker::Date.between(from: 730.days.ago, to: Date.today)
+#     if random_building_type == "Residential"
+#         numberOfColumns = (random_amount_floors.to_f / 20).ceil
+#         averageDoorsPerFloors = (random_amount_apartments.to_f / random_amount_floors.to_f).ceil
+#         numberOfShaftsPerColumn = (averageDoorsPerFloors.to_f / 6).ceil
+#         totalShafts = numberOfShaftsPerColumn * numberOfColumns
+#         if random_product_line == "Standard"
+#             totalElevatorPrice = totalShafts * 7565
+#             installationFees = totalElevatorPrice / 100 * 10
+#             finalPrice = totalElevatorPrice + installationFees
+#         elsif random_product_line == "Premium"
+#             totalElevatorPrice = totalShafts * 12345
+#             installationFees = totalElevatorPrice / 100 * 13
+#             finalPrice = totalElevatorPrice + installationFees
+#         else
+#             totalElevatorPrice = totalShafts * 15400
+#             installationFees = totalElevatorPrice / 100 * 16
+#             finalPrice = totalElevatorPrice + installationFees
+#         end
+#         quotes = Quote.create!(
+#             building_type: "Residential",
+#             amount_floors: random_amount_floors,
+#             amount_basements: random_amount_basements,
+#             amount_apartments: random_amount_apartments,
+#             product_line: random_product_line,
+#             amount_elevators: totalShafts,
+#             installation_fees: installationFees,
+#             total_cost: finalPrice,
+#             email: fakeEmail,
+#             company_name: fakeCompanyName,
+#             created_at: quote_fake_date_of_creation,
+#             full_name: Faker::Name.unique.name
             
-        )
-    elsif random_building_type == "Commercial"
-        totalShafts = random_amount_elevators
-        if random_product_line == "Standard"
-            totalElevatorPrice = totalShafts * 7565
-            installationFees = totalElevatorPrice / 100 * 10
-            finalPrice = totalElevatorPrice + installationFees
-        elsif random_product_line == "Premium"
-            totalElevatorPrice = totalShafts * 12345
-            installationFees = totalElevatorPrice / 100 * 13
-            finalPrice = totalElevatorPrice + installationFees
-        else
-            totalElevatorPrice = totalShafts * 15400
-            installationFees = totalElevatorPrice / 100 * 16
-            finalPrice = totalElevatorPrice + installationFees
-        end
-        quotes = Quote.create!(
-            building_type: "Commercial",
-            email: fakeEmail,
-            company_name: fakeCompanyName,
-            amount_floors: random_amount_floors,
-            amount_basements: random_amount_basements,
-            product_line: random_product_line,
-            amount_elevators: random_amount_elevators,
-            amount_parking_spots: random_amount_parking_slots,
-            amount_companies: random_amount_companies,
-            installation_fees: installationFees,
-            total_cost: finalPrice,
-            created_at: quote_fake_date_of_creation,
-            full_name: Faker::Name.unique.name
-        )
-    elsif random_building_type == "Corporate"
-        totalOccupants = (random_amount_floors + random_amount_basements) * random_maximum_occupancy
-        totalElevators = (totalOccupants.to_f / 1000).ceil
-        numberOfColumns = ((random_amount_floors.to_f + random_amount_basements.to_f) / 20).ceil
-        elevatorsPerColumn = (totalElevators.to_f/numberOfColumns).ceil
-        totalShafts = elevatorsPerColumn * numberOfColumns
-        if random_product_line == "Standard"
-            totalElevatorPrice = totalShafts * 7565
-            installationFees = totalElevatorPrice / 100 * 10
-            finalPrice = totalElevatorPrice + installationFees
-        elsif random_product_line == "Premium"
-            totalElevatorPrice = totalShafts * 12345
-            installationFees = totalElevatorPrice / 100 * 13
-            finalPrice = totalElevatorPrice + installationFees
-        else
-            totalElevatorPrice = totalShafts * 15400
-            installationFees = totalElevatorPrice / 100 * 16
-            finalPrice = totalElevatorPrice + installationFees
-        end
-        quotes = Quote.create!(
-            email: fakeEmail,
-            company_name: fakeCompanyName,
-            building_type: "Corporate",
-            amount_floors: random_amount_floors,
-            amount_basements: random_amount_basements,
-            product_line: random_product_line,
-            amount_parking_spots: random_amount_parking_slots,
-            maximum_occupancy: random_maximum_occupancy,
-            installation_fees: installationFees,
-            total_cost: finalPrice,
-            amount_corporations: random_amount_corporations,
-            amount_elevators: totalShafts,
-            created_at: quote_fake_date_of_creation,
-            full_name: Faker::Name.unique.name
+#         )
+#     elsif random_building_type == "Commercial"
+#         totalShafts = random_amount_elevators
+#         if random_product_line == "Standard"
+#             totalElevatorPrice = totalShafts * 7565
+#             installationFees = totalElevatorPrice / 100 * 10
+#             finalPrice = totalElevatorPrice + installationFees
+#         elsif random_product_line == "Premium"
+#             totalElevatorPrice = totalShafts * 12345
+#             installationFees = totalElevatorPrice / 100 * 13
+#             finalPrice = totalElevatorPrice + installationFees
+#         else
+#             totalElevatorPrice = totalShafts * 15400
+#             installationFees = totalElevatorPrice / 100 * 16
+#             finalPrice = totalElevatorPrice + installationFees
+#         end
+#         quotes = Quote.create!(
+#             building_type: "Commercial",
+#             email: fakeEmail,
+#             company_name: fakeCompanyName,
+#             amount_floors: random_amount_floors,
+#             amount_basements: random_amount_basements,
+#             product_line: random_product_line,
+#             amount_elevators: random_amount_elevators,
+#             amount_parking_spots: random_amount_parking_slots,
+#             amount_companies: random_amount_companies,
+#             installation_fees: installationFees,
+#             total_cost: finalPrice,
+#             created_at: quote_fake_date_of_creation,
+#             full_name: Faker::Name.unique.name
+#         )
+#     elsif random_building_type == "Corporate"
+#         totalOccupants = (random_amount_floors + random_amount_basements) * random_maximum_occupancy
+#         totalElevators = (totalOccupants.to_f / 1000).ceil
+#         numberOfColumns = ((random_amount_floors.to_f + random_amount_basements.to_f) / 20).ceil
+#         elevatorsPerColumn = (totalElevators.to_f/numberOfColumns).ceil
+#         totalShafts = elevatorsPerColumn * numberOfColumns
+#         if random_product_line == "Standard"
+#             totalElevatorPrice = totalShafts * 7565
+#             installationFees = totalElevatorPrice / 100 * 10
+#             finalPrice = totalElevatorPrice + installationFees
+#         elsif random_product_line == "Premium"
+#             totalElevatorPrice = totalShafts * 12345
+#             installationFees = totalElevatorPrice / 100 * 13
+#             finalPrice = totalElevatorPrice + installationFees
+#         else
+#             totalElevatorPrice = totalShafts * 15400
+#             installationFees = totalElevatorPrice / 100 * 16
+#             finalPrice = totalElevatorPrice + installationFees
+#         end
+#         quotes = Quote.create!(
+#             email: fakeEmail,
+#             company_name: fakeCompanyName,
+#             building_type: "Corporate",
+#             amount_floors: random_amount_floors,
+#             amount_basements: random_amount_basements,
+#             product_line: random_product_line,
+#             amount_parking_spots: random_amount_parking_slots,
+#             maximum_occupancy: random_maximum_occupancy,
+#             installation_fees: installationFees,
+#             total_cost: finalPrice,
+#             amount_corporations: random_amount_corporations,
+#             amount_elevators: totalShafts,
+#             created_at: quote_fake_date_of_creation,
+#             full_name: Faker::Name.unique.name
             
-        )
-    else
-        totalOccupants = (random_amount_floors + random_amount_basements) * random_maximum_occupancy
-        totalElevators = (totalOccupants.to_f / 1000).ceil
-        numberOfColumns = ((random_amount_floors.to_f + random_amount_basements.to_f) / 20).ceil
-        elevatorsPerColumn = (totalElevators.to_f/numberOfColumns.to_f).ceil
-        totalShafts = elevatorsPerColumn * numberOfColumns
-        if random_product_line == "Standard"
-            totalElevatorPrice = totalShafts * 7565
-            installationFees = totalElevatorPrice / 100 * 10
-            finalPrice = totalElevatorPrice + installationFees
-        elsif random_product_line == "Premium"
-            totalElevatorPrice = totalShafts * 12345
-            installationFees = totalElevatorPrice / 100 * 13
-            finalPrice = totalElevatorPrice + installationFees
-        else
-            totalElevatorPrice = totalShafts * 15400
-            installationFees = totalElevatorPrice / 100 * 16
-            finalPrice = totalElevatorPrice + installationFees
-        end
-        quotes = Quote.create!(
-            email: fakeEmail,
-            company_name: fakeCompanyName,
-            building_type: "Hybrid",
-            amount_floors: random_amount_floors,
-            amount_basements: random_amount_basements,
-            product_line: random_product_line,
-            amount_parking_spots: random_amount_parking_slots,
-            amount_companies: random_amount_companies,
-            business_hours: random_business_hours,
-            maximum_occupancy: random_maximum_occupancy,
-            installation_fees: installationFees,
-            total_cost: finalPrice,
-            amount_elevators: totalShafts,
-            created_at: quote_fake_date_of_creation,
-            full_name: Faker::Name.unique.name
+#         )
+#     else
+#         totalOccupants = (random_amount_floors + random_amount_basements) * random_maximum_occupancy
+#         totalElevators = (totalOccupants.to_f / 1000).ceil
+#         numberOfColumns = ((random_amount_floors.to_f + random_amount_basements.to_f) / 20).ceil
+#         elevatorsPerColumn = (totalElevators.to_f/numberOfColumns.to_f).ceil
+#         totalShafts = elevatorsPerColumn * numberOfColumns
+#         if random_product_line == "Standard"
+#             totalElevatorPrice = totalShafts * 7565
+#             installationFees = totalElevatorPrice / 100 * 10
+#             finalPrice = totalElevatorPrice + installationFees
+#         elsif random_product_line == "Premium"
+#             totalElevatorPrice = totalShafts * 12345
+#             installationFees = totalElevatorPrice / 100 * 13
+#             finalPrice = totalElevatorPrice + installationFees
+#         else
+#             totalElevatorPrice = totalShafts * 15400
+#             installationFees = totalElevatorPrice / 100 * 16
+#             finalPrice = totalElevatorPrice + installationFees
+#         end
+#         quotes = Quote.create!(
+#             email: fakeEmail,
+#             company_name: fakeCompanyName,
+#             building_type: "Hybrid",
+#             amount_floors: random_amount_floors,
+#             amount_basements: random_amount_basements,
+#             product_line: random_product_line,
+#             amount_parking_spots: random_amount_parking_slots,
+#             amount_companies: random_amount_companies,
+#             business_hours: random_business_hours,
+#             maximum_occupancy: random_maximum_occupancy,
+#             installation_fees: installationFees,
+#             total_cost: finalPrice,
+#             amount_elevators: totalShafts,
+#             created_at: quote_fake_date_of_creation,
+#             full_name: Faker::Name.unique.name
             
-        )
-    end
-    $j += 1
-end
+#         )
+#     end
+#     $j += 1
+# end
 
-$i = 0
-$num = 250
-#for loop to generate leads
-while $i < $num do
-  if $i == 146
-    Faker::UniqueGenerator.clear  
-  end
-  leads_full_name = Faker::Name.unique.name
-  leads_company_name = Faker::App.name
-  leads_email = Faker::Internet.unique.email
-  leads_phone = Faker::PhoneNumber.unique.cell_phone
-  leads_project_name = Faker::Lorem.sentence(word_count: 1)
-  leads_project_description = Faker::Lorem.unique.sentence
-  leads_department = Faker::Job.field
-  leads_message = Faker::Lorem.unique.sentence
-  leads_attachment = Faker::Avatar.unique.image
-  leads_date_of_creation = Faker::Date.between(from: 730.days.ago, to: Date.today)
-
-
-  leads = Lead.new(
-
-    full_name: leads_full_name,
-    company_name: leads_company_name,
-    email: leads_email,
-    phone: leads_phone,
-    project_name: leads_project_name,
-    project_description: leads_project_description,
-    department_in_charge_of_the_elevators: leads_department,
-    message: leads_message,
-    date_of_creation: leads_date_of_creation
-  )
-  $i += 1
-  leads.save
-end
+# $i = 0
+# $num = 250
+# #for loop to generate leads
+# while $i < $num do
+#   if $i == 146
+#     Faker::UniqueGenerator.clear  
+#   end
+#   leads_full_name = Faker::Name.unique.name
+#   leads_company_name = Faker::App.name
+#   leads_email = Faker::Internet.unique.email
+#   leads_phone = Faker::PhoneNumber.unique.cell_phone
+#   leads_project_name = Faker::Lorem.sentence(word_count: 1)
+#   leads_project_description = Faker::Lorem.unique.sentence
+#   leads_department = Faker::Job.field
+#   leads_message = Faker::Lorem.unique.sentence
+#   leads_attachment = Faker::Avatar.unique.image
+#   leads_date_of_creation = Faker::Date.between(from: 730.days.ago, to: Date.today)
 
 
-$i = 0
-$num = 249
+#   leads = Lead.new(
 
-#array for options for address status and type of entity
-address_status = Array["Active", "Inactive"]
-entity = Array["Operational Building", "Billing Address", "Home Address"]
+#     full_name: leads_full_name,
+#     company_name: leads_company_name,
+#     email: leads_email,
+#     phone: leads_phone,
+#     project_name: leads_project_name,
+#     project_description: leads_project_description,
+#     department_in_charge_of_the_elevators: leads_department,
+#     message: leads_message,
+#     date_of_creation: leads_date_of_creation
+#   )
+#   $i += 1
+#   leads.save
+# end
 
-#while loop to create addresses based on the array given.
-while $i < 300 do
-  random_num = rand(0..3)
-  random_num_status = rand(0..1)
-  random_num_entity = rand(0..2)
 
-  addresses = Address.new(
+# $i = 0
+# $num = 249
 
-    type_of_address: address_type[random_num],
-    status: address_status[random_num_status],
-    entity: entity[random_num_entity],
-    number_and_street: data_hash.addresses[$i].address1,
-    suite_or_apartment: data_hash.addresses[$i].address2,
-    city: data_hash.addresses[$i].city,
-    postal_code: data_hash.addresses[$i].postalCode,
-    country: "United States",
-    longitude: data_hash.addresses[$i].coordinates.lng,
-    latitude: data_hash.addresses[$i].coordinates.lat,
-    notes: Faker::Lorem.unique.sentence
+# #array for options for address status and type of entity
+# address_status = Array["Active", "Inactive"]
+# entity = Array["Operational Building", "Billing Address", "Home Address"]
 
-  )
+# #while loop to create addresses based on the array given.
+# while $i < 300 do
+#   random_num = rand(0..3)
+#   random_num_status = rand(0..1)
+#   random_num_entity = rand(0..2)
 
-  $i += 1
-  addresses.save
+#   addresses = Address.new(
 
-end
+#     type_of_address: address_type[random_num],
+#     status: address_status[random_num_status],
+#     entity: entity[random_num_entity],
+#     number_and_street: data_hash.addresses[$i].address1,
+#     suite_or_apartment: data_hash.addresses[$i].address2,
+#     city: data_hash.addresses[$i].city,
+#     postal_code: data_hash.addresses[$i].postalCode,
+#     country: "United States",
+#     longitude: data_hash.addresses[$i].coordinates.lng,
+#     latitude: data_hash.addresses[$i].coordinates.lat,
+#     notes: Faker::Lorem.unique.sentence
+
+#   )
+
+#   $i += 1
+#   addresses.save
+
+# end
 
 $i = 0
 $j = 0
@@ -3801,7 +3801,7 @@ while $i < 100 do
         first_name: Faker::Name.unique.first_name,
         last_name: Faker::Name.unique.last_name,
         email: Faker::Internet.unique.email,
-        password: 'password'
+        password: 'Password123!'
     )
     #create a customer based on the user just created
     @customers = Customer.create!(
