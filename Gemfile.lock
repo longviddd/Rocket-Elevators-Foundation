@@ -558,7 +558,6 @@ DEPENDENCIES
   jquery-ui-rails
   json
   jwt
-  listen (>= 3.0.5, < 3.2)
   mysql2 (>= 0.4.4, < 0.6.0)
   net-http
   net-ssh (>= 6.0.2)
