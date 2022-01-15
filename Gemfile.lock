@@ -313,6 +313,8 @@ GEM
       racc (~> 1.4)
     nokogiri (1.12.5-x86_64-linux)
       racc (~> 1.4)
+    non-stupid-digest-assets (1.0.9)
+      sprockets (>= 2.0)
     oauth2 (1.4.7)
       faraday (>= 0.8, < 2.0)
       jwt (>= 1.0, < 3.0)
@@ -559,6 +561,7 @@ DEPENDENCIES
   mysql2 (>= 0.4.4, < 0.6.0)
   net-http
   net-ssh (>= 6.0.2)
+  non-stupid-digest-assets
   pg
   puma
   pundit
