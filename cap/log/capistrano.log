@@ -5506,3 +5506,1044 @@ Sass::SyntaxError: Undefined variable: "$primary-color".
 /home/long/apps/LongNguyen/shared/bundle/ruby/2.6.0/bin/ruby_executable_hooks:22:in `<main>'
 Tasks: TOP => assets:precompile
 (See full trace by running task with --trace)
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-01-14 23:16:10 -0500 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [3db92690] Running [ -d ~/.rvm ] on 143.198.97.178
+ DEBUG [3db92690] Command: [ -d ~/.rvm ]
+ DEBUG [3db92690] Finished in 61.767 seconds with exit status 0 (successful).
+ DEBUG [66195c7a] Running ~/.rvm/bin/rvm version on 143.198.97.178
+ DEBUG [66195c7a] Command: ~/.rvm/bin/rvm version
+ DEBUG [66195c7a] 	rvm 1.29.12 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [66195c7a] 	
+ DEBUG [66195c7a] Finished in 0.545 seconds with exit status 0 (successful).
+ DEBUG [f6468f9b] Running ~/.rvm/bin/rvm current on 143.198.97.178
+ DEBUG [f6468f9b] Command: ~/.rvm/bin/rvm current
+ DEBUG [f6468f9b] 	ruby-3.0.0
+ DEBUG [f6468f9b] 	
+ DEBUG [f6468f9b] Finished in 0.582 seconds with exit status 0 (successful).
+ DEBUG [284b6fa9] Running ~/.rvm/bin/rvm 2.6.6 do ruby --version on 143.198.97.178
+ DEBUG [284b6fa9] Command: ~/.rvm/bin/rvm 2.6.6 do ruby --version
+ DEBUG [284b6fa9] 	ruby 2.6.6p146 (2020-03-31 revision 67876) [x86_64-linux]
+ DEBUG [284b6fa9] Finished in 0.849 seconds with exit status 0 (successful).
+  INFO [1f7d0fbc] Running /usr/bin/env mkdir -p /tmp on 143.198.97.178
+ DEBUG [1f7d0fbc] Command: /usr/bin/env mkdir -p /tmp
+  INFO [1f7d0fbc] Finished in 0.264 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-7115e2e92e680ea41b49.sh 0.0%
+  INFO Uploading /tmp/git-ssh-7115e2e92e680ea41b49.sh 100.0%
+  INFO [d9ed257d] Running /usr/bin/env chmod 700 /tmp/git-ssh-7115e2e92e680ea41b49.sh on 143.198.97.178
+ DEBUG [d9ed257d] Command: /usr/bin/env chmod 700 /tmp/git-ssh-7115e2e92e680ea41b49.sh
+  INFO [d9ed257d] Finished in 0.255 seconds with exit status 0 (successful).
+  INFO [7c249f5f] Running /usr/bin/env git ls-remote https://github.com/longviddd/Rocket-Elevators-Foundation.git HEAD on 143.198.97.178
+ DEBUG [7c249f5f] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7115e2e92e680ea41b49.sh" ; /usr/bin/env git ls-remote https://github.com/longviddd/Rocket-Elevators-Foundation.git HEAD )
+ DEBUG [7c249f5f] 	970ec384ecd90651df9e257d8a26eb96567563a8
+ DEBUG [7c249f5f] 		HEAD
+  INFO [7c249f5f] Finished in 0.623 seconds with exit status 0 (successful).
+  INFO [d991a7b9] Running /usr/bin/env mkdir -p /home/long/apps/LongNguyen/shared /home/long/apps/LongNguyen/releases on 143.198.97.178
+ DEBUG [d991a7b9] Command: /usr/bin/env mkdir -p /home/long/apps/LongNguyen/shared /home/long/apps/LongNguyen/releases
+  INFO [d991a7b9] Finished in 0.258 seconds with exit status 0 (successful).
+  INFO [eda91882] Running /usr/bin/env mkdir -p /home/long/apps/LongNguyen/shared/tmp/pids /home/long/apps/LongNguyen/shared/tmp/sockets /home/long/apps/LongNguyen/shared/log /home/long/apps/LongNguyen/shared/public/assets on 143.198.97.178
+ DEBUG [eda91882] Command: /usr/bin/env mkdir -p /home/long/apps/LongNguyen/shared/tmp/pids /home/long/apps/LongNguyen/shared/tmp/sockets /home/long/apps/LongNguyen/shared/log /home/long/apps/LongNguyen/shared/public/assets
+  INFO [eda91882] Finished in 0.296 seconds with exit status 0 (successful).
+  INFO [bf0171c6] Running /usr/bin/env mkdir -p /home/long/apps/LongNguyen/shared/config on 143.198.97.178
+ DEBUG [bf0171c6] Command: /usr/bin/env mkdir -p /home/long/apps/LongNguyen/shared/config
+  INFO [bf0171c6] Finished in 0.252 seconds with exit status 0 (successful).
+ DEBUG [fdbef655] Running [ -f /home/long/apps/LongNguyen/shared/config/database.yml ] on 143.198.97.178
+ DEBUG [fdbef655] Command: [ -f /home/long/apps/LongNguyen/shared/config/database.yml ]
+ DEBUG [fdbef655] Finished in 0.298 seconds with exit status 0 (successful).
+ DEBUG [646875d6] Running [ -f /home/long/apps/LongNguyen/shared/config/application.yml ] on 143.198.97.178
+ DEBUG [646875d6] Command: [ -f /home/long/apps/LongNguyen/shared/config/application.yml ]
+ DEBUG [646875d6] Finished in 0.252 seconds with exit status 0 (successful).
+ DEBUG [883c7246] Running [ -f /home/long/apps/LongNguyen/shared/puma.rb ] on 143.198.97.178
+ DEBUG [883c7246] Command: [ -f /home/long/apps/LongNguyen/shared/puma.rb ]
+ DEBUG [883c7246] Finished in 0.354 seconds with exit status 0 (successful).
+ DEBUG [1a486207] Running [ -f /home/long/apps/LongNguyen/current/REVISION ] on 143.198.97.178
+ DEBUG [1a486207] Command: [ -f /home/long/apps/LongNguyen/current/REVISION ]
+ DEBUG [1a486207] Finished in 0.292 seconds with exit status 0 (successful).
+ DEBUG [8c5deb65] Running /usr/bin/env cat /home/long/apps/LongNguyen/current/REVISION 2>/dev/null on 143.198.97.178
+ DEBUG [8c5deb65] Command: /usr/bin/env cat /home/long/apps/LongNguyen/current/REVISION 2>/dev/null
+ DEBUG [8c5deb65] 	b90b2021aae7ab2ce75d5dc566464ff5c75bb6b9
+ DEBUG [8c5deb65] Finished in 0.343 seconds with exit status 0 (successful).
+ DEBUG [13322224] Running [ -f /home/long/apps/LongNguyen/repo/HEAD ] on 143.198.97.178
+ DEBUG [13322224] Command: [ -f /home/long/apps/LongNguyen/repo/HEAD ]
+ DEBUG [13322224] Finished in 0.273 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/long/apps/LongNguyen/repo
+ DEBUG [e1ab7dab] Running if test ! -d /home/long/apps/LongNguyen/repo; then echo "Directory does not exist '/home/long/apps/LongNguyen/repo'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [e1ab7dab] Command: if test ! -d /home/long/apps/LongNguyen/repo; then echo "Directory does not exist '/home/long/apps/LongNguyen/repo'" 1>&2; false; fi
+ DEBUG [e1ab7dab] Finished in 0.295 seconds with exit status 0 (successful).
+  INFO [29b9207f] Running /usr/bin/env git remote set-url origin https://github.com/longviddd/Rocket-Elevators-Foundation.git on 143.198.97.178
+ DEBUG [29b9207f] Command: cd /home/long/apps/LongNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7115e2e92e680ea41b49.sh" ; /usr/bin/env git remote set-url origin https://github.com/longviddd/Rocket-Elevators-Foundation.git )
+  INFO [29b9207f] Finished in 0.264 seconds with exit status 0 (successful).
+  INFO [63298de5] Running /usr/bin/env git remote update --prune on 143.198.97.178
+ DEBUG [63298de5] Command: cd /home/long/apps/LongNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7115e2e92e680ea41b49.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [63298de5] 	Fetching origin
+ DEBUG [63298de5] 	
+ DEBUG [63298de5] 	remote: Enumerating objects: 15, done.[K
+remote: Counting objects:   6% (1/15)[Kremote: Counting objects:  13% (2/15)[Kremote: Counting objects:  20% (3/15)[Kremote: Counting objects:  26% (4/15)[Kremote: Counting objects:  33% (5/15)[Kremote: Counting objects:  40% (6/15)[Kremote: Counting objects:  46% (7/15)[Kremote: Counting objects:  53% (8/15)[Kremote: Counting objects:  60% (9/15)[Kremote: Counting objects:  66% (10/15)[Kremote: Counting objects:  73% (11/15)[Kremote: Counting objects:  80% (12/15)[Kremote: Counting objects:  86% (13/15)[Kremote: Counting objects:  93% (14/15)[Kremote: Counting objects: 100% (15/15)[Kremote: Counting objects: 100% (15/15), done.[K
+remote: Compressing objects:  50% (1/2)[Kremote: Compressing objects: 100% (2/2)[Kremote: Compressing objects: 100% (2/2), done.[K
+ DEBUG [63298de5] 	remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0[K
+ DEBUG [63298de5] 	Unpacking objects:  12% (1/8)
+ DEBUG [63298de5] 	Unpacking objects:  25% (2/8)
+ DEBUG [63298de5] 	Unpacking objects:  37% (3/8)
+ DEBUG [63298de5] 	Unpacking objects:  50% (4/8)
+ DEBUG [63298de5] 	Unpacking objects:  62% (5/8)
+ DEBUG [63298de5] 	Unpacking objects:  75% (6/8)
+ DEBUG [63298de5] 	Unpacking objects:  87% (7/8)
+ DEBUG [63298de5] 	Unpacking objects: 100% (8/8)Unpacking objects: 100% (8/8), 13.96 KiB | 793.00 KiB/s, done.
+ DEBUG [63298de5] 	From https://github.com/longviddd/Rocket-Elevators-Foundation
+ DEBUG [63298de5] 	
+ DEBUG [63298de5] 	   b08584d..970ec38  master     -> master
+ DEBUG [63298de5] 	
+  INFO [63298de5] Finished in 0.759 seconds with exit status 0 (successful).
+ DEBUG [e5ed4246] Running if test ! -d /home/long/apps/LongNguyen/repo; then echo "Directory does not exist '/home/long/apps/LongNguyen/repo'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [e5ed4246] Command: if test ! -d /home/long/apps/LongNguyen/repo; then echo "Directory does not exist '/home/long/apps/LongNguyen/repo'" 1>&2; false; fi
+ DEBUG [e5ed4246] Finished in 0.254 seconds with exit status 0 (successful).
+  INFO [92f11db2] Running /usr/bin/env mkdir -p /home/long/apps/LongNguyen/releases/20220115041718 on 143.198.97.178
+ DEBUG [92f11db2] Command: cd /home/long/apps/LongNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7115e2e92e680ea41b49.sh" ; /usr/bin/env mkdir -p /home/long/apps/LongNguyen/releases/20220115041718 )
+  INFO [92f11db2] Finished in 0.305 seconds with exit status 0 (successful).
+  INFO [caa18b48] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/long/apps/LongNguyen/releases/20220115041718 on 143.198.97.178
+ DEBUG [caa18b48] Command: cd /home/long/apps/LongNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7115e2e92e680ea41b49.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/long/apps/LongNguyen/releases/20220115041718 )
+  INFO [caa18b48] Finished in 0.564 seconds with exit status 0 (successful).
+ DEBUG [06e67496] Running if test ! -d /home/long/apps/LongNguyen/repo; then echo "Directory does not exist '/home/long/apps/LongNguyen/repo'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [06e67496] Command: if test ! -d /home/long/apps/LongNguyen/repo; then echo "Directory does not exist '/home/long/apps/LongNguyen/repo'" 1>&2; false; fi
+ DEBUG [06e67496] Finished in 0.298 seconds with exit status 0 (successful).
+ DEBUG [6334f9b6] Running /usr/bin/env git rev-list --max-count=1 master on 143.198.97.178
+ DEBUG [6334f9b6] Command: cd /home/long/apps/LongNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7115e2e92e680ea41b49.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [6334f9b6] 	970ec384ecd90651df9e257d8a26eb96567563a8
+ DEBUG [6334f9b6] Finished in 0.274 seconds with exit status 0 (successful).
+ DEBUG [689e9ed5] Running if test ! -d /home/long/apps/LongNguyen/releases/20220115041718; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220115041718'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [689e9ed5] Command: if test ! -d /home/long/apps/LongNguyen/releases/20220115041718; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220115041718'" 1>&2; false; fi
+ DEBUG [689e9ed5] Finished in 0.294 seconds with exit status 0 (successful).
+  INFO [1e5efe3d] Running /usr/bin/env echo "970ec384ecd90651df9e257d8a26eb96567563a8" > REVISION on 143.198.97.178
+ DEBUG [1e5efe3d] Command: cd /home/long/apps/LongNguyen/releases/20220115041718 && /usr/bin/env echo "970ec384ecd90651df9e257d8a26eb96567563a8" > REVISION
+  INFO [1e5efe3d] Finished in 0.277 seconds with exit status 0 (successful).
+  INFO [5b2ec9c0] Running /usr/bin/env mkdir -p /home/long/apps/LongNguyen/releases/20220115041718/config on 143.198.97.178
+ DEBUG [5b2ec9c0] Command: /usr/bin/env mkdir -p /home/long/apps/LongNguyen/releases/20220115041718/config
+  INFO [5b2ec9c0] Finished in 0.324 seconds with exit status 0 (successful).
+ DEBUG [52f89a15] Running [ -L /home/long/apps/LongNguyen/releases/20220115041718/config/database.yml ] on 143.198.97.178
+ DEBUG [52f89a15] Command: [ -L /home/long/apps/LongNguyen/releases/20220115041718/config/database.yml ]
+ DEBUG [52f89a15] Finished in 0.276 seconds with exit status 1 (failed).
+ DEBUG [9ed96793] Running [ -f /home/long/apps/LongNguyen/releases/20220115041718/config/database.yml ] on 143.198.97.178
+ DEBUG [9ed96793] Command: [ -f /home/long/apps/LongNguyen/releases/20220115041718/config/database.yml ]
+ DEBUG [9ed96793] Finished in 0.301 seconds with exit status 1 (failed).
+  INFO [fb43efb7] Running /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/config/database.yml /home/long/apps/LongNguyen/releases/20220115041718/config/database.yml on 143.198.97.178
+ DEBUG [fb43efb7] Command: /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/config/database.yml /home/long/apps/LongNguyen/releases/20220115041718/config/database.yml
+  INFO [fb43efb7] Finished in 0.257 seconds with exit status 0 (successful).
+ DEBUG [c91afbf9] Running [ -L /home/long/apps/LongNguyen/releases/20220115041718/config/application.yml ] on 143.198.97.178
+ DEBUG [c91afbf9] Command: [ -L /home/long/apps/LongNguyen/releases/20220115041718/config/application.yml ]
+ DEBUG [c91afbf9] Finished in 0.298 seconds with exit status 1 (failed).
+ DEBUG [b7315a2e] Running [ -f /home/long/apps/LongNguyen/releases/20220115041718/config/application.yml ] on 143.198.97.178
+ DEBUG [b7315a2e] Command: [ -f /home/long/apps/LongNguyen/releases/20220115041718/config/application.yml ]
+ DEBUG [b7315a2e] Finished in 0.256 seconds with exit status 1 (failed).
+  INFO [1daec8bc] Running /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/config/application.yml /home/long/apps/LongNguyen/releases/20220115041718/config/application.yml on 143.198.97.178
+ DEBUG [1daec8bc] Command: /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/config/application.yml /home/long/apps/LongNguyen/releases/20220115041718/config/application.yml
+  INFO [1daec8bc] Finished in 0.298 seconds with exit status 0 (successful).
+  INFO [33def6ec] Running /usr/bin/env mkdir -p /home/long/apps/LongNguyen/releases/20220115041718/tmp /home/long/apps/LongNguyen/releases/20220115041718 /home/long/apps/LongNguyen/releases/20220115041718/public on 143.198.97.178
+ DEBUG [33def6ec] Command: /usr/bin/env mkdir -p /home/long/apps/LongNguyen/releases/20220115041718/tmp /home/long/apps/LongNguyen/releases/20220115041718 /home/long/apps/LongNguyen/releases/20220115041718/public
+  INFO [33def6ec] Finished in 0.261 seconds with exit status 0 (successful).
+ DEBUG [35de20ef] Running [ -L /home/long/apps/LongNguyen/releases/20220115041718/tmp/pids ] on 143.198.97.178
+ DEBUG [35de20ef] Command: [ -L /home/long/apps/LongNguyen/releases/20220115041718/tmp/pids ]
+ DEBUG [35de20ef] Finished in 0.298 seconds with exit status 1 (failed).
+ DEBUG [696633dc] Running [ -d /home/long/apps/LongNguyen/releases/20220115041718/tmp/pids ] on 143.198.97.178
+ DEBUG [696633dc] Command: [ -d /home/long/apps/LongNguyen/releases/20220115041718/tmp/pids ]
+ DEBUG [696633dc] Finished in 0.271 seconds with exit status 1 (failed).
+  INFO [d127b153] Running /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/tmp/pids /home/long/apps/LongNguyen/releases/20220115041718/tmp/pids on 143.198.97.178
+ DEBUG [d127b153] Command: /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/tmp/pids /home/long/apps/LongNguyen/releases/20220115041718/tmp/pids
+  INFO [d127b153] Finished in 0.300 seconds with exit status 0 (successful).
+ DEBUG [6aaac508] Running [ -L /home/long/apps/LongNguyen/releases/20220115041718/tmp/sockets ] on 143.198.97.178
+ DEBUG [6aaac508] Command: [ -L /home/long/apps/LongNguyen/releases/20220115041718/tmp/sockets ]
+ DEBUG [6aaac508] Finished in 0.255 seconds with exit status 1 (failed).
+ DEBUG [4bf57116] Running [ -d /home/long/apps/LongNguyen/releases/20220115041718/tmp/sockets ] on 143.198.97.178
+ DEBUG [4bf57116] Command: [ -d /home/long/apps/LongNguyen/releases/20220115041718/tmp/sockets ]
+ DEBUG [4bf57116] Finished in 0.301 seconds with exit status 1 (failed).
+  INFO [6973af7a] Running /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/tmp/sockets /home/long/apps/LongNguyen/releases/20220115041718/tmp/sockets on 143.198.97.178
+ DEBUG [6973af7a] Command: /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/tmp/sockets /home/long/apps/LongNguyen/releases/20220115041718/tmp/sockets
+  INFO [6973af7a] Finished in 0.271 seconds with exit status 0 (successful).
+ DEBUG [a81b6dde] Running [ -L /home/long/apps/LongNguyen/releases/20220115041718/log ] on 143.198.97.178
+ DEBUG [a81b6dde] Command: [ -L /home/long/apps/LongNguyen/releases/20220115041718/log ]
+ DEBUG [a81b6dde] Finished in 0.307 seconds with exit status 1 (failed).
+ DEBUG [61495128] Running [ -d /home/long/apps/LongNguyen/releases/20220115041718/log ] on 143.198.97.178
+ DEBUG [61495128] Command: [ -d /home/long/apps/LongNguyen/releases/20220115041718/log ]
+ DEBUG [61495128] Finished in 0.264 seconds with exit status 0 (successful).
+  INFO [dfa59cf1] Running /usr/bin/env rm -rf /home/long/apps/LongNguyen/releases/20220115041718/log on 143.198.97.178
+ DEBUG [dfa59cf1] Command: /usr/bin/env rm -rf /home/long/apps/LongNguyen/releases/20220115041718/log
+  INFO [dfa59cf1] Finished in 0.318 seconds with exit status 0 (successful).
+  INFO [d6ea9e12] Running /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/log /home/long/apps/LongNguyen/releases/20220115041718/log on 143.198.97.178
+ DEBUG [d6ea9e12] Command: /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/log /home/long/apps/LongNguyen/releases/20220115041718/log
+  INFO [d6ea9e12] Finished in 0.273 seconds with exit status 0 (successful).
+ DEBUG [55a999a4] Running [ -L /home/long/apps/LongNguyen/releases/20220115041718/public/assets ] on 143.198.97.178
+ DEBUG [55a999a4] Command: [ -L /home/long/apps/LongNguyen/releases/20220115041718/public/assets ]
+ DEBUG [55a999a4] Finished in 0.297 seconds with exit status 1 (failed).
+ DEBUG [cb083226] Running [ -d /home/long/apps/LongNguyen/releases/20220115041718/public/assets ] on 143.198.97.178
+ DEBUG [cb083226] Command: [ -d /home/long/apps/LongNguyen/releases/20220115041718/public/assets ]
+ DEBUG [cb083226] Finished in 0.256 seconds with exit status 1 (failed).
+  INFO [31d1e01b] Running /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/public/assets /home/long/apps/LongNguyen/releases/20220115041718/public/assets on 143.198.97.178
+ DEBUG [31d1e01b] Command: /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/public/assets /home/long/apps/LongNguyen/releases/20220115041718/public/assets
+  INFO [31d1e01b] Finished in 0.301 seconds with exit status 0 (successful).
+ DEBUG [fdf233a0] Running if test ! -d /home/long/apps/LongNguyen/releases/20220115041718; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220115041718'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [fdf233a0] Command: if test ! -d /home/long/apps/LongNguyen/releases/20220115041718; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220115041718'" 1>&2; false; fi
+ DEBUG [fdf233a0] Finished in 0.260 seconds with exit status 0 (successful).
+  INFO [44be56b1] Running ~/.rvm/bin/rvm 2.6.6 do bundle config --local deployment true on 143.198.97.178
+ DEBUG [44be56b1] Command: cd /home/long/apps/LongNguyen/releases/20220115041718 && ~/.rvm/bin/rvm 2.6.6 do bundle config --local deployment true
+  INFO [44be56b1] Finished in 1.370 seconds with exit status 0 (successful).
+  INFO [ee319c0e] Running ~/.rvm/bin/rvm 2.6.6 do bundle config --local path /home/long/apps/LongNguyen/shared/bundle on 143.198.97.178
+ DEBUG [ee319c0e] Command: cd /home/long/apps/LongNguyen/releases/20220115041718 && ~/.rvm/bin/rvm 2.6.6 do bundle config --local path /home/long/apps/LongNguyen/shared/bundle
+  INFO [ee319c0e] Finished in 1.290 seconds with exit status 0 (successful).
+  INFO [dd1699d1] Running ~/.rvm/bin/rvm 2.6.6 do bundle config --local without development:test on 143.198.97.178
+ DEBUG [dd1699d1] Command: cd /home/long/apps/LongNguyen/releases/20220115041718 && ~/.rvm/bin/rvm 2.6.6 do bundle config --local without development:test
+  INFO [dd1699d1] Finished in 1.263 seconds with exit status 0 (successful).
+ DEBUG [f171e690] Running if test ! -d /home/long/apps/LongNguyen/releases/20220115041718; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220115041718'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [f171e690] Command: if test ! -d /home/long/apps/LongNguyen/releases/20220115041718; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220115041718'" 1>&2; false; fi
+ DEBUG [f171e690] Finished in 0.256 seconds with exit status 0 (successful).
+ DEBUG [e4cc7735] Running ~/.rvm/bin/rvm 2.6.6 do bundle check on 143.198.97.178
+ DEBUG [e4cc7735] Command: cd /home/long/apps/LongNguyen/releases/20220115041718 && ~/.rvm/bin/rvm 2.6.6 do bundle check
+ DEBUG [e4cc7735] 	The Gemfile's dependencies are satisfied
+ DEBUG [e4cc7735] Finished in 1.691 seconds with exit status 0 (successful).
+  INFO The Gemfile's dependencies are satisfied, skipping installation
+ DEBUG [e184bf03] Running if test ! -d /home/long/apps/LongNguyen/releases/20220115041718; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220115041718'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [e184bf03] Command: if test ! -d /home/long/apps/LongNguyen/releases/20220115041718; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220115041718'" 1>&2; false; fi
+ DEBUG [e184bf03] Finished in 0.251 seconds with exit status 0 (successful).
+  INFO [bd86f76c] Running ~/.rvm/bin/rvm 2.6.6 do bundle exec rake assets:precompile on 143.198.97.178
+ DEBUG [bd86f76c] Command: cd /home/long/apps/LongNguyen/releases/20220115041718 && ( export RAILS_ENV="production" RAILS_GROUPS="" ; ~/.rvm/bin/rvm 2.6.6 do bundle exec rake assets:precompile )
+ DEBUG [bd86f76c] 	/home/long/.rvm/rubies/ruby-2.6.6/lib/ruby/2.6.0/net/protocol.rb:66: warning: already initialized constant Net::ProtocRetryError
+/home/long/apps/LongNguyen/shared/bundle/ruby/2.6.0/gems/net-protocol-0.1.2/lib/net/protocol.rb:68: warning: previous definition of ProtocRetryError was here
+/home/long/.rvm/rubies/ruby-2.6.6/lib/ruby/2.6.0/net/protocol.rb:206: warning: already initialized constant Net::BufferedIO::BUFSIZE
+/home/long/apps/LongNguyen/shared/bundle/ruby/2.6.0/gems/net-protocol-0.1.2/lib/net/protocol.rb:208: warning: previous definition of BUFSIZE was here
+ DEBUG [bd86f76c] 	/home/long/.rvm/rubies/ruby-2.6.6/lib/ruby/2.6.0/net/protocol.rb:503: warning: already initialized constant Net::NetPrivate::Socket
+/home/long/apps/LongNguyen/shared/bundle/ruby/2.6.0/gems/net-protocol-0.1.2/lib/net/protocol.rb:504: warning: previous definition of Socket was here
+ DEBUG [bd86f76c] 	W, [2022-01-15T04:18:02.835009 #19411]  WARN -- : Removed sourceMappingURL comment for missing asset 'popper.min.js.map' from /home/long/apps/LongNguyen/releases/20220115041718/app/assets/javascripts/plugins/bootstrap/popper.min.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	W, [2022-01-15T04:18:02.910003 #19411]  WARN -- : Removed sourceMappingURL comment for missing asset 'popper.min.js.map' from /home/long/apps/LongNguyen/releases/20220115041718/app/assets/javascripts/popper.min.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	W, [2022-01-15T04:18:02.922601 #19411]  WARN -- : Removed sourceMappingURL comment for missing asset 'popper.min.js.map' from /home/long/apps/LongNguyen/releases/20220115041718/app/assets/javascripts/scripts.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	autoprefixer: /home/long/apps/LongNguyen/releases/20220115041718/app/assets/stylesheets/essentials.css:1300:2: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+autoprefixer: /home/long/apps/LongNguyen/releases/20220115041718/app/assets/stylesheets/essentials.css:1311:2: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [bd86f76c] 	autoprefixer: /home/long/apps/LongNguyen/releases/20220115041718/app/assets/stylesheets/settings.scss:1425:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [bd86f76c] 	W, [2022-01-15T04:20:18.856519 #19411]  WARN -- : Removed sourceMappingURL comment for missing asset 'svg2pdf.js.map' from /home/long/apps/LongNguyen/shared/bundle/ruby/2.6.0/gems/highcharts-rails-6.0.3/app/assets/javascripts/highcharts/lib/svg2pdf.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:52.885053 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/data-5093e02ec4990cd49314f9976655c489bcd831a915c2b0f4a962cde76dc6df88.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:52.885754 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/data-5093e02ec4990cd49314f9976655c489bcd831a915c2b0f4a962cde76dc6df88.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:53.108440 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/disable-selection-a7fc216ae64a929fea8d8674e96e2216c1020f09cb4b7d17a93a2a853e453176.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:53.109005 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/disable-selection-a7fc216ae64a929fea8d8674e96e2216c1020f09cb4b7d17a93a2a853e453176.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:53.334950 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/escape-selector-c8cbdb2fe348dfd9e8a7933c7ada9f18aa6853da0b90d92d8686a42446079883.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:53.335523 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/escape-selector-c8cbdb2fe348dfd9e8a7933c7ada9f18aa6853da0b90d92d8686a42446079883.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:53.667910 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/focusable-2570da0704e30f6ec15139d9d414cebd80277e1afbcead4e6ee3314fff2dc342.js
+I, [2022-01-15T04:20:53.668477 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/focusable-2570da0704e30f6ec15139d9d414cebd80277e1afbcead4e6ee3314fff2dc342.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:53.991427 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/form-reset-mixin-2aa18fc5348b0a063022d887b7b4a698c98bdb5b9773bd004e7b84be26b37381.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:53.991938 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/form-reset-mixin-2aa18fc5348b0a063022d887b7b4a698c98bdb5b9773bd004e7b84be26b37381.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:54.211845 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/form-f3ba8fbffdecf457d7524036968bdae8c83d19932595ce46b1c2f89464055a19.js
+I, [2022-01-15T04:20:54.212271 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/form-f3ba8fbffdecf457d7524036968bdae8c83d19932595ce46b1c2f89464055a19.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:54.412623 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/ie-fe6db67ab66cb704d68bd44f777ffcc44982fbabee9812732b1198c44b06ee5a.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:54.413178 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/ie-fe6db67ab66cb704d68bd44f777ffcc44982fbabee9812732b1198c44b06ee5a.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:54.658644 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/keycode-2719b943551968c484835352cdaba73cb53955a9177f5656e2f0e8acda9ba9ea.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:54.659206 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/keycode-2719b943551968c484835352cdaba73cb53955a9177f5656e2f0e8acda9ba9ea.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:54.917417 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/labels-f151fea86a02f2c40a508d8c46800f00ef8f3b39481921c07c6fded756b11264.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:54.918064 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/labels-f151fea86a02f2c40a508d8c46800f00ef8f3b39481921c07c6fded756b11264.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:55.167653 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/plugin-da68603ad2f729c2e57730524c36060a8bb5ab741ade08408ba15a6d0f2e396a.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:55.168417 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/plugin-da68603ad2f729c2e57730524c36060a8bb5ab741ade08408ba15a6d0f2e396a.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:55.777676 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/position-e684ad40dd72411b492687c7470366260f69a0abf29f104fb03984b2bda7f2f6.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:55.778214 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/position-e684ad40dd72411b492687c7470366260f69a0abf29f104fb03984b2bda7f2f6.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:55.995420 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/safe-active-element-082e6cef3784f0410d4be70e4edb9a1814531c7d8ee130cd1807cd2c97716a48.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:55.995975 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/safe-active-element-082e6cef3784f0410d4be70e4edb9a1814531c7d8ee130cd1807cd2c97716a48.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:56.208330 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/safe-blur-d3fb4e72871e4fae58af33e9e7a631e2181f22110a769d0ecc1499bbd9fa586e.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:56.208990 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/safe-blur-d3fb4e72871e4fae58af33e9e7a631e2181f22110a769d0ecc1499bbd9fa586e.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:56.446668 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/scroll-parent-28f6f9a73322cd4dfca397ed6e927f44cb609a8bc5f2909ce80549148cdfbfe4.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:56.447213 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/scroll-parent-28f6f9a73322cd4dfca397ed6e927f44cb609a8bc5f2909ce80549148cdfbfe4.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:56.724217 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/tabbable-22d0a6dfd6e67fd8b1fe4c8e62c09c84fbee67f8c948d65f47b1a27f5cc2d8b3.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:56.724744 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/tabbable-22d0a6dfd6e67fd8b1fe4c8e62c09c84fbee67f8c948d65f47b1a27f5cc2d8b3.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:56.947001 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/unique-id-d6da9e15b854d6cb1427896670df0d62ca1f5cda070a7fa2cd14bd24d16fae87.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:56.947502 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/unique-id-d6da9e15b854d6cb1427896670df0d62ca1f5cda070a7fa2cd14bd24d16fae87.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:57.136098 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/version-6733498cb8f06c3dd8a7525b5dc2ecd0dc726b79a297f73f5e4e688b01a9ecf2.js
+I, [2022-01-15T04:20:57.136318 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/version-6733498cb8f06c3dd8a7525b5dc2ecd0dc726b79a297f73f5e4e688b01a9ecf2.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:57.703094 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widget-5d5b77a53583bbbf2aade935d3b3be20e774f9de443eb471967f4ea9646e0c02.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:57.703310 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widget-5d5b77a53583bbbf2aade935d3b3be20e774f9de443eb471967f4ea9646e0c02.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:58.640568 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/button-c56b05c567c6881855c33ba0e0e33e0549dab16d980a07f08a0d13e76fe3cdcb.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:58.641070 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/button-c56b05c567c6881855c33ba0e0e33e0549dab16d980a07f08a0d13e76fe3cdcb.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:59.332697 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/checkboxradio-a13da482e510eb3e70f55adbb35f4f88675d4bf8897b92ef32b2c840d8bb6b12.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:59.333285 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/checkboxradio-a13da482e510eb3e70f55adbb35f4f88675d4bf8897b92ef32b2c840d8bb6b12.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:59.955935 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/controlgroup-48c695056596ff8c0c5890df85c0901101043412388505d2fb24c48bd23315cf.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:20:59.956494 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/controlgroup-48c695056596ff8c0c5890df85c0901101043412388505d2fb24c48bd23315cf.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:01.022805 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/datepicker-ce040a5183c59eabc8dbe2aad524aefa80e01c68855323a34b62034591fb49b4.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:01.023430 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/datepicker-ce040a5183c59eabc8dbe2aad524aefa80e01c68855323a34b62034591fb49b4.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:03.052931 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/dialog-1bece69e091ce6ce2fb750a8856c1171447b31fef424691e7045b6e8554580fc.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:03.053543 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/dialog-1bece69e091ce6ce2fb750a8856c1171447b31fef424691e7045b6e8554580fc.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:03.972929 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/draggable-5ea579e46ea9c4a1b7c1a453abf701610626d7e0c26aa218385041a33a5c033e.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:03.973406 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/draggable-5ea579e46ea9c4a1b7c1a453abf701610626d7e0c26aa218385041a33a5c033e.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:04.584973 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/mouse-5fc5a1338a29cc13c2722214f726b9c65936bad66946bc76b5a2187d52ea8b4e.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:04.585542 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/mouse-5fc5a1338a29cc13c2722214f726b9c65936bad66946bc76b5a2187d52ea8b4e.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:05.420013 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/resizable-6c0ed0e7cd57f6a12b065222e71a4e7b2b9593722952a74aa8cf8e52e674b670.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:05.420637 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/resizable-6c0ed0e7cd57f6a12b065222e71a4e7b2b9593722952a74aa8cf8e52e674b670.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:06.342717 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/sortable-20ff0004201e6865a1159be8e305ebc91410a3f6358b670c6212a0c7042a0cc7.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:06.343181 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/sortable-20ff0004201e6865a1159be8e305ebc91410a3f6358b670c6212a0c7042a0cc7.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:07.106391 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/tabs-bb0855a9b40c8c8e631e582dc562ea16183a3c509a9a71897c6ae5585dff3e87.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:07.106948 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/tabs-bb0855a9b40c8c8e631e582dc562ea16183a3c509a9a71897c6ae5585dff3e87.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:07.273399 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery.turbolinks-069574caa2635fbe53686bc46fbfb561b968b391ddd7c5b6a0f55809e1fa0c5e.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:07.273597 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery.turbolinks-069574caa2635fbe53686bc46fbfb561b968b391ddd7c5b6a0f55809e1fa0c5e.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:07.469992 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery.turbolinks.min-cf9415a7eaf05cd9ffac19059be17c64069efa972a6f16b772f76eeef40bf78b.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:07.470245 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery.turbolinks.min-cf9415a7eaf05cd9ffac19059be17c64069efa972a6f16b772f76eeef40bf78b.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:11.230324 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/coffee-script-21b7e2f7ff6a26d1cdb024360632c40d88f49316ddc117af8ea2043a4792f288.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:11.231092 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/coffee-script-21b7e2f7ff6a26d1cdb024360632c40d88f49316ddc117af8ea2043a4792f288.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:13.991723 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ec53ee8c24c7fab2742e063f925f508745b3d988eae5e09e307c27b6809ab018.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:13.991952 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ec53ee8c24c7fab2742e063f925f508745b3d988eae5e09e307c27b6809ab018.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:16.727211 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery.min-9cb0f463f19758437948bdeafd5559f116fd214dc058534e18831475361eb4ca.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:16.727956 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery.min-9cb0f463f19758437948bdeafd5559f116fd214dc058534e18831475361eb4ca.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:19.891289 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery2-b7458e62bace5aee761c61948f390a6633709afd2adb0643cb8d250734bd25a6.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:19.891919 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery2-b7458e62bace5aee761c61948f390a6633709afd2adb0643cb8d250734bd25a6.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:21.954514 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery2.min-9ea7ad2fcd0e7c2fe80eb3888d70bc9e294c58ca92a20eac614ac5861f4ef335.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:21.955327 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery2.min-9ea7ad2fcd0e7c2fe80eb3888d70bc9e294c58ca92a20eac614ac5861f4ef335.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:24.263410 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery3-b7dae4e539e0ed0c88591643607a5d3b616a8227cabc6fa2672283ca0db22273.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:24.263883 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery3-b7dae4e539e0ed0c88591643607a5d3b616a8227cabc6fa2672283ca0db22273.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:26.295956 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery3.min-729e416557a365062a8a20f0562f18aa171da57298005d392312670c706c68de.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:26.296544 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery3.min-729e416557a365062a8a20f0562f18aa171da57298005d392312670c706c68de.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:26.704667 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery_ujs-ab66eb1f932c223068798bfe1b858bf9b3884fc6148fd47e50f4332694028c2e.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:26.705185 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery_ujs-ab66eb1f932c223068798bfe1b858bf9b3884fc6148fd47e50f4332694028c2e.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:27.141903 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/core-99ab7d5a314c9d9d8b8f2dd0d385924dd3c3e80ceca38e19027f4a077371107f.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:27.142367 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/core-99ab7d5a314c9d9d8b8f2dd0d385924dd3c3e80ceca38e19027f4a077371107f.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:28.233860 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effect.all-eddd247efa64ffb589cda115136bf6c617adf303ed6e85f86d700817c2953fd5.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:28.234442 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effect.all-eddd247efa64ffb589cda115136bf6c617adf303ed6e85f86d700817c2953fd5.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:28.927613 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effect-eaba1afd783e4b30e9093c34ea8b8bd6551b51ab47f33d46a9db895fcee7c7d3.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:28.928077 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effect-eaba1afd783e4b30e9093c34ea8b8bd6551b51ab47f33d46a9db895fcee7c7d3.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:29.689252 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effects/effect-blind-e60400cdadb254ed5f1c1cfd3cd910fbf64ced4534da55c27fb78b26ff38e9a2.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:29.689827 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effects/effect-blind-e60400cdadb254ed5f1c1cfd3cd910fbf64ced4534da55c27fb78b26ff38e9a2.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:30.605129 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effects/effect-bounce-9e2a586151e99d239c85515a9200435050cf6e46151a6ec3ff024d3508568098.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:30.605620 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effects/effect-bounce-9e2a586151e99d239c85515a9200435050cf6e46151a6ec3ff024d3508568098.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:31.413090 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effects/effect-clip-a5c6105872f2321386efc915ce10ae52fec36aa53bf12c63981a97e46c3bca3f.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:31.413666 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effects/effect-clip-a5c6105872f2321386efc915ce10ae52fec36aa53bf12c63981a97e46c3bca3f.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:32.122423 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effects/effect-drop-63db6c9c5f2c82f9735e0910bb73eaf520c3b8504b4454c7dedfa512706cd27b.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:32.122938 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effects/effect-drop-63db6c9c5f2c82f9735e0910bb73eaf520c3b8504b4454c7dedfa512706cd27b.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:32.945235 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effects/effect-explode-d9028ba9f96e5d228d30a5a6fb8c4bda3cc4a93fc85042e5a0a8a13f2ff62ce4.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:32.945728 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effects/effect-explode-d9028ba9f96e5d228d30a5a6fb8c4bda3cc4a93fc85042e5a0a8a13f2ff62ce4.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:33.777544 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effects/effect-fade-582b82c855936c3cc73448056897d3373f433f117f82658ae40765b154bd1109.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:33.778103 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effects/effect-fade-582b82c855936c3cc73448056897d3373f433f117f82658ae40765b154bd1109.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:34.769039 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effects/effect-fold-6d48676495b980f95ea372398d01e9bc4b7d51dfb78b8d9492acae48f4514b22.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:34.769641 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effects/effect-fold-6d48676495b980f95ea372398d01e9bc4b7d51dfb78b8d9492acae48f4514b22.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:35.802763 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effects/effect-highlight-e4d90ea953a8f1660d420ba6d7a84763c4c4a7c49891d674215d9501ebcb2316.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:35.803293 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effects/effect-highlight-e4d90ea953a8f1660d420ba6d7a84763c4c4a7c49891d674215d9501ebcb2316.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:36.848875 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effects/effect-puff-2abe657425dc4d82677f9372f548b1879218c608813fe441c711059466ed67bd.js
+I, [2022-01-15T04:21:36.849409 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effects/effect-puff-2abe657425dc4d82677f9372f548b1879218c608813fe441c711059466ed67bd.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:37.789011 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effects/effect-pulsate-32c57258edd9ce09e91330e19e9451015758262700b223d7a1a05f38181841de.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:37.789603 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effects/effect-pulsate-32c57258edd9ce09e91330e19e9451015758262700b223d7a1a05f38181841de.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:38.810574 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effects/effect-scale-30b385a71ff203778ddc92981dedc1553a8b71d2595a4e6c6bb9efc013189dd2.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:38.811299 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effects/effect-scale-30b385a71ff203778ddc92981dedc1553a8b71d2595a4e6c6bb9efc013189dd2.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:39.767215 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effects/effect-shake-3b58a0c24c80142b3646fe7212bf8d8bc78537868933724ca9196ef3ae78314f.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:39.767764 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effects/effect-shake-3b58a0c24c80142b3646fe7212bf8d8bc78537868933724ca9196ef3ae78314f.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:40.659417 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effects/effect-size-04a24cd5312a30a407390d43df55008158d805c85d255310fcc2518d6ee47697.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:40.659951 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effects/effect-size-04a24cd5312a30a407390d43df55008158d805c85d255310fcc2518d6ee47697.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:41.552046 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effects/effect-slide-67d71368dc5b00a9f97b14478dd8a3489178d0eccc33b411f6e3a876a7a1f7fe.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:41.552621 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effects/effect-slide-67d71368dc5b00a9f97b14478dd8a3489178d0eccc33b411f6e3a876a7a1f7fe.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:42.367452 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effects/effect-transfer-189826f2eb1705ed88eb5673a0f00f9840d9563a0ce9da9bc4186968c33ba88f.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:42.367942 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/effects/effect-transfer-189826f2eb1705ed88eb5673a0f00f9840d9563a0ce9da9bc4186968c33ba88f.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:42.594140 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-af-18b6d2d768fce347c39dc2a1e7786e31f57f49c736101c6ee9079da0c90aa02f.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:42.594655 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-af-18b6d2d768fce347c39dc2a1e7786e31f57f49c736101c6ee9079da0c90aa02f.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:42.766456 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-ar-DZ-97d14e989cd9d8604930f4ccd5776bf2053437d1e1ab3687d51d955b95b8b79a.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:42.766902 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-ar-DZ-97d14e989cd9d8604930f4ccd5776bf2053437d1e1ab3687d51d955b95b8b79a.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:42.928852 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-ar-9e8a7f0d5e6d83a10e838ab2c35c295eaa25ae25d87ea23b22caa94dceba2bcf.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:42.929349 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-ar-9e8a7f0d5e6d83a10e838ab2c35c295eaa25ae25d87ea23b22caa94dceba2bcf.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:43.094542 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-az-4e6cb4672644722b9914a18d9caaa41f39543426d582fc10948163c14d31ea15.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:43.095009 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-az-4e6cb4672644722b9914a18d9caaa41f39543426d582fc10948163c14d31ea15.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:43.261125 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-be-efe358a1d80d793e2c9e78bc0fd61e68fa6731028c5f4bb63fb6a5c4952f2a95.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:43.261300 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-be-efe358a1d80d793e2c9e78bc0fd61e68fa6731028c5f4bb63fb6a5c4952f2a95.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:43.432142 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-bg-93188c84ff9e3ec744b6020a02f38068019781864980b2971f6ea5aa38cd4cb7.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:43.432366 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-bg-93188c84ff9e3ec744b6020a02f38068019781864980b2971f6ea5aa38cd4cb7.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:43.598627 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-bs-53cad236c9ea2473f4d7fa68cfa57e96b64ff0cfaa2dae9b821ca0725ede5843.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:43.598871 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-bs-53cad236c9ea2473f4d7fa68cfa57e96b64ff0cfaa2dae9b821ca0725ede5843.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:43.760942 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-ca-be945add7dbf9067bc7274352068d8d39e8632b6320940e75a453e610131b89c.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:43.761139 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-ca-be945add7dbf9067bc7274352068d8d39e8632b6320940e75a453e610131b89c.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:43.952929 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-cs-cadb2dc9cdce68a3f6b2a5211aef51eef446f19fc6e16a8041f2095e314b4bcc.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:43.953104 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-cs-cadb2dc9cdce68a3f6b2a5211aef51eef446f19fc6e16a8041f2095e314b4bcc.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:44.147538 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-cy-GB-19d64bcbc2b51b229a78ef8c80414cc376a7817693583047aea58dc0714e44c4.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:44.147738 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-cy-GB-19d64bcbc2b51b229a78ef8c80414cc376a7817693583047aea58dc0714e44c4.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:44.323449 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-da-8d2a34ef1c30babb92100f52e316fcb4cf36766900cde7fbae3f0e4133e02946.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:44.323680 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-da-8d2a34ef1c30babb92100f52e316fcb4cf36766900cde7fbae3f0e4133e02946.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:44.537759 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-de-296a6846094f72f2a7646311c3e8fb4a37450e4a67e89aec57a6811c1a345400.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:44.537985 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-de-296a6846094f72f2a7646311c3e8fb4a37450e4a67e89aec57a6811c1a345400.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:44.700350 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-el-b464d6572c5783332c82221edba15a7e784cd97e9893031604a50142203ce5c6.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:44.700928 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-el-b464d6572c5783332c82221edba15a7e784cd97e9893031604a50142203ce5c6.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:44.877085 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-en-AU-efa837cbb79da2ef12689aed8c365b0b01749b0b4c6002e207a94f9aa076ecfd.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:44.877546 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-en-AU-efa837cbb79da2ef12689aed8c365b0b01749b0b4c6002e207a94f9aa076ecfd.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:45.056347 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-en-GB-fdcfcb8e4baafd42f39c6ab4755a1bf8c8bfa1625a6204016c767902c118c896.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:45.056869 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-en-GB-fdcfcb8e4baafd42f39c6ab4755a1bf8c8bfa1625a6204016c767902c118c896.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:45.214908 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-en-NZ-b23fabb3c5b8418cc5b5030af48fa48ad459233f775d60aaad89a339030b610a.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:45.215086 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-en-NZ-b23fabb3c5b8418cc5b5030af48fa48ad459233f775d60aaad89a339030b610a.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:45.381630 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-eo-b07642fed44feebedc867c1b8f0a988bd74e778b3b174d28b609de45e607a46a.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:45.382049 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-eo-b07642fed44feebedc867c1b8f0a988bd74e778b3b174d28b609de45e607a46a.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:45.587936 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-es-820dc5f10c7ac3eb8675475c71e5885af19c442a5bfe8fd1b6fe2d94d482ef5b.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:45.588162 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-es-820dc5f10c7ac3eb8675475c71e5885af19c442a5bfe8fd1b6fe2d94d482ef5b.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:45.776280 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-et-a3fcc9baafe9429969f71e4c31283d7eefbd38276280b0bda74501e781f57814.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:45.776528 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-et-a3fcc9baafe9429969f71e4c31283d7eefbd38276280b0bda74501e781f57814.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:45.962322 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-eu-13a65d5f7ff946207bf6e3b7e28b5edb5e35405ba0b762a89db1cff5b42ed8b3.js
+I, [2022-01-15T04:21:45.962533 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-eu-13a65d5f7ff946207bf6e3b7e28b5edb5e35405ba0b762a89db1cff5b42ed8b3.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:46.173908 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-fa-b5de4bc9f002d1c8e0ae7388838fcbabd9458ca3a97d7dfdc53e62a6d298b37b.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:46.174162 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-fa-b5de4bc9f002d1c8e0ae7388838fcbabd9458ca3a97d7dfdc53e62a6d298b37b.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:46.399440 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-fi-23d64622e31d74652b74de7286920fd66bba09feac660885388bbec230ee7a9f.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:46.400039 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-fi-23d64622e31d74652b74de7286920fd66bba09feac660885388bbec230ee7a9f.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:46.610943 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-fo-edbdbc76667fca14459622969ec61967f0b0f250b107b05913b7f472aaa24755.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:46.611137 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-fo-edbdbc76667fca14459622969ec61967f0b0f250b107b05913b7f472aaa24755.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:46.793219 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-fr-CA-1321ec3bad8ab93f6f4a91360f581356577bbd5a505da0bcc0187bc27601954c.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:46.793519 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-fr-CA-1321ec3bad8ab93f6f4a91360f581356577bbd5a505da0bcc0187bc27601954c.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:46.994303 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-fr-CH-24ad7fad517f71758b82b5f72fddc349d045d3d3dfdddea675cec236ce3ae711.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:46.994504 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-fr-CH-24ad7fad517f71758b82b5f72fddc349d045d3d3dfdddea675cec236ce3ae711.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:47.172519 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-fr-063661258cdf95fed835f6f6d639ea6b043d22fb24da1cdf1a4e077afd245b2b.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:47.172702 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-fr-063661258cdf95fed835f6f6d639ea6b043d22fb24da1cdf1a4e077afd245b2b.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:47.367560 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-gl-4c67f2dd5830c38c807c74d44e8f9e0b108a2c3bc5dda27dcde4b58c4a05ed34.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:47.367992 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-gl-4c67f2dd5830c38c807c74d44e8f9e0b108a2c3bc5dda27dcde4b58c4a05ed34.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:47.569610 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-he-cf8704efe46b024eaecf657ae4a467d24e9af1824dad74bfa25299b9faba023c.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:47.569808 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-he-cf8704efe46b024eaecf657ae4a467d24e9af1824dad74bfa25299b9faba023c.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:47.758102 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-hi-67b3eb85fe298afbff280d9d1605f28556853b3bcb58039466d97bccb4260079.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:47.758547 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-hi-67b3eb85fe298afbff280d9d1605f28556853b3bcb58039466d97bccb4260079.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:47.929422 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-hr-d367d483dcc3a157c81612df1f66118436efe404b7a5c495e40d01d356726c8c.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:47.929736 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-hr-d367d483dcc3a157c81612df1f66118436efe404b7a5c495e40d01d356726c8c.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:48.095116 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-hu-d87304fd0ee26fe8450a26ac2cd1af5e09b24216110fbe7e074dd46ed2aad329.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:48.095303 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-hu-d87304fd0ee26fe8450a26ac2cd1af5e09b24216110fbe7e074dd46ed2aad329.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:48.296426 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-hy-1b0550ced6a1edf4159a538d45b0c6a8094826b9fa8b52baaaa3e759c9ef552a.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:48.296646 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-hy-1b0550ced6a1edf4159a538d45b0c6a8094826b9fa8b52baaaa3e759c9ef552a.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:48.461913 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-id-0d872a7da0ec0a5c3ad6d37d12c4e3d52ca6948ac901c8c90ee298869d2b3dbc.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:48.462431 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-id-0d872a7da0ec0a5c3ad6d37d12c4e3d52ca6948ac901c8c90ee298869d2b3dbc.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:48.630697 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-is-4d841f8b4b81f61fa5521f6352575a8b55cee4c50343c7f9e143373ced99af83.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:48.631277 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-is-4d841f8b4b81f61fa5521f6352575a8b55cee4c50343c7f9e143373ced99af83.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:48.857590 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-it-CH-83276bb8cff277582df07857b88adfcb74785f3ecfae6ede43abd96d4499daeb.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:48.858138 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-it-CH-83276bb8cff277582df07857b88adfcb74785f3ecfae6ede43abd96d4499daeb.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:49.022715 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-it-c0e8cd4a8ace8ecac402c72da89b595478fdaf9ac5779bf2d3a9e0e61d821309.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:49.023195 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-it-c0e8cd4a8ace8ecac402c72da89b595478fdaf9ac5779bf2d3a9e0e61d821309.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:49.218312 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-ja-7701da3c172e58bc50099a25d4ed281e5b2ecb4eea1c3815df07d2ce624ee90a.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:49.218848 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-ja-7701da3c172e58bc50099a25d4ed281e5b2ecb4eea1c3815df07d2ce624ee90a.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:49.393433 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-ka-d17e686042ee9ecbac6aaba5eb8d11cbd20290bfed6ff69c0cdd0a492cfc7192.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:49.393897 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-ka-d17e686042ee9ecbac6aaba5eb8d11cbd20290bfed6ff69c0cdd0a492cfc7192.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:49.571836 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-kk-bb761a815a1b3182a7ada78ccdf1304b4cce455b7f217b1737d7fa8a37b37bea.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:49.572291 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-kk-bb761a815a1b3182a7ada78ccdf1304b4cce455b7f217b1737d7fa8a37b37bea.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:49.742190 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-km-e194618d75cf33da8f326c2f99f425c004e11cbf68c1417f6762ce7d70d8636c.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:49.742622 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-km-e194618d75cf33da8f326c2f99f425c004e11cbf68c1417f6762ce7d70d8636c.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:49.926193 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-ko-a930a44dd8cb57080c58128d3edb846240865193eb47bdd9ce721a7f494080d9.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:49.926699 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-ko-a930a44dd8cb57080c58128d3edb846240865193eb47bdd9ce721a7f494080d9.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:50.112852 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-ky-a9304ce4d46e8f94c6ccb5b6b7983819246c13c4003bced6863ec690e696561a.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:50.113460 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-ky-a9304ce4d46e8f94c6ccb5b6b7983819246c13c4003bced6863ec690e696561a.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:50.345071 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-lb-deb710f713daf85be6761e8d98672f563b01b4b849df151be0fc871941bd48c3.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:50.345611 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-lb-deb710f713daf85be6761e8d98672f563b01b4b849df151be0fc871941bd48c3.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:50.519311 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-lt-dca09ba2432c5bbee3bbf0eb2dee0901b89c581b84ceeb6114cf9f8e0e4e85fb.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:50.519812 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-lt-dca09ba2432c5bbee3bbf0eb2dee0901b89c581b84ceeb6114cf9f8e0e4e85fb.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:50.713090 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-lv-8d8f870aaab6f9a0659bf2933982dc23bebe7a1a694d0a9da2a5146c45df01df.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:50.713531 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-lv-8d8f870aaab6f9a0659bf2933982dc23bebe7a1a694d0a9da2a5146c45df01df.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:50.887380 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-mk-636e04adab6e5839ae445aa298d8b70c4c255b290b0b031a9eaaec50ffc0cd84.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:50.887940 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-mk-636e04adab6e5839ae445aa298d8b70c4c255b290b0b031a9eaaec50ffc0cd84.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:51.051039 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-ml-5a236660e4ddcc4a39b1f97a487dfaf121cacc24c42ace7070a85ab57bbd03dc.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:51.051598 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-ml-5a236660e4ddcc4a39b1f97a487dfaf121cacc24c42ace7070a85ab57bbd03dc.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:51.229022 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-ms-ed77e978267d8d9e428b72f7862cf2ff572d23d11ec6b9d58d121e78d9489ecf.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:51.229527 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-ms-ed77e978267d8d9e428b72f7862cf2ff572d23d11ec6b9d58d121e78d9489ecf.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:51.393998 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-nb-9ebb3d90160d94c75f54b2ac6012b16b98e8bbb0ac059403138cb72cb19ed80b.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:51.394519 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-nb-9ebb3d90160d94c75f54b2ac6012b16b98e8bbb0ac059403138cb72cb19ed80b.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:51.556382 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-nl-BE-25f70a069fd9fad7a9afc198c9fb3c33e0adc3fb7a09ba09c5c1e104c9368683.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:51.556791 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-nl-BE-25f70a069fd9fad7a9afc198c9fb3c33e0adc3fb7a09ba09c5c1e104c9368683.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:51.722171 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-nl-a21bf61db7ccef6896840be338e270e2819a6179b4b0ed30ffce050888d16d6d.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:51.722661 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-nl-a21bf61db7ccef6896840be338e270e2819a6179b4b0ed30ffce050888d16d6d.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:51.952611 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-nn-f2ebeca374209b8eaf713f711c186451ce792ca266efa1229883c9107fa954a4.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:51.953173 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-nn-f2ebeca374209b8eaf713f711c186451ce792ca266efa1229883c9107fa954a4.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:52.160432 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-no-fc92430dfab8e147f0aac2e83e17a5be5f02a6bb7647d04c37500f307abfadea.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:52.160956 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-no-fc92430dfab8e147f0aac2e83e17a5be5f02a6bb7647d04c37500f307abfadea.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:52.330941 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-pl-3e614976e1191fa176dfb451a774f234396c7f514ed9befa9291b43c130dc63d.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:52.331385 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-pl-3e614976e1191fa176dfb451a774f234396c7f514ed9befa9291b43c130dc63d.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:52.505479 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-pt-BR-6edff7eed64662a6a0d6c2adf489d0d47dfe5c6f470802dae83e6f2f5394200d.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:52.506059 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-pt-BR-6edff7eed64662a6a0d6c2adf489d0d47dfe5c6f470802dae83e6f2f5394200d.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:52.689050 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-pt-cad0881e4ebb73b588424616e74037d2e654377ef496c211b7bb7f07ce85f6ea.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:52.689556 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-pt-cad0881e4ebb73b588424616e74037d2e654377ef496c211b7bb7f07ce85f6ea.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:52.863140 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-rm-001a00f7dd3c5008f75c1d6aa8b7b80e914aff2b857fad166881f3b51edc5ad9.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:52.863654 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-rm-001a00f7dd3c5008f75c1d6aa8b7b80e914aff2b857fad166881f3b51edc5ad9.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:53.041024 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-ro-a21f766f1e94b49b3c17e233d0de08078989073a0959b69c7680408ba0a68714.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:53.041468 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-ro-a21f766f1e94b49b3c17e233d0de08078989073a0959b69c7680408ba0a68714.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:53.211810 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-ru-e4e06054c74d72f623f1bff3bda1c157e9336856186351d41c3c4846bb160d6c.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:53.212317 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-ru-e4e06054c74d72f623f1bff3bda1c157e9336856186351d41c3c4846bb160d6c.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:53.389639 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-sk-83880eafaba8d3baae48e445a630c22006b8e7f477408d098e74459147fb25f8.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:53.390200 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-sk-83880eafaba8d3baae48e445a630c22006b8e7f477408d098e74459147fb25f8.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:53.564070 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-sl-a7dc361616a59b4425738bbf62dec2112d25792a6450c6e59f5fcfc96bc9f751.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:53.564646 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-sl-a7dc361616a59b4425738bbf62dec2112d25792a6450c6e59f5fcfc96bc9f751.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:53.735008 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-sq-89b2859e91a49136f883d9ef520e4bcc3f993e483ac95f9137b4eed13663383b.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:53.735463 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-sq-89b2859e91a49136f883d9ef520e4bcc3f993e483ac95f9137b4eed13663383b.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:53.903267 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-sr-SR-b0545825c9f4f1bdb12af2d15a48b23bac8e6ee09a0b6720001e10306cf9c537.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:53.903770 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-sr-SR-b0545825c9f4f1bdb12af2d15a48b23bac8e6ee09a0b6720001e10306cf9c537.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:54.101488 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-sr-8fefff87c8055694a76110a11c4de7a711d8e5e3eb26aae1e04d023988dbba6b.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:54.102063 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-sr-8fefff87c8055694a76110a11c4de7a711d8e5e3eb26aae1e04d023988dbba6b.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:54.302661 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-sv-2f2b20d29a45233701fd8eecd00516e0b067668b092738589fff027c195593df.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:54.303525 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-sv-2f2b20d29a45233701fd8eecd00516e0b067668b092738589fff027c195593df.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:54.513434 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-ta-4a490dbd332b0033559f98405d39b28a1c1c6689da6cad8aba6f342aeef14a3d.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:54.513965 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-ta-4a490dbd332b0033559f98405d39b28a1c1c6689da6cad8aba6f342aeef14a3d.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:54.688468 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-th-09768345c14ca2fbc1b07b675ad5ecde1385662e57505fadae13e1e3f83682d5.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:54.688918 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-th-09768345c14ca2fbc1b07b675ad5ecde1385662e57505fadae13e1e3f83682d5.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:54.879359 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-tj-b4769dca4eecbfb638623c10ac6aefde86185b67d14c2da77dcdff5fd9d6870e.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:54.879878 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-tj-b4769dca4eecbfb638623c10ac6aefde86185b67d14c2da77dcdff5fd9d6870e.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:55.099335 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-tr-e203303ba21828aed697b9bd5083c82f18ab994d29834401d61f5a001550d72c.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:55.099844 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-tr-e203303ba21828aed697b9bd5083c82f18ab994d29834401d61f5a001550d72c.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:55.319616 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-uk-92014a8c402e466f0c55c77e2999709aaf2981c504f2f19edfc4464f61a03ef9.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:55.320103 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-uk-92014a8c402e466f0c55c77e2999709aaf2981c504f2f19edfc4464f61a03ef9.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:55.531211 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-vi-dbbda036db8b89860dc0e15cf8eb86d0dbcfc25abc8f4b7aa9f41d9bb4ffebf9.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:55.531681 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-vi-dbbda036db8b89860dc0e15cf8eb86d0dbcfc25abc8f4b7aa9f41d9bb4ffebf9.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:55.716538 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-zh-CN-4b22c9ea0d4410d33df9b8c98c4d3e19fec15644a8e1231172e6ce53e655c21c.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:55.717060 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-zh-CN-4b22c9ea0d4410d33df9b8c98c4d3e19fec15644a8e1231172e6ce53e655c21c.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:55.952332 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-zh-HK-a9bf075985cbf02c8bf337206dd9c60a23b8148ade5f980af372f3c9b43f2f8b.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:55.952926 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-zh-HK-a9bf075985cbf02c8bf337206dd9c60a23b8148ade5f980af372f3c9b43f2f8b.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:56.139819 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-zh-TW-25b39647beb0476f8c2a95f61b8d962adf2c6568ca0ffb111d624fe16c85e535.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:56.140319 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/i18n/datepicker-zh-TW-25b39647beb0476f8c2a95f61b8d962adf2c6568ca0ffb111d624fe16c85e535.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:56.363826 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/jquery-1-7-94617bf57503f888c0421f40bf786d3e8ca1fe090c064e53c5c0a8497b4c467a.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:56.364355 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/jquery-1-7-94617bf57503f888c0421f40bf786d3e8ca1fe090c064e53c5c0a8497b4c467a.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:57.152038 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/accordion-421156724e67733fac115ef42c485784bf0e4f0724eba209361052eadd5da13a.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:57.152668 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/accordion-421156724e67733fac115ef42c485784bf0e4f0724eba209361052eadd5da13a.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:58.350106 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/autocomplete-b58affcf40bd5249d21a5bd55bf282af36ac7f1a44a6a6c6583782870720335c.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:58.350944 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/autocomplete-b58affcf40bd5249d21a5bd55bf282af36ac7f1a44a6a6c6583782870720335c.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:59.698203 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/droppable-4e56bac20b735b10d66bd61e5db0f6ec76d298dfdf04805615050b3330e38433.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:21:59.698810 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/droppable-4e56bac20b735b10d66bd61e5db0f6ec76d298dfdf04805615050b3330e38433.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:01.089915 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/menu-44b02060388012bcf23c944a0b74cf3bbcf1584edd2cd7c595cad33797394e60.js
+I, [2022-01-15T04:22:01.090496 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/menu-44b02060388012bcf23c944a0b74cf3bbcf1584edd2cd7c595cad33797394e60.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:02.283664 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/progressbar-f3446c9851e81c673366cd31aa7f49ba4f44dda9cd1b1f230aa4f4af0feb6956.js
+I, [2022-01-15T04:22:02.284210 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/progressbar-f3446c9851e81c673366cd31aa7f49ba4f44dda9cd1b1f230aa4f4af0feb6956.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:03.362143 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/selectable-0a508539e48d60f3cb5d786c9ee715d3e3b9a54694d4d865f3b412e17d4c805e.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:03.362667 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/selectable-0a508539e48d60f3cb5d786c9ee715d3e3b9a54694d4d865f3b412e17d4c805e.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:04.807500 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/selectmenu-68dc834610e150a4eb673e47d4ead6dc269af2f0cb57839030f523906037a1be.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:04.808060 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/selectmenu-68dc834610e150a4eb673e47d4ead6dc269af2f0cb57839030f523906037a1be.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:05.709120 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/slider-64416552f573b5119d68a79a6d964b5b2fd4f472b6385ae8ab8d66d93f6aa155.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:05.709720 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/slider-64416552f573b5119d68a79a6d964b5b2fd4f472b6385ae8ab8d66d93f6aa155.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:06.736141 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/spinner-3a8660cfaf9a8fb8d44eb681d348efb58d8c5e85dc04fffbeba42ecbadc71a13.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:06.736619 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/spinner-3a8660cfaf9a8fb8d44eb681d348efb58d8c5e85dc04fffbeba42ecbadc71a13.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:07.587296 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/tooltip-8d8e820291495ae894c6ed3270732683793aecb4e71672317cb86e15593e7457.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:07.587798 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui/widgets/tooltip-8d8e820291495ae894c6ed3270732683793aecb4e71672317cb86e15593e7457.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:11.653996 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui-b012aa3933f3b435ee93601f6b413bd168bb3c37bcd9e5d58c0760c12f34f3e7.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:11.654741 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/jquery-ui-b012aa3933f3b435ee93601f6b413bd168bb3c37bcd9e5d58c0760c12f34f3e7.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:12.188522 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/action_cable-d432397b7221015b717cef2e9b999dac2b1b69082253ce6b8bfea739e4420e7a.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:12.189147 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/action_cable-d432397b7221015b717cef2e9b999dac2b1b69082253ce6b8bfea739e4420e7a.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:13.077490 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/activestorage-5d5aff2736014ae55e8417910fceb3853a8fd04774a27093405c5091bcd5418f.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:13.078106 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/activestorage-5d5aff2736014ae55e8417910fceb3853a8fd04774a27093405c5091bcd5418f.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:13.656878 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/rails-ujs-75d9941c7e5d55fc650313882950d7565930823ab340caef16e1452fcb3485d6.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:13.657176 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/rails-ujs-75d9941c7e5d55fc650313882950d7565930823ab340caef16e1452fcb3485d6.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:14.573825 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/turbolinks-697c499a81d3d7b23e98838ee9f9945412ff5caaddde17f7918d78f4997ae7a6.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:14.574060 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/turbolinks-697c499a81d3d7b23e98838ee9f9945412ff5caaddde17f7918d78f4997ae7a6.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:15.376161 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/popper-24b434f02d1bbbeb5fde690b98568126a2cd8ea8c0c194986c1c94f109be40c3.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:15.376360 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/popper-24b434f02d1bbbeb5fde690b98568126a2cd8ea8c0c194986c1c94f109be40c3.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:15.644932 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/alert-bdf74c50d22df4f581e23d7b90f5dec32c2c4dae534b748ad7dba6233ebcab6b.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:15.645137 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/alert-bdf74c50d22df4f581e23d7b90f5dec32c2c4dae534b748ad7dba6233ebcab6b.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:15.869496 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/base-component-487658dc28835ceca7d748b845625e2abd82224bc768f21b299233897ab37d7b.js
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:15.869858 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/base-component-487658dc28835ceca7d748b845625e2abd82224bc768f21b299233897ab37d7b.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:16.085707 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/button-cfd4c11d117ae135597d630741883e2ddce82b299aedb5545b78b88bfcaf1bb3.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:16.086407 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/button-cfd4c11d117ae135597d630741883e2ddce82b299aedb5545b78b88bfcaf1bb3.js.gz
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:16.718979 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/carousel-fc5304ddb7788d9a65fc74c6b501944e5ffdcb0713f422c485444116f3fd56bc.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:16.719405 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/carousel-fc5304ddb7788d9a65fc74c6b501944e5ffdcb0713f422c485444116f3fd56bc.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:17.233410 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/collapse-696368f8e608dac49195317eb780b2976e800ebb0a99edbb21f0be4c37e8d73a.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:17.233922 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/collapse-696368f8e608dac49195317eb780b2976e800ebb0a99edbb21f0be4c37e8d73a.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:17.460119 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/dom/data-fb00dfedb84e6fd3868eec5a3a2e683fd055e1491149bd2b64e5891a44fc92f3.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:17.460608 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/dom/data-fb00dfedb84e6fd3868eec5a3a2e683fd055e1491149bd2b64e5891a44fc92f3.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:17.831085 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/dom/event-handler-83e9b08a94c92a33917d56b2802d52451ee5c030c162aa0a559034e9e64fac50.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:17.831639 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/dom/event-handler-83e9b08a94c92a33917d56b2802d52451ee5c030c162aa0a559034e9e64fac50.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:18.040154 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/dom/manipulator-0c6cf42c27916256aeb7bd127336a09e6fd2823b7bad6bc63ea22879987f1975.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:18.040644 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/dom/manipulator-0c6cf42c27916256aeb7bd127336a09e6fd2823b7bad6bc63ea22879987f1975.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:18.267632 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/dom/selector-engine-0bccecc70d2152549b8a67d7e06c69ad37dbda13c87b13e390ea66ec8d7ef39f.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:18.268091 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/dom/selector-engine-0bccecc70d2152549b8a67d7e06c69ad37dbda13c87b13e390ea66ec8d7ef39f.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:18.849874 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/dropdown-3789ef87a0472c9eab0bb850fb52031e6ae978f3f5f3df147ad5822e7e1dc2b2.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:18.850416 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/dropdown-3789ef87a0472c9eab0bb850fb52031e6ae978f3f5f3df147ad5822e7e1dc2b2.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:19.577728 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/modal-544163d2de9b562a5f2dafb3bc1c2a66fe2dff5279f9ff8cf09b1a709952c344.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:19.578290 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/modal-544163d2de9b562a5f2dafb3bc1c2a66fe2dff5279f9ff8cf09b1a709952c344.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:20.368746 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/offcanvas-99db0183f009b337de5e3bcdbf711eabc7f054d65e5055d36362b62df2ab9319.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:20.369209 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/offcanvas-99db0183f009b337de5e3bcdbf711eabc7f054d65e5055d36362b62df2ab9319.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:20.684351 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/popover-28dcf5f406043fcda3fb597000e2b110835d44148424d27c982a6ae403135fb2.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:20.694273 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/popover-28dcf5f406043fcda3fb597000e2b110835d44148424d27c982a6ae403135fb2.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:21.255564 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/scrollspy-129f89e73573878744c56daa1f75e30662a40469bf54d8151f37c6db67d06f49.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:21.256144 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/scrollspy-129f89e73573878744c56daa1f75e30662a40469bf54d8151f37c6db67d06f49.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:21.695877 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/tab-da664915097f909336bb4ddde4190bad337837a87ceeded0eaee943c9b6917be.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:21.696738 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/tab-da664915097f909336bb4ddde4190bad337837a87ceeded0eaee943c9b6917be.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:22.206178 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/toast-68812bc2b05795aa8c6ad5bd7dc41f3e7ba8a1fbbeae38b216806c5a9b5164ab.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:22.206631 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/toast-68812bc2b05795aa8c6ad5bd7dc41f3e7ba8a1fbbeae38b216806c5a9b5164ab.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:22.956174 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/tooltip-f41ae731043b510fb35cfd7a146e267692bf66e188e90bbe80ac57d0384422bf.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:22.956651 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap/tooltip-f41ae731043b510fb35cfd7a146e267692bf66e188e90bbe80ac57d0384422bf.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:23.151904 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap-global-this-define-6c2396a60d1ffc583fbea09844509907fc54ccfee2b357d488f2794da6f7e6b1.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:23.152453 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap-global-this-define-6c2396a60d1ffc583fbea09844509907fc54ccfee2b357d488f2794da6f7e6b1.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:23.351265 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap-global-this-undefine-5d8da16de8897781f81cc15fda466ec0182113a22d8221c5b5443c9b2921eebd.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:23.351914 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap-global-this-undefine-5d8da16de8897781f81cc15fda466ec0182113a22d8221c5b5443c9b2921eebd.js.gz
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:25.986691 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap-sprockets-4992b3b8993d4f2ffa3e4c98f94ebd76f0235cf0f6e96292099d1534660ba3cb.js
+ DEBUG [bd86f76c] 	
+ DEBUG [bd86f76c] 	I, [2022-01-15T04:22:25.987350 #19411]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220115041718/public/assets/bootstrap-sprockets-4992b3b8993d4f2ffa3e4c98f94ebd76f0235cf0f6e96292099d1534660ba3cb.js.gz
+ DEBUG [bd86f76c] 	
+  INFO [bd86f76c] Finished in 291.231 seconds with exit status 0 (successful).
+ DEBUG [d7782058] Running if test ! -d /home/long/apps/LongNguyen/releases/20220115041718; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220115041718'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [d7782058] Command: if test ! -d /home/long/apps/LongNguyen/releases/20220115041718; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220115041718'" 1>&2; false; fi
+ DEBUG [d7782058] Finished in 0.272 seconds with exit status 0 (successful).
+  INFO [f12ebe13] Running /usr/bin/env mkdir -p /home/long/apps/LongNguyen/releases/20220115041718/assets_manifest_backup on 143.198.97.178
+ DEBUG [f12ebe13] Command: cd /home/long/apps/LongNguyen/releases/20220115041718 && /usr/bin/env mkdir -p /home/long/apps/LongNguyen/releases/20220115041718/assets_manifest_backup
+  INFO [f12ebe13] Finished in 0.300 seconds with exit status 0 (successful).
+ DEBUG [4eec3ec7] Running /usr/bin/env ls /home/long/apps/LongNguyen/releases/20220115041718/public/assets/.sprockets-manifest* on 143.198.97.178
+ DEBUG [4eec3ec7] Command: cd /home/long/apps/LongNguyen/releases/20220115041718 && /usr/bin/env ls /home/long/apps/LongNguyen/releases/20220115041718/public/assets/.sprockets-manifest*
+ DEBUG [4eec3ec7] 	/home/long/apps/LongNguyen/releases/20220115041718/public/assets/.sprockets-manifest-d3d71b4a2de566ccc7140f8628978a46.json
+ DEBUG [4eec3ec7] Finished in 0.273 seconds with exit status 0 (successful).
+ DEBUG [c0af9465] Running /usr/bin/env ls /home/long/apps/LongNguyen/releases/20220115041718/public/assets/.sprockets-manifest* on 143.198.97.178
+ DEBUG [c0af9465] Command: cd /home/long/apps/LongNguyen/releases/20220115041718 && /usr/bin/env ls /home/long/apps/LongNguyen/releases/20220115041718/public/assets/.sprockets-manifest*
+ DEBUG [c0af9465] 	/home/long/apps/LongNguyen/releases/20220115041718/public/assets/.sprockets-manifest-d3d71b4a2de566ccc7140f8628978a46.json
+ DEBUG [c0af9465] Finished in 0.294 seconds with exit status 0 (successful).
+  INFO [2dbe471d] Running /usr/bin/env cp /home/long/apps/LongNguyen/releases/20220115041718/public/assets/.sprockets-manifest-d3d71b4a2de566ccc7140f8628978a46.json /home/long/apps/LongNguyen/releases/20220115041718/assets_manifest_backup on 143.198.97.178
+ DEBUG [2dbe471d] Command: cd /home/long/apps/LongNguyen/releases/20220115041718 && /usr/bin/env cp /home/long/apps/LongNguyen/releases/20220115041718/public/assets/.sprockets-manifest-d3d71b4a2de566ccc7140f8628978a46.json /home/long/apps/LongNguyen/releases/20220115041718/assets_manifest_backup
+  INFO [2dbe471d] Finished in 0.256 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [33f31423] Running if test ! -d /home/long/apps/LongNguyen/releases/20220115041718; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220115041718'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [33f31423] Command: if test ! -d /home/long/apps/LongNguyen/releases/20220115041718; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220115041718'" 1>&2; false; fi
+ DEBUG [33f31423] Finished in 0.319 seconds with exit status 0 (successful).
+  INFO [d33bfcab] Running ~/.rvm/bin/rvm 2.6.6 do bundle exec rake db:migrate on 143.198.97.178
+ DEBUG [d33bfcab] Command: cd /home/long/apps/LongNguyen/releases/20220115041718 && ( export RAILS_ENV="production" ; ~/.rvm/bin/rvm 2.6.6 do bundle exec rake db:migrate )
+ DEBUG [d33bfcab] 	/home/long/.rvm/rubies/ruby-2.6.6/lib/ruby/2.6.0/net/protocol.rb:66: warning: already initialized constant Net::ProtocRetryError
+/home/long/apps/LongNguyen/shared/bundle/ruby/2.6.0/gems/net-protocol-0.1.2/lib/net/protocol.rb:68: warning: previous definition of ProtocRetryError was here
+/home/long/.rvm/rubies/ruby-2.6.6/lib/ruby/2.6.0/net/protocol.rb:206: warning: already initialized constant Net::BufferedIO::BUFSIZE
+/home/long/apps/LongNguyen/shared/bundle/ruby/2.6.0/gems/net-protocol-0.1.2/lib/net/protocol.rb:208: warning: previous definition of BUFSIZE was here
+/home/long/.rvm/rubies/ruby-2.6.6/lib/ruby/2.6.0/net/protocol.rb:503: warning: already initialized constant Net::NetPrivate::Socket
+ DEBUG [d33bfcab] 	/home/long/apps/LongNguyen/shared/bundle/ruby/2.6.0/gems/net-protocol-0.1.2/lib/net/protocol.rb:504: warning: previous definition of Socket was here
+  INFO [d33bfcab] Finished in 6.002 seconds with exit status 0 (successful).
+  INFO [515a777a] Running /usr/bin/env ln -s /home/long/apps/LongNguyen/releases/20220115041718 /home/long/apps/LongNguyen/releases/current on 143.198.97.178
+ DEBUG [515a777a] Command: /usr/bin/env ln -s /home/long/apps/LongNguyen/releases/20220115041718 /home/long/apps/LongNguyen/releases/current
+  INFO [515a777a] Finished in 0.292 seconds with exit status 0 (successful).
+  INFO [b2a6882a] Running /usr/bin/env mv /home/long/apps/LongNguyen/releases/current /home/long/apps/LongNguyen on 143.198.97.178
+ DEBUG [b2a6882a] Command: /usr/bin/env mv /home/long/apps/LongNguyen/releases/current /home/long/apps/LongNguyen
+  INFO [b2a6882a] Finished in 0.257 seconds with exit status 0 (successful).
+ DEBUG [b43bd684] Running /usr/bin/env ls -x /home/long/apps/LongNguyen/releases on 143.198.97.178
+ DEBUG [b43bd684] Command: /usr/bin/env ls -x /home/long/apps/LongNguyen/releases
+ DEBUG [b43bd684] 	20220115034110	20220115034312	20220115034453	20220115034832	20220115040113
+20220115040459	20220115041718
+ DEBUG [b43bd684] Finished in 0.306 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 7 deployed releases on 143.198.97.178
+ DEBUG [94dd04c7] Running [ -d /home/long/apps/LongNguyen/current ] on 143.198.97.178
+ DEBUG [94dd04c7] Command: [ -d /home/long/apps/LongNguyen/current ]
+ DEBUG [94dd04c7] Finished in 0.267 seconds with exit status 0 (successful).
+ DEBUG [9cfe086c] Running /usr/bin/env readlink /home/long/apps/LongNguyen/current on 143.198.97.178
+ DEBUG [9cfe086c] Command: /usr/bin/env readlink /home/long/apps/LongNguyen/current
+ DEBUG [9cfe086c] 	/home/long/apps/LongNguyen/releases/20220115041718
+ DEBUG [9cfe086c] Finished in 0.310 seconds with exit status 0 (successful).
+  INFO [dc059eb3] Running /usr/bin/env rm -rf /home/long/apps/LongNguyen/releases/20220115034110 /home/long/apps/LongNguyen/releases/20220115034312 on 143.198.97.178
+ DEBUG [dc059eb3] Command: /usr/bin/env rm -rf /home/long/apps/LongNguyen/releases/20220115034110 /home/long/apps/LongNguyen/releases/20220115034312
+  INFO [dc059eb3] Finished in 0.445 seconds with exit status 0 (successful).
+ DEBUG [9a2f429c] Running if test ! -d /home/long/apps/LongNguyen/current; then echo "Directory does not exist '/home/long/apps/LongNguyen/current'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [9a2f429c] Command: if test ! -d /home/long/apps/LongNguyen/current; then echo "Directory does not exist '/home/long/apps/LongNguyen/current'" 1>&2; false; fi
+ DEBUG [9a2f429c] Finished in 0.299 seconds with exit status 0 (successful).
+ DEBUG [2600afde] Running [ -f /home/long/apps/LongNguyen/shared/tmp/pids/puma.pid ] on 143.198.97.178
+ DEBUG [2600afde] Command: [ -f /home/long/apps/LongNguyen/shared/tmp/pids/puma.pid ]
+ DEBUG [2600afde] Finished in 0.376 seconds with exit status 0 (successful).
+ DEBUG [23db3fb7] Running /usr/bin/env kill -0 $( cat /home/long/apps/LongNguyen/shared/tmp/pids/puma.pid ) on 143.198.97.178
+ DEBUG [23db3fb7] Command: cd /home/long/apps/LongNguyen/current && ( export RACK_ENV="production" ; /usr/bin/env kill -0 $( cat /home/long/apps/LongNguyen/shared/tmp/pids/puma.pid ) )
+ DEBUG [23db3fb7] Finished in 0.400 seconds with exit status 0 (successful).
+  INFO [bc5b3102] Running ~/.rvm/bin/rvm 2.6.6 do bundle exec pumactl -S /home/long/apps/LongNguyen/shared/tmp/pids/puma.state -F /home/long/apps/LongNguyen/shared/puma.rb restart on 143.198.97.178
+ DEBUG [bc5b3102] Command: cd /home/long/apps/LongNguyen/current && ( export RACK_ENV="production" ; ~/.rvm/bin/rvm 2.6.6 do bundle exec pumactl -S /home/long/apps/LongNguyen/shared/tmp/pids/puma.state -F /home/long/apps/LongNguyen/shared/puma.rb restart )
+ DEBUG [bc5b3102] 	Command restart sent success
+  INFO [bc5b3102] Finished in 1.898 seconds with exit status 0 (successful).
+ DEBUG [acc3742a] Running if test ! -d /home/long/apps/LongNguyen/releases; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [acc3742a] Command: if test ! -d /home/long/apps/LongNguyen/releases; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases'" 1>&2; false; fi
+ DEBUG [acc3742a] Finished in 0.340 seconds with exit status 0 (successful).
+  INFO [72f8ca0b] Running /usr/bin/env echo "Branch master (at 970ec384ecd90651df9e257d8a26eb96567563a8) deployed as release 20220115041718 by longnguyen" >> /home/long/apps/LongNguyen/revisions.log on 143.198.97.178
+ DEBUG [72f8ca0b] Command: cd /home/long/apps/LongNguyen/releases && /usr/bin/env echo "Branch master (at 970ec384ecd90651df9e257d8a26eb96567563a8) deployed as release 20220115041718 by longnguyen" >> /home/long/apps/LongNguyen/revisions.log
+  INFO [72f8ca0b] Finished in 0.321 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-01-14 23:32:13 -0500 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [619047f9] Running [ -d ~/.rvm ] on 143.198.97.178
+ DEBUG [619047f9] Command: [ -d ~/.rvm ]
+ DEBUG [619047f9] Finished in 4.021 seconds with exit status 0 (successful).
+ DEBUG [f01affa7] Running ~/.rvm/bin/rvm version on 143.198.97.178
+ DEBUG [f01affa7] Command: ~/.rvm/bin/rvm version
+ DEBUG [f01affa7] 	rvm 1.29.12 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [f01affa7] Finished in 0.641 seconds with exit status 0 (successful).
+ DEBUG [d923ce07] Running ~/.rvm/bin/rvm current on 143.198.97.178
+ DEBUG [d923ce07] Command: ~/.rvm/bin/rvm current
+ DEBUG [d923ce07] 	ruby-3.0.0
+ DEBUG [d923ce07] 	
+ DEBUG [d923ce07] Finished in 0.636 seconds with exit status 0 (successful).
+ DEBUG [bcb03c11] Running ~/.rvm/bin/rvm 2.6.6 do ruby --version on 143.198.97.178
+ DEBUG [bcb03c11] Command: ~/.rvm/bin/rvm 2.6.6 do ruby --version
+ DEBUG [bcb03c11] 	ruby 2.6.6p146 (2020-03-31 revision 67876) [x86_64-linux]
+ DEBUG [bcb03c11] Finished in 0.893 seconds with exit status 0 (successful).
+  INFO [723d90c2] Running /usr/bin/env mkdir -p /tmp on 143.198.97.178
+ DEBUG [723d90c2] Command: /usr/bin/env mkdir -p /tmp
+  INFO [723d90c2] Finished in 0.287 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-2b6e3aa46eca383cc648.sh 0.0%
+  INFO Uploading /tmp/git-ssh-2b6e3aa46eca383cc648.sh 100.0%
+  INFO [25329c32] Running /usr/bin/env chmod 700 /tmp/git-ssh-2b6e3aa46eca383cc648.sh on 143.198.97.178
+ DEBUG [25329c32] Command: /usr/bin/env chmod 700 /tmp/git-ssh-2b6e3aa46eca383cc648.sh
+  INFO [25329c32] Finished in 0.301 seconds with exit status 0 (successful).
+  INFO [c5a35fbb] Running /usr/bin/env git ls-remote https://github.com/longviddd/Rocket-Elevators-Foundation.git HEAD on 143.198.97.178
+ DEBUG [c5a35fbb] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2b6e3aa46eca383cc648.sh" ; /usr/bin/env git ls-remote https://github.com/longviddd/Rocket-Elevators-Foundation.git HEAD )
+ DEBUG [c5a35fbb] 	970ec384ecd90651df9e257d8a26eb96567563a8	HEAD
+  INFO [c5a35fbb] Finished in 0.643 seconds with exit status 0 (successful).
+  INFO [22604517] Running /usr/bin/env mkdir -p /home/long/apps/LongNguyen/shared /home/long/apps/LongNguyen/releases on 143.198.97.178
+ DEBUG [22604517] Command: /usr/bin/env mkdir -p /home/long/apps/LongNguyen/shared /home/long/apps/LongNguyen/releases
+  INFO [22604517] Finished in 0.277 seconds with exit status 0 (successful).
+  INFO [dc68af9a] Running /usr/bin/env mkdir -p /home/long/apps/LongNguyen/shared/tmp/pids /home/long/apps/LongNguyen/shared/tmp/sockets /home/long/apps/LongNguyen/shared/log /home/long/apps/LongNguyen/shared/public/assets on 143.198.97.178
+ DEBUG [dc68af9a] Command: /usr/bin/env mkdir -p /home/long/apps/LongNguyen/shared/tmp/pids /home/long/apps/LongNguyen/shared/tmp/sockets /home/long/apps/LongNguyen/shared/log /home/long/apps/LongNguyen/shared/public/assets
+  INFO [dc68af9a] Finished in 0.326 seconds with exit status 0 (successful).
+  INFO [5715a525] Running /usr/bin/env mkdir -p /home/long/apps/LongNguyen/shared/config on 143.198.97.178
+ DEBUG [5715a525] Command: /usr/bin/env mkdir -p /home/long/apps/LongNguyen/shared/config
+  INFO [5715a525] Finished in 0.270 seconds with exit status 0 (successful).
+ DEBUG [2d14c486] Running [ -f /home/long/apps/LongNguyen/shared/config/database.yml ] on 143.198.97.178
+ DEBUG [2d14c486] Command: [ -f /home/long/apps/LongNguyen/shared/config/database.yml ]
+ DEBUG [2d14c486] Finished in 0.304 seconds with exit status 0 (successful).
+ DEBUG [fe70201b] Running [ -f /home/long/apps/LongNguyen/shared/config/application.yml ] on 143.198.97.178
+ DEBUG [fe70201b] Command: [ -f /home/long/apps/LongNguyen/shared/config/application.yml ]
+ DEBUG [fe70201b] Finished in 0.278 seconds with exit status 0 (successful).
+ DEBUG [7f0c3773] Running [ -f /home/long/apps/LongNguyen/shared/puma.rb ] on 143.198.97.178
+ DEBUG [7f0c3773] Command: [ -f /home/long/apps/LongNguyen/shared/puma.rb ]
+ DEBUG [7f0c3773] Finished in 0.388 seconds with exit status 0 (successful).
+ DEBUG [c54d8889] Running [ -f /home/long/apps/LongNguyen/current/REVISION ] on 143.198.97.178
+ DEBUG [c54d8889] Command: [ -f /home/long/apps/LongNguyen/current/REVISION ]
+ DEBUG [c54d8889] Finished in 0.321 seconds with exit status 0 (successful).
+ DEBUG [f06cdbe5] Running /usr/bin/env cat /home/long/apps/LongNguyen/current/REVISION 2>/dev/null on 143.198.97.178
+ DEBUG [f06cdbe5] Command: /usr/bin/env cat /home/long/apps/LongNguyen/current/REVISION 2>/dev/null
+ DEBUG [f06cdbe5] 	970ec384ecd90651df9e257d8a26eb96567563a8
+ DEBUG [f06cdbe5] Finished in 0.321 seconds with exit status 0 (successful).
+ DEBUG [4041198c] Running [ -f /home/long/apps/LongNguyen/repo/HEAD ] on 143.198.97.178
+ DEBUG [4041198c] Command: [ -f /home/long/apps/LongNguyen/repo/HEAD ]
+ DEBUG [4041198c] Finished in 0.274 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/long/apps/LongNguyen/repo
+ DEBUG [580060ad] Running if test ! -d /home/long/apps/LongNguyen/repo; then echo "Directory does not exist '/home/long/apps/LongNguyen/repo'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [580060ad] Command: if test ! -d /home/long/apps/LongNguyen/repo; then echo "Directory does not exist '/home/long/apps/LongNguyen/repo'" 1>&2; false; fi
+ DEBUG [580060ad] Finished in 0.315 seconds with exit status 0 (successful).
+  INFO [42b0759f] Running /usr/bin/env git remote set-url origin https://github.com/longviddd/Rocket-Elevators-Foundation.git on 143.198.97.178
+ DEBUG [42b0759f] Command: cd /home/long/apps/LongNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2b6e3aa46eca383cc648.sh" ; /usr/bin/env git remote set-url origin https://github.com/longviddd/Rocket-Elevators-Foundation.git )
+  INFO [42b0759f] Finished in 0.306 seconds with exit status 0 (successful).
+  INFO [5f76b787] Running /usr/bin/env git remote update --prune on 143.198.97.178
+ DEBUG [5f76b787] Command: cd /home/long/apps/LongNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2b6e3aa46eca383cc648.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [5f76b787] 	Fetching origin
+  INFO [5f76b787] Finished in 0.558 seconds with exit status 0 (successful).
+ DEBUG [42979508] Running if test ! -d /home/long/apps/LongNguyen/repo; then echo "Directory does not exist '/home/long/apps/LongNguyen/repo'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [42979508] Command: if test ! -d /home/long/apps/LongNguyen/repo; then echo "Directory does not exist '/home/long/apps/LongNguyen/repo'" 1>&2; false; fi
+ DEBUG [42979508] Finished in 0.278 seconds with exit status 0 (successful).
+  INFO [5d5309e5] Running /usr/bin/env mkdir -p /home/long/apps/LongNguyen/releases/20220115043224 on 143.198.97.178
+ DEBUG [5d5309e5] Command: cd /home/long/apps/LongNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2b6e3aa46eca383cc648.sh" ; /usr/bin/env mkdir -p /home/long/apps/LongNguyen/releases/20220115043224 )
+  INFO [5d5309e5] Finished in 0.417 seconds with exit status 0 (successful).
+  INFO [2f7789de] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/long/apps/LongNguyen/releases/20220115043224 on 143.198.97.178
+ DEBUG [2f7789de] Command: cd /home/long/apps/LongNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2b6e3aa46eca383cc648.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/long/apps/LongNguyen/releases/20220115043224 )
+  INFO [2f7789de] Finished in 0.625 seconds with exit status 0 (successful).
+ DEBUG [f4e4391d] Running if test ! -d /home/long/apps/LongNguyen/repo; then echo "Directory does not exist '/home/long/apps/LongNguyen/repo'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [f4e4391d] Command: if test ! -d /home/long/apps/LongNguyen/repo; then echo "Directory does not exist '/home/long/apps/LongNguyen/repo'" 1>&2; false; fi
+ DEBUG [f4e4391d] Finished in 0.407 seconds with exit status 0 (successful).
+ DEBUG [749020fe] Running /usr/bin/env git rev-list --max-count=1 master on 143.198.97.178
+ DEBUG [749020fe] Command: cd /home/long/apps/LongNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2b6e3aa46eca383cc648.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [749020fe] 	970ec384ecd90651df9e257d8a26eb96567563a8
+ DEBUG [749020fe] Finished in 0.289 seconds with exit status 0 (successful).
+ DEBUG [c125a01d] Running if test ! -d /home/long/apps/LongNguyen/releases/20220115043224; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220115043224'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [c125a01d] Command: if test ! -d /home/long/apps/LongNguyen/releases/20220115043224; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220115043224'" 1>&2; false; fi
+ DEBUG [c125a01d] Finished in 0.314 seconds with exit status 0 (successful).
+  INFO [99eb2078] Running /usr/bin/env echo "970ec384ecd90651df9e257d8a26eb96567563a8" > REVISION on 143.198.97.178
+ DEBUG [99eb2078] Command: cd /home/long/apps/LongNguyen/releases/20220115043224 && /usr/bin/env echo "970ec384ecd90651df9e257d8a26eb96567563a8" > REVISION
+  INFO [99eb2078] Finished in 0.277 seconds with exit status 0 (successful).
+  INFO [a81f96f7] Running /usr/bin/env mkdir -p /home/long/apps/LongNguyen/releases/20220115043224/config on 143.198.97.178
+ DEBUG [a81f96f7] Command: /usr/bin/env mkdir -p /home/long/apps/LongNguyen/releases/20220115043224/config
+  INFO [a81f96f7] Finished in 0.331 seconds with exit status 0 (successful).
+ DEBUG [600357a5] Running [ -L /home/long/apps/LongNguyen/releases/20220115043224/config/database.yml ] on 143.198.97.178
+ DEBUG [600357a5] Command: [ -L /home/long/apps/LongNguyen/releases/20220115043224/config/database.yml ]
+ DEBUG [600357a5] Finished in 0.275 seconds with exit status 1 (failed).
+ DEBUG [43ee7696] Running [ -f /home/long/apps/LongNguyen/releases/20220115043224/config/database.yml ] on 143.198.97.178
+ DEBUG [43ee7696] Command: [ -f /home/long/apps/LongNguyen/releases/20220115043224/config/database.yml ]
+ DEBUG [43ee7696] Finished in 0.321 seconds with exit status 1 (failed).
+  INFO [cb011d09] Running /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/config/database.yml /home/long/apps/LongNguyen/releases/20220115043224/config/database.yml on 143.198.97.178
+ DEBUG [cb011d09] Command: /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/config/database.yml /home/long/apps/LongNguyen/releases/20220115043224/config/database.yml
+  INFO [cb011d09] Finished in 0.270 seconds with exit status 0 (successful).
+ DEBUG [e8de6337] Running [ -L /home/long/apps/LongNguyen/releases/20220115043224/config/application.yml ] on 143.198.97.178
+ DEBUG [e8de6337] Command: [ -L /home/long/apps/LongNguyen/releases/20220115043224/config/application.yml ]
+ DEBUG [e8de6337] Finished in 0.326 seconds with exit status 1 (failed).
+ DEBUG [f07aa97f] Running [ -f /home/long/apps/LongNguyen/releases/20220115043224/config/application.yml ] on 143.198.97.178
+ DEBUG [f07aa97f] Command: [ -f /home/long/apps/LongNguyen/releases/20220115043224/config/application.yml ]
+ DEBUG [f07aa97f] Finished in 0.278 seconds with exit status 1 (failed).
+  INFO [44b06c62] Running /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/config/application.yml /home/long/apps/LongNguyen/releases/20220115043224/config/application.yml on 143.198.97.178
+ DEBUG [44b06c62] Command: /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/config/application.yml /home/long/apps/LongNguyen/releases/20220115043224/config/application.yml
+  INFO [44b06c62] Finished in 0.361 seconds with exit status 0 (successful).
+  INFO [14d9eac6] Running /usr/bin/env mkdir -p /home/long/apps/LongNguyen/releases/20220115043224/tmp /home/long/apps/LongNguyen/releases/20220115043224 /home/long/apps/LongNguyen/releases/20220115043224/public on 143.198.97.178
+ DEBUG [14d9eac6] Command: /usr/bin/env mkdir -p /home/long/apps/LongNguyen/releases/20220115043224/tmp /home/long/apps/LongNguyen/releases/20220115043224 /home/long/apps/LongNguyen/releases/20220115043224/public
+  INFO [14d9eac6] Finished in 0.314 seconds with exit status 0 (successful).
+ DEBUG [7ec359d2] Running [ -L /home/long/apps/LongNguyen/releases/20220115043224/tmp/pids ] on 143.198.97.178
+ DEBUG [7ec359d2] Command: [ -L /home/long/apps/LongNguyen/releases/20220115043224/tmp/pids ]
+ DEBUG [7ec359d2] Finished in 0.453 seconds with exit status 1 (failed).
+ DEBUG [01cd0827] Running [ -d /home/long/apps/LongNguyen/releases/20220115043224/tmp/pids ] on 143.198.97.178
+ DEBUG [01cd0827] Command: [ -d /home/long/apps/LongNguyen/releases/20220115043224/tmp/pids ]
+ DEBUG [01cd0827] Finished in 0.354 seconds with exit status 1 (failed).
+  INFO [8e6fc3f9] Running /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/tmp/pids /home/long/apps/LongNguyen/releases/20220115043224/tmp/pids on 143.198.97.178
+ DEBUG [8e6fc3f9] Command: /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/tmp/pids /home/long/apps/LongNguyen/releases/20220115043224/tmp/pids
+  INFO [8e6fc3f9] Finished in 0.325 seconds with exit status 0 (successful).
+ DEBUG [abb29353] Running [ -L /home/long/apps/LongNguyen/releases/20220115043224/tmp/sockets ] on 143.198.97.178
+ DEBUG [abb29353] Command: [ -L /home/long/apps/LongNguyen/releases/20220115043224/tmp/sockets ]
+ DEBUG [abb29353] Finished in 0.292 seconds with exit status 1 (failed).
+ DEBUG [b33b89c7] Running [ -d /home/long/apps/LongNguyen/releases/20220115043224/tmp/sockets ] on 143.198.97.178
+ DEBUG [b33b89c7] Command: [ -d /home/long/apps/LongNguyen/releases/20220115043224/tmp/sockets ]
+ DEBUG [b33b89c7] Finished in 0.364 seconds with exit status 1 (failed).
+  INFO [8ac58de7] Running /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/tmp/sockets /home/long/apps/LongNguyen/releases/20220115043224/tmp/sockets on 143.198.97.178
+ DEBUG [8ac58de7] Command: /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/tmp/sockets /home/long/apps/LongNguyen/releases/20220115043224/tmp/sockets
+  INFO [8ac58de7] Finished in 0.287 seconds with exit status 0 (successful).
+ DEBUG [ecc4c40a] Running [ -L /home/long/apps/LongNguyen/releases/20220115043224/log ] on 143.198.97.178
+ DEBUG [ecc4c40a] Command: [ -L /home/long/apps/LongNguyen/releases/20220115043224/log ]
+ DEBUG [ecc4c40a] Finished in 0.352 seconds with exit status 1 (failed).
+ DEBUG [d90aa8fd] Running [ -d /home/long/apps/LongNguyen/releases/20220115043224/log ] on 143.198.97.178
+ DEBUG [d90aa8fd] Command: [ -d /home/long/apps/LongNguyen/releases/20220115043224/log ]
+ DEBUG [d90aa8fd] Finished in 0.341 seconds with exit status 0 (successful).
+  INFO [38583d03] Running /usr/bin/env rm -rf /home/long/apps/LongNguyen/releases/20220115043224/log on 143.198.97.178
+ DEBUG [38583d03] Command: /usr/bin/env rm -rf /home/long/apps/LongNguyen/releases/20220115043224/log
+  INFO [38583d03] Finished in 0.357 seconds with exit status 0 (successful).
+  INFO [c22a7773] Running /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/log /home/long/apps/LongNguyen/releases/20220115043224/log on 143.198.97.178
+ DEBUG [c22a7773] Command: /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/log /home/long/apps/LongNguyen/releases/20220115043224/log
+  INFO [c22a7773] Finished in 0.276 seconds with exit status 0 (successful).
+ DEBUG [4854f81b] Running [ -L /home/long/apps/LongNguyen/releases/20220115043224/public/assets ] on 143.198.97.178
+ DEBUG [4854f81b] Command: [ -L /home/long/apps/LongNguyen/releases/20220115043224/public/assets ]
+ DEBUG [4854f81b] Finished in 0.328 seconds with exit status 1 (failed).
+ DEBUG [b81a83bf] Running [ -d /home/long/apps/LongNguyen/releases/20220115043224/public/assets ] on 143.198.97.178
+ DEBUG [b81a83bf] Command: [ -d /home/long/apps/LongNguyen/releases/20220115043224/public/assets ]
+ DEBUG [b81a83bf] Finished in 0.271 seconds with exit status 1 (failed).
+  INFO [83225353] Running /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/public/assets /home/long/apps/LongNguyen/releases/20220115043224/public/assets on 143.198.97.178
+ DEBUG [83225353] Command: /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/public/assets /home/long/apps/LongNguyen/releases/20220115043224/public/assets
+  INFO [83225353] Finished in 0.324 seconds with exit status 0 (successful).
+ DEBUG [e7fd2c1f] Running if test ! -d /home/long/apps/LongNguyen/releases/20220115043224; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220115043224'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [e7fd2c1f] Command: if test ! -d /home/long/apps/LongNguyen/releases/20220115043224; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220115043224'" 1>&2; false; fi
+ DEBUG [e7fd2c1f] Finished in 0.269 seconds with exit status 0 (successful).
+  INFO [110155ea] Running ~/.rvm/bin/rvm 2.6.6 do bundle config --local deployment true on 143.198.97.178
+ DEBUG [110155ea] Command: cd /home/long/apps/LongNguyen/releases/20220115043224 && ~/.rvm/bin/rvm 2.6.6 do bundle config --local deployment true
+  INFO [110155ea] Finished in 1.394 seconds with exit status 0 (successful).
+  INFO [c76f2fc6] Running ~/.rvm/bin/rvm 2.6.6 do bundle config --local path /home/long/apps/LongNguyen/shared/bundle on 143.198.97.178
+ DEBUG [c76f2fc6] Command: cd /home/long/apps/LongNguyen/releases/20220115043224 && ~/.rvm/bin/rvm 2.6.6 do bundle config --local path /home/long/apps/LongNguyen/shared/bundle
+  INFO [c76f2fc6] Finished in 1.250 seconds with exit status 0 (successful).
+  INFO [0c341a86] Running ~/.rvm/bin/rvm 2.6.6 do bundle config --local without development:test on 143.198.97.178
+ DEBUG [0c341a86] Command: cd /home/long/apps/LongNguyen/releases/20220115043224 && ~/.rvm/bin/rvm 2.6.6 do bundle config --local without development:test
+  INFO [0c341a86] Finished in 1.227 seconds with exit status 0 (successful).
+ DEBUG [127be42b] Running if test ! -d /home/long/apps/LongNguyen/releases/20220115043224; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220115043224'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [127be42b] Command: if test ! -d /home/long/apps/LongNguyen/releases/20220115043224; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220115043224'" 1>&2; false; fi
+ DEBUG [127be42b] Finished in 0.285 seconds with exit status 0 (successful).
+ DEBUG [574ba932] Running ~/.rvm/bin/rvm 2.6.6 do bundle check on 143.198.97.178
+ DEBUG [574ba932] Command: cd /home/long/apps/LongNguyen/releases/20220115043224 && ~/.rvm/bin/rvm 2.6.6 do bundle check
+ DEBUG [574ba932] 	The Gemfile's dependencies are satisfied
+ DEBUG [574ba932] Finished in 1.748 seconds with exit status 0 (successful).
+  INFO The Gemfile's dependencies are satisfied, skipping installation
+ DEBUG [20e9b466] Running if test ! -d /home/long/apps/LongNguyen/releases/20220115043224; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220115043224'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [20e9b466] Command: if test ! -d /home/long/apps/LongNguyen/releases/20220115043224; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220115043224'" 1>&2; false; fi
+ DEBUG [20e9b466] Finished in 0.293 seconds with exit status 0 (successful).
+  INFO [4fcece81] Running ~/.rvm/bin/rvm 2.6.6 do bundle exec rake assets:precompile on 143.198.97.178
+ DEBUG [4fcece81] Command: cd /home/long/apps/LongNguyen/releases/20220115043224 && ( export RAILS_ENV="production" RAILS_GROUPS="" ; ~/.rvm/bin/rvm 2.6.6 do bundle exec rake assets:precompile )
+ DEBUG [4fcece81] 	/home/long/.rvm/rubies/ruby-2.6.6/lib/ruby/2.6.0/net/protocol.rb:66: warning: already initialized constant Net::ProtocRetryError
+ DEBUG [4fcece81] 	
+ DEBUG [4fcece81] 	/home/long/apps/LongNguyen/shared/bundle/ruby/2.6.0/gems/net-protocol-0.1.2/lib/net/protocol.rb:68: warning: previous definition of ProtocRetryError was here
+ DEBUG [4fcece81] 	
+ DEBUG [4fcece81] 	/home/long/.rvm/rubies/ruby-2.6.6/lib/ruby/2.6.0/net/protocol.rb:206: warning: already initialized constant Net::BufferedIO::BUFSIZE
+ DEBUG [4fcece81] 	
+ DEBUG [4fcece81] 	/home/long/apps/LongNguyen/shared/bundle/ruby/2.6.0/gems/net-protocol-0.1.2/lib/net/protocol.rb:208: warning: previous definition of BUFSIZE was here
+ DEBUG [4fcece81] 	
+ DEBUG [4fcece81] 	/home/long/.rvm/rubies/ruby-2.6.6/lib/ruby/2.6.0/net/protocol.rb:503: warning: already initialized constant Net::NetPrivate::Socket
+ DEBUG [4fcece81] 	
+ DEBUG [4fcece81] 	/home/long/apps/LongNguyen/shared/bundle/ruby/2.6.0/gems/net-protocol-0.1.2/lib/net/protocol.rb:504: warning: previous definition of Socket was here
+ DEBUG [4fcece81] 	
+ DEBUG [4fcece81] 	W, [2022-01-15T04:33:11.245975 #25893]  WARN -- : Removed sourceMappingURL comment for missing asset 'popper.min.js.map' from /home/long/apps/LongNguyen/releases/20220115043224/app/assets/javascripts/plugins/bootstrap/popper.min.js
+ DEBUG [4fcece81] 	W, [2022-01-15T04:33:11.530845 #25893]  WARN -- : Removed sourceMappingURL comment for missing asset 'popper.min.js.map' from /home/long/apps/LongNguyen/releases/20220115043224/app/assets/javascripts/popper.min.js
+ DEBUG [4fcece81] 	W, [2022-01-15T04:33:11.540178 #25893]  WARN -- : Removed sourceMappingURL comment for missing asset 'popper.min.js.map' from /home/long/apps/LongNguyen/releases/20220115043224/app/assets/javascripts/scripts.js
+ DEBUG [4fcece81] 	autoprefixer: /home/long/apps/LongNguyen/releases/20220115043224/app/assets/stylesheets/essentials.css:1300:2: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [4fcece81] 	
+ DEBUG [4fcece81] 	autoprefixer: /home/long/apps/LongNguyen/releases/20220115043224/app/assets/stylesheets/essentials.css:1311:2: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [4fcece81] 	
+ DEBUG [4fcece81] 	autoprefixer: /home/long/apps/LongNguyen/releases/20220115043224/app/assets/stylesheets/settings.scss:1425:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [4fcece81] 	
+ DEBUG [4fcece81] 	W, [2022-01-15T04:35:33.806944 #25893]  WARN -- : Removed sourceMappingURL comment for missing asset 'svg2pdf.js.map' from /home/long/apps/LongNguyen/shared/bundle/ruby/2.6.0/gems/highcharts-rails-6.0.3/app/assets/javascripts/highcharts/lib/svg2pdf.js
+ DEBUG [4fcece81] 	
+  INFO [4fcece81] Finished in 300.880 seconds with exit status 0 (successful).
+ DEBUG [995e4aec] Running if test ! -d /home/long/apps/LongNguyen/releases/20220115043224; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220115043224'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [995e4aec] Command: if test ! -d /home/long/apps/LongNguyen/releases/20220115043224; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220115043224'" 1>&2; false; fi
+ DEBUG [995e4aec] Finished in 0.304 seconds with exit status 0 (successful).
+  INFO [9ec19b16] Running /usr/bin/env mkdir -p /home/long/apps/LongNguyen/releases/20220115043224/assets_manifest_backup on 143.198.97.178
+ DEBUG [9ec19b16] Command: cd /home/long/apps/LongNguyen/releases/20220115043224 && /usr/bin/env mkdir -p /home/long/apps/LongNguyen/releases/20220115043224/assets_manifest_backup
+  INFO [9ec19b16] Finished in 0.335 seconds with exit status 0 (successful).
+ DEBUG [855980fe] Running /usr/bin/env ls /home/long/apps/LongNguyen/releases/20220115043224/public/assets/.sprockets-manifest* on 143.198.97.178
+ DEBUG [855980fe] Command: cd /home/long/apps/LongNguyen/releases/20220115043224 && /usr/bin/env ls /home/long/apps/LongNguyen/releases/20220115043224/public/assets/.sprockets-manifest*
+ DEBUG [855980fe] 	/home/long/apps/LongNguyen/releases/20220115043224/public/assets/.sprockets-manifest-d3d71b4a2de566ccc7140f8628978a46.json
+ DEBUG [855980fe] Finished in 0.300 seconds with exit status 0 (successful).
+ DEBUG [280acfba] Running /usr/bin/env ls /home/long/apps/LongNguyen/releases/20220115043224/public/assets/.sprockets-manifest* on 143.198.97.178
+ DEBUG [280acfba] Command: cd /home/long/apps/LongNguyen/releases/20220115043224 && /usr/bin/env ls /home/long/apps/LongNguyen/releases/20220115043224/public/assets/.sprockets-manifest*
+ DEBUG [280acfba] 	/home/long/apps/LongNguyen/releases/20220115043224/public/assets/.sprockets-manifest-d3d71b4a2de566ccc7140f8628978a46.json
+ DEBUG [280acfba] 	
+ DEBUG [280acfba] Finished in 0.346 seconds with exit status 0 (successful).
+  INFO [99b6f84d] Running /usr/bin/env cp /home/long/apps/LongNguyen/releases/20220115043224/public/assets/.sprockets-manifest-d3d71b4a2de566ccc7140f8628978a46.json /home/long/apps/LongNguyen/releases/20220115043224/assets_manifest_backup on 143.198.97.178
+ DEBUG [99b6f84d] Command: cd /home/long/apps/LongNguyen/releases/20220115043224 && /usr/bin/env cp /home/long/apps/LongNguyen/releases/20220115043224/public/assets/.sprockets-manifest-d3d71b4a2de566ccc7140f8628978a46.json /home/long/apps/LongNguyen/releases/20220115043224/assets_manifest_backup
+  INFO [99b6f84d] Finished in 0.279 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [66e2d0d1] Running if test ! -d /home/long/apps/LongNguyen/releases/20220115043224; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220115043224'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [66e2d0d1] Command: if test ! -d /home/long/apps/LongNguyen/releases/20220115043224; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220115043224'" 1>&2; false; fi
+ DEBUG [66e2d0d1] Finished in 0.308 seconds with exit status 0 (successful).
+  INFO [d4781db0] Running ~/.rvm/bin/rvm 2.6.6 do bundle exec rake db:migrate on 143.198.97.178
+ DEBUG [d4781db0] Command: cd /home/long/apps/LongNguyen/releases/20220115043224 && ( export RAILS_ENV="production" ; ~/.rvm/bin/rvm 2.6.6 do bundle exec rake db:migrate )
+ DEBUG [d4781db0] 	/home/long/.rvm/rubies/ruby-2.6.6/lib/ruby/2.6.0/net/protocol.rb:66: warning: already initialized constant Net::ProtocRetryError
+/home/long/apps/LongNguyen/shared/bundle/ruby/2.6.0/gems/net-protocol-0.1.2/lib/net/protocol.rb:68: warning: previous definition of ProtocRetryError was here
+/home/long/.rvm/rubies/ruby-2.6.6/lib/ruby/2.6.0/net/protocol.rb:206: warning: already initialized constant Net::BufferedIO::BUFSIZE
+/home/long/apps/LongNguyen/shared/bundle/ruby/2.6.0/gems/net-protocol-0.1.2/lib/net/protocol.rb:208: warning: previous definition of BUFSIZE was here
+/home/long/.rvm/rubies/ruby-2.6.6/lib/ruby/2.6.0/net/protocol.rb:503: warning: already initialized constant Net::NetPrivate::Socket
+/home/long/apps/LongNguyen/shared/bundle/ruby/2.6.0/gems/net-protocol-0.1.2/lib/net/protocol.rb:504: warning: previous definition of Socket was here
+  INFO [d4781db0] Finished in 6.504 seconds with exit status 0 (successful).
+  INFO [0481842d] Running /usr/bin/env ln -s /home/long/apps/LongNguyen/releases/20220115043224 /home/long/apps/LongNguyen/releases/current on 143.198.97.178
+ DEBUG [0481842d] Command: /usr/bin/env ln -s /home/long/apps/LongNguyen/releases/20220115043224 /home/long/apps/LongNguyen/releases/current
+  INFO [0481842d] Finished in 0.325 seconds with exit status 0 (successful).
+  INFO [8d5a9414] Running /usr/bin/env mv /home/long/apps/LongNguyen/releases/current /home/long/apps/LongNguyen on 143.198.97.178
+ DEBUG [8d5a9414] Command: /usr/bin/env mv /home/long/apps/LongNguyen/releases/current /home/long/apps/LongNguyen
+  INFO [8d5a9414] Finished in 0.292 seconds with exit status 0 (successful).
+ DEBUG [8e995230] Running /usr/bin/env ls -x /home/long/apps/LongNguyen/releases on 143.198.97.178
+ DEBUG [8e995230] Command: /usr/bin/env ls -x /home/long/apps/LongNguyen/releases
+ DEBUG [8e995230] 	20220115034453	20220115034832	20220115040113	20220115040459	20220115041718
+20220115043224
+ DEBUG [8e995230] Finished in 0.321 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on 143.198.97.178
+ DEBUG [b357e6bc] Running [ -d /home/long/apps/LongNguyen/current ] on 143.198.97.178
+ DEBUG [b357e6bc] Command: [ -d /home/long/apps/LongNguyen/current ]
+ DEBUG [b357e6bc] Finished in 0.282 seconds with exit status 0 (successful).
+ DEBUG [b481bd81] Running /usr/bin/env readlink /home/long/apps/LongNguyen/current on 143.198.97.178
+ DEBUG [b481bd81] Command: /usr/bin/env readlink /home/long/apps/LongNguyen/current
+ DEBUG [b481bd81] 	/home/long/apps/LongNguyen/releases/20220115043224
+ DEBUG [b481bd81] 	
+ DEBUG [b481bd81] Finished in 0.317 seconds with exit status 0 (successful).
+  INFO [fb4a13e2] Running /usr/bin/env rm -rf /home/long/apps/LongNguyen/releases/20220115034453 on 143.198.97.178
+ DEBUG [fb4a13e2] Command: /usr/bin/env rm -rf /home/long/apps/LongNguyen/releases/20220115034453
+  INFO [fb4a13e2] Finished in 0.699 seconds with exit status 0 (successful).
+ DEBUG [a62b9a1f] Running if test ! -d /home/long/apps/LongNguyen/current; then echo "Directory does not exist '/home/long/apps/LongNguyen/current'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [a62b9a1f] Command: if test ! -d /home/long/apps/LongNguyen/current; then echo "Directory does not exist '/home/long/apps/LongNguyen/current'" 1>&2; false; fi
+ DEBUG [a62b9a1f] Finished in 0.310 seconds with exit status 0 (successful).
+ DEBUG [0c8ea893] Running [ -f /home/long/apps/LongNguyen/shared/tmp/pids/puma.pid ] on 143.198.97.178
+ DEBUG [0c8ea893] Command: [ -f /home/long/apps/LongNguyen/shared/tmp/pids/puma.pid ]
+ DEBUG [0c8ea893] Finished in 0.278 seconds with exit status 0 (successful).
+ DEBUG [99ab462b] Running /usr/bin/env kill -0 $( cat /home/long/apps/LongNguyen/shared/tmp/pids/puma.pid ) on 143.198.97.178
+ DEBUG [99ab462b] Command: cd /home/long/apps/LongNguyen/current && ( export RACK_ENV="production" ; /usr/bin/env kill -0 $( cat /home/long/apps/LongNguyen/shared/tmp/pids/puma.pid ) )
+ DEBUG [99ab462b] Finished in 0.328 seconds with exit status 0 (successful).
+  INFO [12a14784] Running ~/.rvm/bin/rvm 2.6.6 do bundle exec pumactl -S /home/long/apps/LongNguyen/shared/tmp/pids/puma.state -F /home/long/apps/LongNguyen/shared/puma.rb restart on 143.198.97.178
+ DEBUG [12a14784] Command: cd /home/long/apps/LongNguyen/current && ( export RACK_ENV="production" ; ~/.rvm/bin/rvm 2.6.6 do bundle exec pumactl -S /home/long/apps/LongNguyen/shared/tmp/pids/puma.state -F /home/long/apps/LongNguyen/shared/puma.rb restart )
+ DEBUG [12a14784] 	Command restart sent success
+  INFO [12a14784] Finished in 2.250 seconds with exit status 0 (successful).
+ DEBUG [61ca3def] Running if test ! -d /home/long/apps/LongNguyen/releases; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [61ca3def] Command: if test ! -d /home/long/apps/LongNguyen/releases; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases'" 1>&2; false; fi
+ DEBUG [61ca3def] Finished in 0.314 seconds with exit status 0 (successful).
+  INFO [fac37b3a] Running /usr/bin/env echo "Branch master (at 970ec384ecd90651df9e257d8a26eb96567563a8) deployed as release 20220115043224 by longnguyen" >> /home/long/apps/LongNguyen/revisions.log on 143.198.97.178
+ DEBUG [fac37b3a] Command: cd /home/long/apps/LongNguyen/releases && /usr/bin/env echo "Branch master (at 970ec384ecd90651df9e257d8a26eb96567563a8) deployed as release 20220115043224 by longnguyen" >> /home/long/apps/LongNguyen/revisions.log
+  INFO [fac37b3a] Finished in 0.273 seconds with exit status 0 (successful).
