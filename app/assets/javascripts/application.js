@@ -5,4 +5,3 @@
 //= require_tree 
 //= require jquery.mixitup.min
 //= require bootstrap.min
-
