@@ -17,8 +17,6 @@
     <%= render "layouts/header" %>
     <%= yield %>
     <%= render "layouts/footer" %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script async defer src=<%=ENV['MAPS_API']%>></script>
     		<script>
 			function initMap() {} // now it IS a function and it is in global

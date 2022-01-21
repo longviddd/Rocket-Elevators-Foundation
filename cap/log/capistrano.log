@@ -14730,3 +14730,319 @@ WARNING: Use strings for Figaro configuration. true was converted to "true".
   INFO [791de63f] Running /usr/bin/env echo "Branch master (at 18477e43ed24adb1361ffce436d1ca60d8438017) deployed as release 20220121010804 by longnguyen" >> /home/long/apps/LongNguyen/revisions.log on 143.198.97.178
  DEBUG [791de63f] Command: cd /home/long/apps/LongNguyen/releases && /usr/bin/env echo "Branch master (at 18477e43ed24adb1361ffce436d1ca60d8438017) deployed as release 20220121010804 by longnguyen" >> /home/long/apps/LongNguyen/revisions.log
   INFO [791de63f] Finished in 0.353 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-01-20 20:20:00 -0500 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [8fec8744] Running [ -d ~/.rvm ] on 143.198.97.178
+ DEBUG [8fec8744] Command: [ -d ~/.rvm ]
+ DEBUG [8fec8744] Finished in 4.663 seconds with exit status 0 (successful).
+ DEBUG [0f006bf5] Running ~/.rvm/bin/rvm version on 143.198.97.178
+ DEBUG [0f006bf5] Command: ~/.rvm/bin/rvm version
+ DEBUG [0f006bf5] 	rvm 1.29.12 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [0f006bf5] Finished in 0.621 seconds with exit status 0 (successful).
+ DEBUG [343a9779] Running ~/.rvm/bin/rvm current on 143.198.97.178
+ DEBUG [343a9779] Command: ~/.rvm/bin/rvm current
+ DEBUG [343a9779] 	ruby-3.0.0
+ DEBUG [343a9779] Finished in 0.639 seconds with exit status 0 (successful).
+ DEBUG [f32a0842] Running ~/.rvm/bin/rvm 2.6.6 do ruby --version on 143.198.97.178
+ DEBUG [f32a0842] Command: ~/.rvm/bin/rvm 2.6.6 do ruby --version
+ DEBUG [f32a0842] 	ruby 2.6.6p146 (2020-03-31 revision 67876) [x86_64-linux]
+ DEBUG [f32a0842] 	
+ DEBUG [f32a0842] Finished in 0.951 seconds with exit status 0 (successful).
+  INFO [160bc5cf] Running /usr/bin/env mkdir -p /tmp on 143.198.97.178
+ DEBUG [160bc5cf] Command: /usr/bin/env mkdir -p /tmp
+  INFO [160bc5cf] Finished in 0.353 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-e070e5aaf9587b740b6b.sh 0.0%
+  INFO Uploading /tmp/git-ssh-e070e5aaf9587b740b6b.sh 100.0%
+  INFO [49c09cda] Running /usr/bin/env chmod 700 /tmp/git-ssh-e070e5aaf9587b740b6b.sh on 143.198.97.178
+ DEBUG [49c09cda] Command: /usr/bin/env chmod 700 /tmp/git-ssh-e070e5aaf9587b740b6b.sh
+  INFO [49c09cda] Finished in 0.291 seconds with exit status 0 (successful).
+  INFO [8e09e2e5] Running /usr/bin/env git ls-remote https://github.com/longviddd/Rocket-Elevators-Foundation.git HEAD on 143.198.97.178
+ DEBUG [8e09e2e5] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e070e5aaf9587b740b6b.sh" ; /usr/bin/env git ls-remote https://github.com/longviddd/Rocket-Elevators-Foundation.git HEAD )
+ DEBUG [8e09e2e5] 	4875eb8ff031269fe6094253efdf84cc8f1c7d0a	HEAD
+  INFO [8e09e2e5] Finished in 0.626 seconds with exit status 0 (successful).
+  INFO [b3bee2b5] Running /usr/bin/env mkdir -p /home/long/apps/LongNguyen/shared /home/long/apps/LongNguyen/releases on 143.198.97.178
+ DEBUG [b3bee2b5] Command: /usr/bin/env mkdir -p /home/long/apps/LongNguyen/shared /home/long/apps/LongNguyen/releases
+  INFO [b3bee2b5] Finished in 0.276 seconds with exit status 0 (successful).
+  INFO [9f3cdea2] Running /usr/bin/env mkdir -p /home/long/apps/LongNguyen/shared/tmp/pids /home/long/apps/LongNguyen/shared/tmp/sockets /home/long/apps/LongNguyen/shared/log /home/long/apps/LongNguyen/shared/public/assets on 143.198.97.178
+ DEBUG [9f3cdea2] Command: /usr/bin/env mkdir -p /home/long/apps/LongNguyen/shared/tmp/pids /home/long/apps/LongNguyen/shared/tmp/sockets /home/long/apps/LongNguyen/shared/log /home/long/apps/LongNguyen/shared/public/assets
+  INFO [9f3cdea2] Finished in 0.349 seconds with exit status 0 (successful).
+  INFO [8fc63d87] Running /usr/bin/env mkdir -p /home/long/apps/LongNguyen/shared/config on 143.198.97.178
+ DEBUG [8fc63d87] Command: /usr/bin/env mkdir -p /home/long/apps/LongNguyen/shared/config
+  INFO [8fc63d87] Finished in 0.272 seconds with exit status 0 (successful).
+ DEBUG [a9d55d9e] Running [ -f /home/long/apps/LongNguyen/shared/config/database.yml ] on 143.198.97.178
+ DEBUG [a9d55d9e] Command: [ -f /home/long/apps/LongNguyen/shared/config/database.yml ]
+ DEBUG [a9d55d9e] Finished in 0.375 seconds with exit status 0 (successful).
+ DEBUG [71a05c29] Running [ -f /home/long/apps/LongNguyen/shared/config/application.yml ] on 143.198.97.178
+ DEBUG [71a05c29] Command: [ -f /home/long/apps/LongNguyen/shared/config/application.yml ]
+ DEBUG [71a05c29] Finished in 0.290 seconds with exit status 0 (successful).
+ DEBUG [90046958] Running [ -f /home/long/apps/LongNguyen/shared/puma.rb ] on 143.198.97.178
+ DEBUG [90046958] Command: [ -f /home/long/apps/LongNguyen/shared/puma.rb ]
+ DEBUG [90046958] Finished in 0.323 seconds with exit status 0 (successful).
+ DEBUG [6d7d3068] Running [ -f /home/long/apps/LongNguyen/current/REVISION ] on 143.198.97.178
+ DEBUG [6d7d3068] Command: [ -f /home/long/apps/LongNguyen/current/REVISION ]
+ DEBUG [6d7d3068] Finished in 0.289 seconds with exit status 0 (successful).
+ DEBUG [2fa4793f] Running /usr/bin/env cat /home/long/apps/LongNguyen/current/REVISION 2>/dev/null on 143.198.97.178
+ DEBUG [2fa4793f] Command: /usr/bin/env cat /home/long/apps/LongNguyen/current/REVISION 2>/dev/null
+ DEBUG [2fa4793f] 	18477e43ed24adb1361ffce436d1ca60d8438017
+ DEBUG [2fa4793f] Finished in 0.318 seconds with exit status 0 (successful).
+ DEBUG [6cbe9e1c] Running [ -f /home/long/apps/LongNguyen/repo/HEAD ] on 143.198.97.178
+ DEBUG [6cbe9e1c] Command: [ -f /home/long/apps/LongNguyen/repo/HEAD ]
+ DEBUG [6cbe9e1c] Finished in 0.261 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/long/apps/LongNguyen/repo
+ DEBUG [74a5cb43] Running if test ! -d /home/long/apps/LongNguyen/repo; then echo "Directory does not exist '/home/long/apps/LongNguyen/repo'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [74a5cb43] Command: if test ! -d /home/long/apps/LongNguyen/repo; then echo "Directory does not exist '/home/long/apps/LongNguyen/repo'" 1>&2; false; fi
+ DEBUG [74a5cb43] Finished in 0.305 seconds with exit status 0 (successful).
+  INFO [921a518e] Running /usr/bin/env git remote set-url origin https://github.com/longviddd/Rocket-Elevators-Foundation.git on 143.198.97.178
+ DEBUG [921a518e] Command: cd /home/long/apps/LongNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e070e5aaf9587b740b6b.sh" ; /usr/bin/env git remote set-url origin https://github.com/longviddd/Rocket-Elevators-Foundation.git )
+  INFO [921a518e] Finished in 0.303 seconds with exit status 0 (successful).
+  INFO [9db7239f] Running /usr/bin/env git remote update --prune on 143.198.97.178
+ DEBUG [9db7239f] Command: cd /home/long/apps/LongNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e070e5aaf9587b740b6b.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [9db7239f] 	Fetching origin
+ DEBUG [9db7239f] 	
+ DEBUG [9db7239f] 	remote: Enumerating objects: 23, done.[K
+remote: Counting objects:   4% (1/23)[Kremote: Counting objects:   8% (2/23)[Kremote: Counting objects:  13% (3/23)[Kremote: Counting objects:  17% (4/23)[Kremote: Counting objects:  21% (5/23)[Kremote: Counting objects:  26% (6/23)[Kremote: Counting objects:  30% (7/23)[Kremote: Counting objects:  34% (8/23)[Kremote: Counting objects:  39% (9/23)[Kremote: Counting objects:  43% (10/23)[Kremote: Counting objects:  47% (11/23)[Kremote: Counting objects:  52% (12/23)[Kremote: Counting objects:  56% (13/23)[Kremote: Counting objects:  60% (14/23)[Kremote: Counting objects:  65% (15/23)[Kremote: Counting objects:  69% (16/23)[Kremote: Counting objects:  73% (17/23)[K
+ DEBUG [9db7239f] 	remote: Counting objects:  78% (18/23)[Kremote: Counting objects:  82% (19/23)[Kremote: Counting objects:  86% (20/23)[Kremote: Counting objects:  91% (21/23)[Kremote: Counting objects:  95% (22/23)[Kremote: Counting objects: 100% (23/23)[Kremote: Counting objects: 100% (23/23), done.[K
+remote: Compressing objects: 100% (1/1)[Kremote: Compressing objects: 100% (1/1), done.[K
+ DEBUG [9db7239f] 	remote: Total 12 (delta 9), reused 12 (delta 9), pack-reused 0[K
+ DEBUG [9db7239f] 	
+ DEBUG [9db7239f] 	Unpacking objects:   8% (1/12)
+ DEBUG [9db7239f] 	Unpacking objects:  16% (2/12)Unpacking objects:  25% (3/12)Unpacking objects:  33% (4/12)Unpacking objects:  41% (5/12)Unpacking objects:  50% (6/12)
+ DEBUG [9db7239f] 	Unpacking objects:  58% (7/12)
+ DEBUG [9db7239f] 	Unpacking objects:  66% (8/12)
+ DEBUG [9db7239f] 	Unpacking objects:  75% (9/12)
+ DEBUG [9db7239f] 	Unpacking objects:  83% (10/12)
+ DEBUG [9db7239f] 	Unpacking objects:  91% (11/12)
+ DEBUG [9db7239f] 	Unpacking objects: 100% (12/12)Unpacking objects: 100% (12/12), 4.50 KiB | 53.00 KiB/s, done.
+ DEBUG [9db7239f] 	
+ DEBUG [9db7239f] 	From https://github.com/longviddd/Rocket-Elevators-Foundation
+ DEBUG [9db7239f] 	
+ DEBUG [9db7239f] 	   18477e4..4875eb8  master     -> master
+ DEBUG [9db7239f] 	
+  INFO [9db7239f] Finished in 0.878 seconds with exit status 0 (successful).
+ DEBUG [37491673] Running if test ! -d /home/long/apps/LongNguyen/repo; then echo "Directory does not exist '/home/long/apps/LongNguyen/repo'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [37491673] Command: if test ! -d /home/long/apps/LongNguyen/repo; then echo "Directory does not exist '/home/long/apps/LongNguyen/repo'" 1>&2; false; fi
+ DEBUG [37491673] Finished in 0.282 seconds with exit status 0 (successful).
+  INFO [4a0bc1a0] Running /usr/bin/env mkdir -p /home/long/apps/LongNguyen/releases/20220121012011 on 143.198.97.178
+ DEBUG [4a0bc1a0] Command: cd /home/long/apps/LongNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e070e5aaf9587b740b6b.sh" ; /usr/bin/env mkdir -p /home/long/apps/LongNguyen/releases/20220121012011 )
+  INFO [4a0bc1a0] Finished in 0.316 seconds with exit status 0 (successful).
+  INFO [580edca3] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/long/apps/LongNguyen/releases/20220121012011 on 143.198.97.178
+ DEBUG [580edca3] Command: cd /home/long/apps/LongNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e070e5aaf9587b740b6b.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/long/apps/LongNguyen/releases/20220121012011 )
+  INFO [580edca3] Finished in 1.777 seconds with exit status 0 (successful).
+ DEBUG [29d2eeca] Running if test ! -d /home/long/apps/LongNguyen/repo; then echo "Directory does not exist '/home/long/apps/LongNguyen/repo'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [29d2eeca] Command: if test ! -d /home/long/apps/LongNguyen/repo; then echo "Directory does not exist '/home/long/apps/LongNguyen/repo'" 1>&2; false; fi
+ DEBUG [29d2eeca] Finished in 0.324 seconds with exit status 0 (successful).
+ DEBUG [82b303ad] Running /usr/bin/env git rev-list --max-count=1 master on 143.198.97.178
+ DEBUG [82b303ad] Command: cd /home/long/apps/LongNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e070e5aaf9587b740b6b.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [82b303ad] 	4875eb8ff031269fe6094253efdf84cc8f1c7d0a
+ DEBUG [82b303ad] 	
+ DEBUG [82b303ad] Finished in 0.315 seconds with exit status 0 (successful).
+ DEBUG [b89c8004] Running if test ! -d /home/long/apps/LongNguyen/releases/20220121012011; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220121012011'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [b89c8004] Command: if test ! -d /home/long/apps/LongNguyen/releases/20220121012011; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220121012011'" 1>&2; false; fi
+ DEBUG [b89c8004] Finished in 0.311 seconds with exit status 0 (successful).
+  INFO [db549da2] Running /usr/bin/env echo "4875eb8ff031269fe6094253efdf84cc8f1c7d0a" > REVISION on 143.198.97.178
+ DEBUG [db549da2] Command: cd /home/long/apps/LongNguyen/releases/20220121012011 && /usr/bin/env echo "4875eb8ff031269fe6094253efdf84cc8f1c7d0a" > REVISION
+  INFO [db549da2] Finished in 0.326 seconds with exit status 0 (successful).
+  INFO [55fcc612] Running /usr/bin/env mkdir -p /home/long/apps/LongNguyen/releases/20220121012011/config on 143.198.97.178
+ DEBUG [55fcc612] Command: /usr/bin/env mkdir -p /home/long/apps/LongNguyen/releases/20220121012011/config
+  INFO [55fcc612] Finished in 0.335 seconds with exit status 0 (successful).
+ DEBUG [ba829161] Running [ -L /home/long/apps/LongNguyen/releases/20220121012011/config/database.yml ] on 143.198.97.178
+ DEBUG [ba829161] Command: [ -L /home/long/apps/LongNguyen/releases/20220121012011/config/database.yml ]
+ DEBUG [ba829161] Finished in 0.272 seconds with exit status 1 (failed).
+ DEBUG [2448b3fb] Running [ -f /home/long/apps/LongNguyen/releases/20220121012011/config/database.yml ] on 143.198.97.178
+ DEBUG [2448b3fb] Command: [ -f /home/long/apps/LongNguyen/releases/20220121012011/config/database.yml ]
+ DEBUG [2448b3fb] Finished in 0.310 seconds with exit status 1 (failed).
+  INFO [80ef9031] Running /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/config/database.yml /home/long/apps/LongNguyen/releases/20220121012011/config/database.yml on 143.198.97.178
+ DEBUG [80ef9031] Command: /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/config/database.yml /home/long/apps/LongNguyen/releases/20220121012011/config/database.yml
+  INFO [80ef9031] Finished in 0.264 seconds with exit status 0 (successful).
+ DEBUG [fb5882d6] Running [ -L /home/long/apps/LongNguyen/releases/20220121012011/config/application.yml ] on 143.198.97.178
+ DEBUG [fb5882d6] Command: [ -L /home/long/apps/LongNguyen/releases/20220121012011/config/application.yml ]
+ DEBUG [fb5882d6] Finished in 0.320 seconds with exit status 1 (failed).
+ DEBUG [b79375b2] Running [ -f /home/long/apps/LongNguyen/releases/20220121012011/config/application.yml ] on 143.198.97.178
+ DEBUG [b79375b2] Command: [ -f /home/long/apps/LongNguyen/releases/20220121012011/config/application.yml ]
+ DEBUG [b79375b2] Finished in 0.269 seconds with exit status 1 (failed).
+  INFO [b29ba384] Running /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/config/application.yml /home/long/apps/LongNguyen/releases/20220121012011/config/application.yml on 143.198.97.178
+ DEBUG [b29ba384] Command: /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/config/application.yml /home/long/apps/LongNguyen/releases/20220121012011/config/application.yml
+  INFO [b29ba384] Finished in 0.321 seconds with exit status 0 (successful).
+  INFO [61ed01e2] Running /usr/bin/env mkdir -p /home/long/apps/LongNguyen/releases/20220121012011/tmp /home/long/apps/LongNguyen/releases/20220121012011 /home/long/apps/LongNguyen/releases/20220121012011/public on 143.198.97.178
+ DEBUG [61ed01e2] Command: /usr/bin/env mkdir -p /home/long/apps/LongNguyen/releases/20220121012011/tmp /home/long/apps/LongNguyen/releases/20220121012011 /home/long/apps/LongNguyen/releases/20220121012011/public
+  INFO [61ed01e2] Finished in 0.265 seconds with exit status 0 (successful).
+ DEBUG [3089f182] Running [ -L /home/long/apps/LongNguyen/releases/20220121012011/tmp/pids ] on 143.198.97.178
+ DEBUG [3089f182] Command: [ -L /home/long/apps/LongNguyen/releases/20220121012011/tmp/pids ]
+ DEBUG [3089f182] Finished in 0.309 seconds with exit status 1 (failed).
+ DEBUG [a0a5c80e] Running [ -d /home/long/apps/LongNguyen/releases/20220121012011/tmp/pids ] on 143.198.97.178
+ DEBUG [a0a5c80e] Command: [ -d /home/long/apps/LongNguyen/releases/20220121012011/tmp/pids ]
+ DEBUG [a0a5c80e] Finished in 0.270 seconds with exit status 1 (failed).
+  INFO [258b412e] Running /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/tmp/pids /home/long/apps/LongNguyen/releases/20220121012011/tmp/pids on 143.198.97.178
+ DEBUG [258b412e] Command: /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/tmp/pids /home/long/apps/LongNguyen/releases/20220121012011/tmp/pids
+  INFO [258b412e] Finished in 0.313 seconds with exit status 0 (successful).
+ DEBUG [8494e943] Running [ -L /home/long/apps/LongNguyen/releases/20220121012011/tmp/sockets ] on 143.198.97.178
+ DEBUG [8494e943] Command: [ -L /home/long/apps/LongNguyen/releases/20220121012011/tmp/sockets ]
+ DEBUG [8494e943] Finished in 0.288 seconds with exit status 1 (failed).
+ DEBUG [e589d855] Running [ -d /home/long/apps/LongNguyen/releases/20220121012011/tmp/sockets ] on 143.198.97.178
+ DEBUG [e589d855] Command: [ -d /home/long/apps/LongNguyen/releases/20220121012011/tmp/sockets ]
+ DEBUG [e589d855] Finished in 0.801 seconds with exit status 1 (failed).
+  INFO [b1e30596] Running /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/tmp/sockets /home/long/apps/LongNguyen/releases/20220121012011/tmp/sockets on 143.198.97.178
+ DEBUG [b1e30596] Command: /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/tmp/sockets /home/long/apps/LongNguyen/releases/20220121012011/tmp/sockets
+  INFO [b1e30596] Finished in 0.322 seconds with exit status 0 (successful).
+ DEBUG [b1f1db2d] Running [ -L /home/long/apps/LongNguyen/releases/20220121012011/log ] on 143.198.97.178
+ DEBUG [b1f1db2d] Command: [ -L /home/long/apps/LongNguyen/releases/20220121012011/log ]
+ DEBUG [b1f1db2d] Finished in 0.368 seconds with exit status 1 (failed).
+ DEBUG [55891790] Running [ -d /home/long/apps/LongNguyen/releases/20220121012011/log ] on 143.198.97.178
+ DEBUG [55891790] Command: [ -d /home/long/apps/LongNguyen/releases/20220121012011/log ]
+ DEBUG [55891790] Finished in 0.282 seconds with exit status 0 (successful).
+  INFO [d5d43917] Running /usr/bin/env rm -rf /home/long/apps/LongNguyen/releases/20220121012011/log on 143.198.97.178
+ DEBUG [d5d43917] Command: /usr/bin/env rm -rf /home/long/apps/LongNguyen/releases/20220121012011/log
+  INFO [d5d43917] Finished in 0.326 seconds with exit status 0 (successful).
+  INFO [a02fa80a] Running /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/log /home/long/apps/LongNguyen/releases/20220121012011/log on 143.198.97.178
+ DEBUG [a02fa80a] Command: /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/log /home/long/apps/LongNguyen/releases/20220121012011/log
+  INFO [a02fa80a] Finished in 0.287 seconds with exit status 0 (successful).
+ DEBUG [d206e2e4] Running [ -L /home/long/apps/LongNguyen/releases/20220121012011/public/assets ] on 143.198.97.178
+ DEBUG [d206e2e4] Command: [ -L /home/long/apps/LongNguyen/releases/20220121012011/public/assets ]
+ DEBUG [d206e2e4] Finished in 0.338 seconds with exit status 1 (failed).
+ DEBUG [d412bb59] Running [ -d /home/long/apps/LongNguyen/releases/20220121012011/public/assets ] on 143.198.97.178
+ DEBUG [d412bb59] Command: [ -d /home/long/apps/LongNguyen/releases/20220121012011/public/assets ]
+ DEBUG [d412bb59] Finished in 0.322 seconds with exit status 0 (successful).
+  INFO [224a7a33] Running /usr/bin/env rm -rf /home/long/apps/LongNguyen/releases/20220121012011/public/assets on 143.198.97.178
+ DEBUG [224a7a33] Command: /usr/bin/env rm -rf /home/long/apps/LongNguyen/releases/20220121012011/public/assets
+  INFO [224a7a33] Finished in 0.387 seconds with exit status 0 (successful).
+  INFO [aa66ba6c] Running /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/public/assets /home/long/apps/LongNguyen/releases/20220121012011/public/assets on 143.198.97.178
+ DEBUG [aa66ba6c] Command: /usr/bin/env ln -s /home/long/apps/LongNguyen/shared/public/assets /home/long/apps/LongNguyen/releases/20220121012011/public/assets
+  INFO [aa66ba6c] Finished in 0.287 seconds with exit status 0 (successful).
+ DEBUG [39abcc0d] Running if test ! -d /home/long/apps/LongNguyen/releases/20220121012011; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220121012011'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [39abcc0d] Command: if test ! -d /home/long/apps/LongNguyen/releases/20220121012011; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220121012011'" 1>&2; false; fi
+ DEBUG [39abcc0d] Finished in 0.331 seconds with exit status 0 (successful).
+  INFO [c3780a13] Running ~/.rvm/bin/rvm 2.6.6 do bundle config --local deployment true on 143.198.97.178
+ DEBUG [c3780a13] Command: cd /home/long/apps/LongNguyen/releases/20220121012011 && ~/.rvm/bin/rvm 2.6.6 do bundle config --local deployment true
+  INFO [c3780a13] Finished in 1.204 seconds with exit status 0 (successful).
+  INFO [c2d925f3] Running ~/.rvm/bin/rvm 2.6.6 do bundle config --local path /home/long/apps/LongNguyen/shared/bundle on 143.198.97.178
+ DEBUG [c2d925f3] Command: cd /home/long/apps/LongNguyen/releases/20220121012011 && ~/.rvm/bin/rvm 2.6.6 do bundle config --local path /home/long/apps/LongNguyen/shared/bundle
+  INFO [c2d925f3] Finished in 1.326 seconds with exit status 0 (successful).
+  INFO [8ef2bfb6] Running ~/.rvm/bin/rvm 2.6.6 do bundle config --local without development:test on 143.198.97.178
+ DEBUG [8ef2bfb6] Command: cd /home/long/apps/LongNguyen/releases/20220121012011 && ~/.rvm/bin/rvm 2.6.6 do bundle config --local without development:test
+  INFO [8ef2bfb6] Finished in 1.082 seconds with exit status 0 (successful).
+ DEBUG [f8cacee1] Running if test ! -d /home/long/apps/LongNguyen/releases/20220121012011; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220121012011'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [f8cacee1] Command: if test ! -d /home/long/apps/LongNguyen/releases/20220121012011; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220121012011'" 1>&2; false; fi
+ DEBUG [f8cacee1] Finished in 0.317 seconds with exit status 0 (successful).
+ DEBUG [6c2893c5] Running ~/.rvm/bin/rvm 2.6.6 do bundle check on 143.198.97.178
+ DEBUG [6c2893c5] Command: cd /home/long/apps/LongNguyen/releases/20220121012011 && ~/.rvm/bin/rvm 2.6.6 do bundle check
+ DEBUG [6c2893c5] 	The Gemfile's dependencies are satisfied
+ DEBUG [6c2893c5] Finished in 1.666 seconds with exit status 0 (successful).
+  INFO The Gemfile's dependencies are satisfied, skipping installation
+ DEBUG [8fcd6545] Running if test ! -d /home/long/apps/LongNguyen/releases/20220121012011; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220121012011'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [8fcd6545] Command: if test ! -d /home/long/apps/LongNguyen/releases/20220121012011; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220121012011'" 1>&2; false; fi
+ DEBUG [8fcd6545] Finished in 0.314 seconds with exit status 0 (successful).
+  INFO [e8ad9be1] Running ~/.rvm/bin/rvm 2.6.6 do bundle exec rake assets:precompile on 143.198.97.178
+ DEBUG [e8ad9be1] Command: cd /home/long/apps/LongNguyen/releases/20220121012011 && ( export RAILS_ENV="production" RAILS_GROUPS="" ; ~/.rvm/bin/rvm 2.6.6 do bundle exec rake assets:precompile )
+ DEBUG [e8ad9be1] 	WARNING: Use strings for Figaro configuration. true was converted to "true".
+WARNING: Use strings for Figaro configuration. true was converted to "true".
+ DEBUG [e8ad9be1] 	/home/long/.rvm/rubies/ruby-2.6.6/lib/ruby/2.6.0/net/protocol.rb:66: warning: already initialized constant Net::ProtocRetryError
+/home/long/apps/LongNguyen/shared/bundle/ruby/2.6.0/gems/net-protocol-0.1.2/lib/net/protocol.rb:68: warning: previous definition of ProtocRetryError was here
+ DEBUG [e8ad9be1] 	/home/long/.rvm/rubies/ruby-2.6.6/lib/ruby/2.6.0/net/protocol.rb:206: warning: already initialized constant Net::BufferedIO::BUFSIZE
+/home/long/apps/LongNguyen/shared/bundle/ruby/2.6.0/gems/net-protocol-0.1.2/lib/net/protocol.rb:208: warning: previous definition of BUFSIZE was here
+/home/long/.rvm/rubies/ruby-2.6.6/lib/ruby/2.6.0/net/protocol.rb:503: warning: already initialized constant Net::NetPrivate::Socket
+/home/long/apps/LongNguyen/shared/bundle/ruby/2.6.0/gems/net-protocol-0.1.2/lib/net/protocol.rb:504: warning: previous definition of Socket was here
+ DEBUG [e8ad9be1] 	W, [2022-01-21T01:21:00.539589 #746820]  WARN -- : Removed sourceMappingURL comment for missing asset 'popper.min.js.map' from /home/long/apps/LongNguyen/releases/20220121012011/app/assets/javascripts/plugins/bootstrap/popper.min.js
+ DEBUG [e8ad9be1] 	W, [2022-01-21T01:21:00.623908 #746820]  WARN -- : Removed sourceMappingURL comment for missing asset 'popper.min.js.map' from /home/long/apps/LongNguyen/releases/20220121012011/app/assets/javascripts/popper.min.js
+ DEBUG [e8ad9be1] 	W, [2022-01-21T01:21:00.636443 #746820]  WARN -- : Removed sourceMappingURL comment for missing asset 'popper.min.js.map' from /home/long/apps/LongNguyen/releases/20220121012011/app/assets/javascripts/scripts.js
+ DEBUG [e8ad9be1] 	I, [2022-01-21T01:21:38.570312 #746820]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220121012011/public/assets/application-81b13f0b4675a94e6ea6a4a31aad99b0794f03adc69c9284a1f4ede325b1d1a7.js
+ DEBUG [e8ad9be1] 	I, [2022-01-21T01:21:38.571082 #746820]  INFO -- : Writing /home/long/apps/LongNguyen/releases/20220121012011/public/assets/application-81b13f0b4675a94e6ea6a4a31aad99b0794f03adc69c9284a1f4ede325b1d1a7.js.gz
+ DEBUG [e8ad9be1] 	autoprefixer: /home/long/apps/LongNguyen/releases/20220121012011/app/assets/stylesheets/essentials.css:1300:2: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [e8ad9be1] 	
+ DEBUG [e8ad9be1] 	autoprefixer: /home/long/apps/LongNguyen/releases/20220121012011/app/assets/stylesheets/essentials.css:1311:2: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [e8ad9be1] 	
+ DEBUG [e8ad9be1] 	autoprefixer: /home/long/apps/LongNguyen/releases/20220121012011/app/assets/stylesheets/settings.scss:1425:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+  INFO [e8ad9be1] Finished in 103.019 seconds with exit status 0 (successful).
+ DEBUG [64ba6422] Running if test ! -d /home/long/apps/LongNguyen/releases/20220121012011; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220121012011'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [64ba6422] Command: if test ! -d /home/long/apps/LongNguyen/releases/20220121012011; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220121012011'" 1>&2; false; fi
+ DEBUG [64ba6422] Finished in 0.338 seconds with exit status 0 (successful).
+  INFO [da525d80] Running /usr/bin/env mkdir -p /home/long/apps/LongNguyen/releases/20220121012011/assets_manifest_backup on 143.198.97.178
+ DEBUG [da525d80] Command: cd /home/long/apps/LongNguyen/releases/20220121012011 && /usr/bin/env mkdir -p /home/long/apps/LongNguyen/releases/20220121012011/assets_manifest_backup
+  INFO [da525d80] Finished in 0.279 seconds with exit status 0 (successful).
+ DEBUG [64c45728] Running /usr/bin/env ls /home/long/apps/LongNguyen/releases/20220121012011/public/assets/.sprockets-manifest* on 143.198.97.178
+ DEBUG [64c45728] Command: cd /home/long/apps/LongNguyen/releases/20220121012011 && /usr/bin/env ls /home/long/apps/LongNguyen/releases/20220121012011/public/assets/.sprockets-manifest*
+ DEBUG [64c45728] 	/home/long/apps/LongNguyen/releases/20220121012011/public/assets/.sprockets-manifest-27313f9b0a53a239da5b26268f11d3ff.json
+ DEBUG [64c45728] Finished in 0.313 seconds with exit status 0 (successful).
+ DEBUG [b685eb01] Running /usr/bin/env ls /home/long/apps/LongNguyen/releases/20220121012011/public/assets/.sprockets-manifest* on 143.198.97.178
+ DEBUG [b685eb01] Command: cd /home/long/apps/LongNguyen/releases/20220121012011 && /usr/bin/env ls /home/long/apps/LongNguyen/releases/20220121012011/public/assets/.sprockets-manifest*
+ DEBUG [b685eb01] 	/home/long/apps/LongNguyen/releases/20220121012011/public/assets/.sprockets-manifest-27313f9b0a53a239da5b26268f11d3ff.json
+ DEBUG [b685eb01] 	
+ DEBUG [b685eb01] Finished in 0.280 seconds with exit status 0 (successful).
+  INFO [07141753] Running /usr/bin/env cp /home/long/apps/LongNguyen/releases/20220121012011/public/assets/.sprockets-manifest-27313f9b0a53a239da5b26268f11d3ff.json /home/long/apps/LongNguyen/releases/20220121012011/assets_manifest_backup on 143.198.97.178
+ DEBUG [07141753] Command: cd /home/long/apps/LongNguyen/releases/20220121012011 && /usr/bin/env cp /home/long/apps/LongNguyen/releases/20220121012011/public/assets/.sprockets-manifest-27313f9b0a53a239da5b26268f11d3ff.json /home/long/apps/LongNguyen/releases/20220121012011/assets_manifest_backup
+  INFO [07141753] Finished in 0.310 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [a8d08496] Running if test ! -d /home/long/apps/LongNguyen/releases/20220121012011; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220121012011'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [a8d08496] Command: if test ! -d /home/long/apps/LongNguyen/releases/20220121012011; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases/20220121012011'" 1>&2; false; fi
+ DEBUG [a8d08496] Finished in 0.261 seconds with exit status 0 (successful).
+  INFO [fd306980] Running ~/.rvm/bin/rvm 2.6.6 do bundle exec rake db:migrate on 143.198.97.178
+ DEBUG [fd306980] Command: cd /home/long/apps/LongNguyen/releases/20220121012011 && ( export RAILS_ENV="production" ; ~/.rvm/bin/rvm 2.6.6 do bundle exec rake db:migrate )
+ DEBUG [fd306980] 	WARNING: Use strings for Figaro configuration. true was converted to "true".
+ DEBUG [fd306980] 	
+ DEBUG [fd306980] 	WARNING: Use strings for Figaro configuration. true was converted to "true".
+ DEBUG [fd306980] 	
+ DEBUG [fd306980] 	/home/long/.rvm/rubies/ruby-2.6.6/lib/ruby/2.6.0/net/protocol.rb:66: warning: already initialized constant Net::ProtocRetryError
+ DEBUG [fd306980] 	
+ DEBUG [fd306980] 	/home/long/apps/LongNguyen/shared/bundle/ruby/2.6.0/gems/net-protocol-0.1.2/lib/net/protocol.rb:68: warning: previous definition of ProtocRetryError was here
+ DEBUG [fd306980] 	
+ DEBUG [fd306980] 	/home/long/.rvm/rubies/ruby-2.6.6/lib/ruby/2.6.0/net/protocol.rb:206: warning: already initialized constant Net::BufferedIO::BUFSIZE
+ DEBUG [fd306980] 	
+ DEBUG [fd306980] 	/home/long/apps/LongNguyen/shared/bundle/ruby/2.6.0/gems/net-protocol-0.1.2/lib/net/protocol.rb:208: warning: previous definition of BUFSIZE was here
+ DEBUG [fd306980] 	
+ DEBUG [fd306980] 	/home/long/.rvm/rubies/ruby-2.6.6/lib/ruby/2.6.0/net/protocol.rb:503: warning: already initialized constant Net::NetPrivate::Socket
+ DEBUG [fd306980] 	
+ DEBUG [fd306980] 	/home/long/apps/LongNguyen/shared/bundle/ruby/2.6.0/gems/net-protocol-0.1.2/lib/net/protocol.rb:504: warning: previous definition of Socket was here
+ DEBUG [fd306980] 	
+  INFO [fd306980] Finished in 6.778 seconds with exit status 0 (successful).
+  INFO [99a69765] Running /usr/bin/env ln -s /home/long/apps/LongNguyen/releases/20220121012011 /home/long/apps/LongNguyen/releases/current on 143.198.97.178
+ DEBUG [99a69765] Command: /usr/bin/env ln -s /home/long/apps/LongNguyen/releases/20220121012011 /home/long/apps/LongNguyen/releases/current
+  INFO [99a69765] Finished in 0.276 seconds with exit status 0 (successful).
+  INFO [d0f5780d] Running /usr/bin/env mv /home/long/apps/LongNguyen/releases/current /home/long/apps/LongNguyen on 143.198.97.178
+ DEBUG [d0f5780d] Command: /usr/bin/env mv /home/long/apps/LongNguyen/releases/current /home/long/apps/LongNguyen
+  INFO [d0f5780d] Finished in 0.317 seconds with exit status 0 (successful).
+ DEBUG [0c754e24] Running /usr/bin/env ls -x /home/long/apps/LongNguyen/releases on 143.198.97.178
+ DEBUG [0c754e24] Command: /usr/bin/env ls -x /home/long/apps/LongNguyen/releases
+ DEBUG [0c754e24] 	20220121004429
+ DEBUG [0c754e24] 		
+ DEBUG [0c754e24] 	20220121004839
+ DEBUG [0c754e24] 		
+ DEBUG [0c754e24] 	20220121005531
+ DEBUG [0c754e24] 		
+ DEBUG [0c754e24] 	20220121010239
+ DEBUG [0c754e24] 		
+ DEBUG [0c754e24] 	20220121010804
+ DEBUG [0c754e24] 	
+ DEBUG [0c754e24] 	20220121012011
+ DEBUG [0c754e24] 	
+ DEBUG [0c754e24] Finished in 0.265 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on 143.198.97.178
+ DEBUG [08765f54] Running [ -d /home/long/apps/LongNguyen/current ] on 143.198.97.178
+ DEBUG [08765f54] Command: [ -d /home/long/apps/LongNguyen/current ]
+ DEBUG [08765f54] Finished in 0.313 seconds with exit status 0 (successful).
+ DEBUG [f205d429] Running /usr/bin/env readlink /home/long/apps/LongNguyen/current on 143.198.97.178
+ DEBUG [f205d429] Command: /usr/bin/env readlink /home/long/apps/LongNguyen/current
+ DEBUG [f205d429] 	/home/long/apps/LongNguyen/releases/20220121012011
+ DEBUG [f205d429] Finished in 0.279 seconds with exit status 0 (successful).
+  INFO [f7d2547c] Running /usr/bin/env rm -rf /home/long/apps/LongNguyen/releases/20220121004429 on 143.198.97.178
+ DEBUG [f7d2547c] Command: /usr/bin/env rm -rf /home/long/apps/LongNguyen/releases/20220121004429
+  INFO [f7d2547c] Finished in 0.789 seconds with exit status 0 (successful).
+ DEBUG [955af3e9] Running if test ! -d /home/long/apps/LongNguyen/current; then echo "Directory does not exist '/home/long/apps/LongNguyen/current'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [955af3e9] Command: if test ! -d /home/long/apps/LongNguyen/current; then echo "Directory does not exist '/home/long/apps/LongNguyen/current'" 1>&2; false; fi
+ DEBUG [955af3e9] Finished in 0.273 seconds with exit status 0 (successful).
+ DEBUG [3ae07e3d] Running [ -f /home/long/apps/LongNguyen/shared/tmp/pids/puma.pid ] on 143.198.97.178
+ DEBUG [3ae07e3d] Command: [ -f /home/long/apps/LongNguyen/shared/tmp/pids/puma.pid ]
+ DEBUG [3ae07e3d] Finished in 0.309 seconds with exit status 0 (successful).
+ DEBUG [46601ecb] Running /usr/bin/env kill -0 $( cat /home/long/apps/LongNguyen/shared/tmp/pids/puma.pid ) on 143.198.97.178
+ DEBUG [46601ecb] Command: cd /home/long/apps/LongNguyen/current && ( export RACK_ENV="production" ; /usr/bin/env kill -0 $( cat /home/long/apps/LongNguyen/shared/tmp/pids/puma.pid ) )
+ DEBUG [46601ecb] Finished in 0.309 seconds with exit status 0 (successful).
+  INFO [b66fb9d4] Running ~/.rvm/bin/rvm 2.6.6 do bundle exec pumactl -S /home/long/apps/LongNguyen/shared/tmp/pids/puma.state -F /home/long/apps/LongNguyen/shared/puma.rb restart on 143.198.97.178
+ DEBUG [b66fb9d4] Command: cd /home/long/apps/LongNguyen/current && ( export RACK_ENV="production" ; ~/.rvm/bin/rvm 2.6.6 do bundle exec pumactl -S /home/long/apps/LongNguyen/shared/tmp/pids/puma.state -F /home/long/apps/LongNguyen/shared/puma.rb restart )
+ DEBUG [b66fb9d4] 	Command restart sent success
+ DEBUG [b66fb9d4] 	
+  INFO [b66fb9d4] Finished in 2.478 seconds with exit status 0 (successful).
+ DEBUG [76d2267a] Running if test ! -d /home/long/apps/LongNguyen/releases; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases'" 1>&2; false; fi on 143.198.97.178
+ DEBUG [76d2267a] Command: if test ! -d /home/long/apps/LongNguyen/releases; then echo "Directory does not exist '/home/long/apps/LongNguyen/releases'" 1>&2; false; fi
+ DEBUG [76d2267a] Finished in 0.314 seconds with exit status 0 (successful).
+  INFO [5da30104] Running /usr/bin/env echo "Branch master (at 4875eb8ff031269fe6094253efdf84cc8f1c7d0a) deployed as release 20220121012011 by longnguyen" >> /home/long/apps/LongNguyen/revisions.log on 143.198.97.178
+ DEBUG [5da30104] Command: cd /home/long/apps/LongNguyen/releases && /usr/bin/env echo "Branch master (at 4875eb8ff031269fe6094253efdf84cc8f1c7d0a) deployed as release 20220121012011 by longnguyen" >> /home/long/apps/LongNguyen/revisions.log
+  INFO [5da30104] Finished in 0.357 seconds with exit status 0 (successful).
