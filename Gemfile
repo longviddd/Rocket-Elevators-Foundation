@@ -10,7 +10,6 @@ gem "pg"
 gem "rails", "~> 5.2.6"
 # query ui
 gem "bootstrap"
-gem 'newrelic_rpm'
 gem "font-awesome-rails"
 gem "font-awesome-sass"
 gem "jquery-ui-rails"
@@ -125,4 +124,3 @@ gem 'net-ssh', '>= 6.0.2'
 gem 'ed25519', '>= 1.2', '< 2.0'
 gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
 gem 'authtrail'
-gem 'rails_12factor', group: :production
