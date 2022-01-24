@@ -88,15 +88,16 @@ class InterventionController < ApplicationController
                 employee_string = ""
             end
             
-            ZendeskAPI::Ticket.create!(@client, 
-                :subject => "Intervention from #{company_name}",
-                :requester => {"name": request_name},
-                :comment => { :value => 
-                 "There's an intervention from company #{company_name}.
-                The intervention happens at building #{building_id}, at battery #{battery_id} #{column_string} #{elevator_string} #{employee_string}
-                  Report: #{report}"},
-                :type => "question",  
-                :priority => "urgent")
+            # ZendeskAPI::Ticket.create!(@client, 
+            #     :subject => "Intervention from #{company_name}",
+            #     :requester => {"name": request_name},
+            #     :comment => { :value => 
+            #      "There's an intervention from company #{company_name}.
+            #     The intervention happens at building #{building_id}, at battery #{battery_id} #{column_string} #{elevator_string} #{employee_string}
+            #       Report: #{report}"},
+            #     :type => "question",  
+            #     :priority => "urgent")
+            # Trial account ran out 
         end
         
     end

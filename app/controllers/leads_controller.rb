@@ -39,28 +39,30 @@ class LeadsController < ApplicationController
     end
 
     # ZenDesk
-    if params[:contact_attachment_file]
-      ZendeskAPI::Ticket.create!(@client, 
-        :subject => "#{@lead.full_name} from #{@lead.company_name}",
-        :requester => {"name": @lead.email},
-        :comment => { :value => 
-         "The contact #{@lead.full_name} from company #{@lead.company_name} can be reached at email #{@lead.email} and at phone number #{@lead.phone}. #{@lead.department_in_charge_of_the_elevators} has a project named #{@lead.project_name} which would require contribution from Rocket Elevators. 
-          #{@lead.project_description}
-          Attached Message: #{@lead.message}
-          The Contact uploaded an attachment"},
-        :type => "question",  
-        :priority => "urgent")
-    else
-      ZendeskAPI::Ticket.create!(@client, 
-        :subject => "#{@lead.full_name} from #{@lead.company_name}",
-        :requester => {"name": @lead.email},
-        :comment => { :value => 
-         "The contact #{@lead.full_name} from company #{@lead.company_name} can be reached at email #{@lead.email} and at phone number #{@lead.phone}. #{@lead.department_in_charge_of_the_elevators} has a project named #{@lead.project_name} which would require contribution from Rocket Elevators. 
-          #{@lead.project_description}
-          Attached Message: #{@lead.message}"},
-        :type => "question",  
-        :priority => "urgent")
-    end
+    # if params[:contact_attachment_file]
+    #   ZendeskAPI::Ticket.create!(@client, 
+    #     :subject => "#{@lead.full_name} from #{@lead.company_name}",
+    #     :requester => {"name": @lead.email},
+    #     :comment => { :value => 
+    #      "The contact #{@lead.full_name} from company #{@lead.company_name} can be reached at email #{@lead.email} and at phone number #{@lead.phone}. #{@lead.department_in_charge_of_the_elevators} has a project named #{@lead.project_name} which would require contribution from Rocket Elevators. 
+    #       #{@lead.project_description}
+    #       Attached Message: #{@lead.message}
+    #       The Contact uploaded an attachment"},
+    #     :type => "question",  
+    #     :priority => "urgent")
+    # else
+    #   ZendeskAPI::Ticket.create!(@client, 
+    #     :subject => "#{@lead.full_name} from #{@lead.company_name}",
+    #     :requester => {"name": @lead.email},
+    #     :comment => { :value => 
+    #      "The contact #{@lead.full_name} from company #{@lead.company_name} can be reached at email #{@lead.email} and at phone number #{@lead.phone}. #{@lead.department_in_charge_of_the_elevators} has a project named #{@lead.project_name} which would require contribution from Rocket Elevators. 
+    #       #{@lead.project_description}
+    #       Attached Message: #{@lead.message}"},
+    #     :type => "question",  
+    #     :priority => "urgent")
+    # end
+    
+    #comment out since free trial account ran out :)
 
     # SendGrid
     UserNotifierMailer.send_lead_email(@lead).deliver_now!
