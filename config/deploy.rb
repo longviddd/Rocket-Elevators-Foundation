@@ -24,7 +24,7 @@ set :puma_init_active_record, true  # Change to false when not using ActiveRecor
 set :linked_files, %w[config/database.yml config/application.yml]
 set :linked_dirs, %w[tmp/pids tmp/sockets log]
 set :rvm_ruby_version, '2.6.6'
-set :format_options, log_file: 'cap/log/capistrano.log'
+
 ## Defaults:
 # set :scm,           :git
 # set :branch,        :master
