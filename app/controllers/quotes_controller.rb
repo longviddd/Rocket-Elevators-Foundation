@@ -44,13 +44,14 @@ class QuotesController < ApplicationController
       elevator_price = 15400.00
     end
 
-    ZendeskAPI::Ticket.create!(@client, 
-      :subject => "#{@quote.company_name}",
-      :requester => {"name": @quote.email},
-      :comment => { :value => 
-        "The company #{@quote.company_name} has made a quote for a building of type #{@quote.building_type} and wants the type of service #{@quote.product_line} service. Amount of elevators is #{@quote.amount_elevators}. Price per elevator: $#{elevator_price}. Installation fee is #{@quote.installation_fees}. Total price is #{@quote.total_cost}. The company #{@quote.company_name} can be contacted at #{@quote.email}"},
-      :type => "task",  
-      :priority => "urgent")
+    # ZendeskAPI::Ticket.create!(@client, 
+    #   :subject => "#{@quote.company_name}",
+    #   :requester => {"name": @quote.email},
+    #   :comment => { :value => 
+    #     "The company #{@quote.company_name} has made a quote for a building of type #{@quote.building_type} and wants the type of service #{@quote.product_line} service. Amount of elevators is #{@quote.amount_elevators}. Price per elevator: $#{elevator_price}. Installation fee is #{@quote.installation_fees}. Total price is #{@quote.total_cost}. The company #{@quote.company_name} can be contacted at #{@quote.email}"},
+    #   :type => "task",  
+    #   :priority => "urgent")
+    # Zendesk account trial ran out
   end
 
   # PATCH/PUT /quotes/1 or /quotes/1.json
